@@ -1,0 +1,192 @@
+Script started on Mon 21 Feb 2022 01:38:32 PM UTC
+root@localhost:/home/ISS_DELTA# ./ACL.exe
+dnsproxy: no process found
+ Unable to open sizing file system.size 
+ System Size Data Structure updated with Default Values 
+LR: 
+      This switch software is implemented using Open sources from OpenSSL,OpenSSH,and other open source community.
+To see a full description, type "show system acknowledgement"
+Broadcom Command Monitor: Copyright (c) 1998-2021 Broadcom
+Release: sdk-6.5.18 built 20210828 (Sat Aug 28 17:29:38 2021)
+From root@coverityiss.che.aricent.com:/home/DELTA_AX_AGCV208S/sdk-all-6.5.18
+Platform: X86
+OS: Unix (Posix)
+DMA pool size: 33554432
+BDE unit 0 (PCI), Dev 0x8270, Rev 0x02, Chip BCM88270_A1, Driver BCM88270_A1
+rc: unit 0 device BCM88270_A1
+BCM.0> 
+BCM.0> debug -
+SNMP: Warning Registering OID 1.3.6.1.4.1.2076.81.8.4 is an subset of registered OID 1.3.6.1.4.1.2076.81.8
+[2J[1;1H[100B
+		 Aricent Intelligent Switch Solution 
+
+sh: 1: cannot create /sys/devices/platform/accton_as5912_54x_led/leds/accton_as5912_54x_led::diag/brightness: Directory nonexistent
+ISS login: root
+Password: 
+
+ISS# configure terminal
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# set port-channel enable
+ISS(config)# set lldp enable
+ISS(config)# shutdown garp
+ISS(config)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 100
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 200
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 300
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 400
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 500
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 600
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 700
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 800
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/2
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 200 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/3
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 300 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 400 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 500 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/6
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 600 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/7
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 700 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/8
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 800 mode active
+ISS(config-if)# end
+ISS# 
+ISS# sh po[K[KISS# sh p[K[KISS# sh int po 100
+
+po100 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100 
+
+Hardware Address is 00:02:02:03:04:81   
+
+ISS# sh etherchannel 100 deatil
+
+sh etherchannel 100 deatil
+                    ^
+% Invalid input detected at '^' marker
+ISS# sh ether summary
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  00:02:02:03:04:01   
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+Flags: 
+D - down         P - in port-channel
+I - stand-alone  H - Hot-standby (LACP only)
+E - ErrDisabled
+U - in-use       d - default port
+R - Layer3
+AD - Admin Down      AU - Admin Up
+OD - Operative Down  OU - Operative Up
+
+[100B[K--More--[K                [KNumber of channel-groups in use: 8
+[100B[K--More--[K                [KNumber of aggregators: 8
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KGroup  Port-channel    Protocol   Ports
+[100B[K--More--[K                [K-------------------------------------------------------------------------
+[100B[K--More--[K                [K100    Po100(D)[AU,OD] LACP       Gi0/1(D)
+[100B[K--More--[K                [K200    Po200(D)[AU,OD] LACP       Gi0/2(D)
+[100B[K--More--[K                [K300    Po300(D)[AU,OD] LACP       Gi0/3(D)
+[100B[K--More--[K                [K400    Po400(D)[AU,OD] LACP       Gi0/4(D)
+[100B[K--More--[K                [K500    Po500(D)[AU,OD] LACP       Gi0/5(D)
+[100B[K--More--[K                [K600    Po600(D)[AU,OD] LACP       Gi0/6(D)
+[100B[K--More--[K                [K700    Po700(D)[AU,OD] LACP       Gi0/7(D)
+[100B[K--More--[K                [K800    Po800(D)[AU,OD] LACP       Gi0/8(D)
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K[27m                       ISS# 
+ISS# 
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 900
+% Maximum number of port channels supported in the system is 8 
+ISS(config)# no shutdown
+% Incomplete command.
+ISS(config)# end
+ISS# 
+ISS# Quit
+root@localhost:/home/ISS_DELTA# exit
+
+Script done on Mon 21 Feb 2022 01:42:39 PM UTC

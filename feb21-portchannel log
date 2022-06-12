@@ -1,0 +1,342 @@
+Script started on Mon 21 Feb 2022 01:34:06 PM UTC
+root@localhost:/home/ISS_DELTA# gdb ./ISS.execd /home/ISS_DELTA/[6Pgdb ./ISS.exe[K./ACL.exe
+dnsproxy: no process found
+ Unable to open sizing file system.size 
+ System Size Data Structure updated with Default Values 
+LR: 
+      This switch software is implemented using Open sources from OpenSSL,OpenSSH,and other open source community.
+To see a full description, type "show system acknowledgement"
+Broadcom Command Monitor: Copyright (c) 1998-2021 Broadcom
+Release: sdk-6.5.18 built 20210828 (Sat Aug 28 17:29:38 2021)
+From root@coverityiss.che.aricent.com:/home/DELTA_AX_AGCV208S/sdk-all-6.5.18
+Platform: X86
+OS: Unix (Posix)
+DMA pool size: 33554432
+BDE unit 0 (PCI), Dev 0x8270, Rev 0x02, Chip BCM88270_A1, Driver BCM88270_A1
+rc: unit 0 device BCM88270_A1
+BCM.0> 
+BCM.0> debug -
+SNMP: Warning Registering OID 1.3.6.1.4.1.2076.81.8.4 is an subset of registered OID 1.3.6.1.4.1.2076.81.8
+[2J[1;1H[100B
+		 Aricent Intelligent Switch Solution 
+
+sh: 1: cannot create /sys/devices/platform/accton_as5912_54x_led/leds/accton_as5912_54x_led::diag/brightness: Directory nonexistent
+ISS login: root
+Password: 
+
+ISS# configure terminal
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# set port-channel enable
+ISS(config)# set lldp enable
+ISS(config)# shutdown garp
+ISS(config)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 100
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/2
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/3
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/6
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/7
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/8
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# 
+ISS# sh etherchannel 100 deati[K[KISS# sh etherchannel 100 deat[K[KISS# sh etherchannel 100 dea[K[KISS# sh etherchannel 100 detail
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  00:02:02:03:04:01   
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+                 Channel Group Listing
+                 ---------------------
+Group: 100 
+----------
+Protocol :LACP
+
+                 Ports in the Group
+                 ------------------
+
+[100B[K--More--[K                [KPort : Gi0/1
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:35:58
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 1 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/2
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:10
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 2 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/3
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:11
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 3 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/4
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:11
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 4 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/5
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:11
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 5 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/6
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:11
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 6 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/7
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:11
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 7 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort : Gi0/8
+[100B[K--More--[K                [K-------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort State = Down, Not in Bundle
+[100B[K--More--[K                [KChannel Group : 100
+[100B[K--More--[K                [KMode : Active
+[100B[K--More--[K                [KPort-channel = Null
+[100B[K--More--[K                [KPseudo port-channel = Po100
+[100B[K--More--[K                [KPort Up-In-Bundle Transition Count = 0
+[100B[K--More--[K                [KPort Down-In-Bundle Transition Count = 1
+[100B[K--More--[K                [KPort state change Timestamp = 21 Feb 2022 13:36:11
+[100B[K--More--[K                [KLACP port-priority  = 128
+[100B[K--More--[K                [KLACP Wait-time  = 2 secs 
+[100B[K--More--[K                [KLACP Port Identifier = 8 
+[100B[K--More--[K                [KLACP Activity : Active 
+[100B[K--More--[K                [KLACP Timeout : Long
+[100B[K--More--[K                [KLACP Error State : None 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KAggregation State : Aggregation, Defaulted 
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K                 LACP Port   Admin  Oper   Port    Port
+[100B[K--More--[K                [KPort     State   Priority    Key    Key    Number  State   
+[100B[K--More--[K                [K---------------------------------------------------------------------
+[100B[K--More--[K                [KGi0/1    Down    128         100    100    0x1     0xa2    
+[100B[K--More--[K                [KGi0/2    Down    128         100    100    0x2     0xa2    
+[100B[K--More--[K                [KGi0/3    Down    128         100    100    0x3     0xa2    
+[100B[K--More--[K                [KGi0/4    Down    128         100    100    0x4     0xa2    
+[100B[K--More--[K                [KGi0/5    Down    128         100    100    0x5     0xa2    
+[100B[K--More--[K                [KGi0/6    Down    128         100    100    0x6     0xa2    
+[100B[K--More--[K                [KGi0/7    Down    128         100    100    0x7     0xa2    
+[100B[K--More--[K                [KGi0/8    Down    128         100    100    0x8     0xa2    
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort-channel : Po100
+[100B[K--More--[K                [K -------------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KNumber of Ports = 8
+[100B[K--More--[K                [KHotStandBy port = null
+[100B[K--More--[K                [KPort state = Port-channel Ag-Not-Inuse 
+[100B[K--More--[K                [KProtocol = LACP
+[100B[K--More--[K                [KAggregator-MAC  00:02:02:03:04:81   
+[100B[K--More--[K                [KDefault Port = NoneMaximum number of Ports  = 48
+[100B[K--More--[K                [KPort-channel operational Up Transition Count = 0
+[100B[K--More--[K                [KPort-channel operational Down Transition Count = 1
+[100B[K--More--[K                [KOperational change timestamp = 21 Feb 2022 13:34:18
+[100B[K--More--[K                [KPort-channel is operationally Down
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort-Channel Mtu         = 1500
+[100B[K--More--[K                [KPort-Channel Speed       = 0 Mbps
+[100B[K--More--[K                [KPort-Channel High Speed  = 0 Mbps
+[100B[K--More--[K                [KPort-Channel Member Ports Speed = 0 Mbps
+[100B[K--More--[K                [KPort-Channel Member Ports High Speed  = 0 Mbps
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K[27m                       ISS# 
+ISS# 
+ISS# 
+ISS# 
+ISS# 
+ISS# 
+ISS# sh int po 100
+
+po100 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100 
+
+Hardware Address is 00:02:02:03:04:81   
+
+ISS# sh int des
+
+Interface    Status   Protocol  Description   SFP Status
+---------    ------   --------  -----------   ----------
+Gi0/1        up       up            Not Present
+Gi0/2        up       up            Not Present
+Gi0/3        up       up            Not Present
+Gi0/4        up       up            Not Present
+Gi0/5        up       up            Not Present
+Gi0/6        up       up            Not Present
+Gi0/7        up       up            Not Present
+Gi0/8        up       up            Not Present
+Gi0/9        down     down          Not Present
+Gi0/10       down     down          Not Present
+Gi0/11       down     down          Not Present
+Gi0/12       down     down          Not Present
+Gi0/13       down     down          Not Present
+Gi0/14       down     down          Not Present
+Gi0/15       down     down          Not Present
+Gi0/16       down     down          Not Present
+po100        up       down          Not Present
+vlan1        up       down          Not Present
+ISS# Quit
+root@localhost:/home/ISS_DELTA# exit
+
+Script done on Mon 21 Feb 2022 01:38:24 PM UTC

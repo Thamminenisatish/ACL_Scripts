@@ -1,0 +1,225 @@
+iss# configure terminal
+iss(config)# set gvrp disable
+iss(config)# set gmrp disable
+iss(config)# set port-channel enable
+iss(config)# set lldp enable
+iss(config)# shutdown garp
+iss(config)# end
+iss# 
+iss# configure terminal
+iss(config)# no shut port-channel
+iss(config)# channel-protocol lacp
+iss(config)# interface port-channel 100
+iss(config-if)# no shutdown
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/1
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/2
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/3
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/4
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/5
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/6
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/7
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/8
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# 
+iss# show ether summary
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  00:01:02:03:04:01   
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+Flags: 
+D - down         P - in port-channel
+I - stand-alone  H - Hot-standby (LACP only)
+E - ErrDisabled
+U - in-use       d - default port
+R - Layer3
+AD - Admin Down      AU - Admin Up
+OD - Operative Down  OU - Operative Up
+
+Number of channel-groups in use: 1
+Number of aggregators: 1
+
+Group  Port-channel    Protocol   Ports
+-------------------------------------------------------------------------
+100    Po100(U)[AU,OU] LACP       Gi0/1(P),Gi0/2(P),Gi0/3(P),Gi0/4(P)
+                                  Gi0/5(P),Gi0/6(P),Gi0/7(P),Gi0/8(P)
+
+iss# show int des
+
+Interface    Status   Protocol  Description
+---------    ------   --------  -----------
+Gi0/1        up       up            
+Gi0/2        up       up            
+Gi0/3        up       up            
+Gi0/4        up       up            
+Gi0/5        up       up            
+Gi0/6        up       up            
+Gi0/7        up       up            
+Gi0/8        up       up            
+Gi0/9        down     down      
+Gi0/10       down     down      
+Gi0/11       down     down      
+Gi0/12       down     down      
+Gi0/13       down     down      
+Gi0/14       down     down      
+Gi0/15       down     down      
+Gi0/16       down     down      
+Gi0/17       down     down      
+Gi0/18       down     down      
+Gi0/19       down     down      
+Gi0/20       down     down      
+Gi0/21       down     down      
+Gi0/22       down     down      
+Gi0/23       down     down      
+Gi0/24       down     down      
+po100        up       up            
+vlan1        up       up            
+iss# 
+iss# 
+iss# show ip int
+
+vlan1 is up, line protocol is up
+Internet Address is 12.0.0.1/8
+Broadcast Address  12.255.255.255
+Vlan counters disabled 
+iss# show int po 100
+
+po100 up, line protocol is up (connected)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100 
+
+Hardware Address is 00:01:02:03:04:19   
+
+iss# configure terminal
+iss(config)# interface gigabitethernet 0/9
+iss(config-if)# no shutdown
+iss(config-if)# channel-group 100 mode active
+iss(config-if)# end
+iss# 
+iss# show po 100iss# show po 10iss# show po 1iss# show po iss# show poiss# show piss# show iss# showiss# shoiss# show  po 100iss# show i po 100iss# show in po 100iss# show int po 100iss# show intiss# show int po 100
+
+po100 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100 
+
+Hardware Address is 00:01:02:03:04:19   
+
+iss# show ip int
+
+vlan1 is up, line protocol is down
+Internet Address is 12.0.0.1/8
+Broadcast Address  12.255.255.255
+Vlan counters disabled 
+iss# show ether summary
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  00:01:02:03:04:01   
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+Flags: 
+D - down         P - in port-channel
+I - stand-alone  H - Hot-standby (LACP only)
+E - ErrDisabled
+U - in-use       d - default port
+R - Layer3
+AD - Admin Down      AU - Admin Up
+OD - Operative Down  OU - Operative Up
+
+Number of channel-groups in use: 1
+Number of aggregators: 1
+
+Group  Port-channel    Protocol   Ports
+-------------------------------------------------------------------------
+100    Po100(D)[AU,OD] LACP       Gi0/1(D),Gi0/2(D),Gi0/3(D),Gi0/4(D)
+                                  Gi0/5(D),Gi0/6(D),Gi0/7(D),Gi0/8(D)
+                                  Gi0/9(D)
+
+iss# show int des
+
+Interface    Status   Protocol  Description
+---------    ------   --------  -----------
+Gi0/1        up       up            
+Gi0/2        up       up            
+Gi0/3        up       up            
+Gi0/4        up       up            
+Gi0/5        up       up            
+Gi0/6        up       up            
+Gi0/7        up       up            
+Gi0/8        up       up            
+Gi0/9        up       up            
+Gi0/10       down     down      
+Gi0/11       down     down      
+Gi0/12       down     down      
+Gi0/13       down     down      
+Gi0/14       down     down      
+Gi0/15       down     down      
+Gi0/16       down     down      
+Gi0/17       down     down      
+Gi0/18       down     down      
+Gi0/19       down     down      
+Gi0/20       down     down      
+Gi0/21       down     down      
+Gi0/22       down     down      
+Gi0/23       down     down      
+Gi0/24       down     down      
+po100        up       down      
+vlan1        up       down      
+iss# Quit
+_root@localhost:/home/sat/switch1\You have new mail in /var/spool/mail/root
+[root@localhost switch1]# exit
+
+Script done on Thu 17 Feb 2022 02:15:22 PM IST

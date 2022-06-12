@@ -1,0 +1,15 @@
+r s ./Base_config.txt
+r s ./EVC_500_VLAN.txt
+r s ./124_L2_DENY.txt
+r s ./1_1_MAC_ACC.txt
+r s ./124_L2_permit.txt
+r s ./1_2_MAC_ACC.txt
+			
+r s ./1_2_NOMAC_ACC.txt
+r s ./1_1_NOMAC_ACC.txt
+r s ./1_1_MAC_ACC.txt
+r s ./1_2_MAC_ACC.txt
+r s ./NO_MAC_ACC.txt
+r s ./256_L2_DENY_ACL.txt
+r s ./1_1_MAC_ACC.txt
+r s ./1_2_MAC_ACC.txt

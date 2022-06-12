@@ -1,0 +1,198 @@
+ISS# 
+ISS# configure terminal
+ISS(config)# set gmrp disable
+ISS(config)# set gvrp disable
+ISS(config)# shutdown garp
+ISS(config)# shutdown spanning-tree
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/2
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/4
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 1
+ISS(config-vlan)# ports gi 0/1
+ISS(config-vlan)# exit
+ISS(config)# vlan 2
+ISS(config-vlan)# ports gi 0/3
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# switchport pvid 1
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# switchport pvid 2
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 1 source int gi 0/1 rx
+ISS(config)# monitor session 1 destination int gi 0/2
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 2 source int gi 0/3 rx
+ISS(config)# monitor session 2 destination int gi 0/4
+ISS(config)# end
+ISS# 
+ISS# sh monitor session 1
+Mirroring is globally Enabled.
+  Session     : 1
+ -------
+ Source Ports 
+   Rx              : Gi0/1
+   Tx              :  None 
+   Both            :  None 
+ Destination Ports : Gi0/2
+ Session Status    : Active 
+ Rspan Disabled ISS# sh monitor session 2
+Mirroring is globally Enabled.
+  Session     : 2
+ -------
+ Source Ports 
+   Rx              : Gi0/3
+   Tx              :  None 
+   Both            :  None 
+ Destination Ports : Gi0/4
+ Session Status    : Active 
+ Rspan Disabled 
+
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/6
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/8
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 3
+ISS(config-vlan)# ports gi 0/5
+ISS(config-vlan)# exit
+ISS(config)# vlan 4
+ISS(config-vlan)# ports gi 0/7
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# switchport pvid 3
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# switchport pvid 4
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 3 source int gi 0/5 rx
+ISS(config)# monitor session 3 destination int gi 0/6
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 4 source int gi 0/7 rx
+ISS(config)# monitor session 4 destination int gi 0/8
+ISS(config)# end
+ISS# 
+ISS# sh monitor session 3
+Mirroring is globally Enabled.
+  Session     : 3
+ -------
+ Source Ports 
+   Rx              : Gi0/5
+   Tx              :  None 
+   Both            :  None 
+ Destination Ports : Gi0/6
+ Session Status    : Active 
+ Rspan Disabled 
+ISS# sh monitor session 4
+Mirroring is globally Enabled.
+  Session     : 4
+ -------
+ Source Ports 
+   Rx              : Gi0/7
+   Tx              :  None 
+   Both            :  None 
+ Destination Ports : Gi0/8
+ Session Status    : Active 
+ Rspan Disabled 
+
+ISS# c t
+ISS(config)# int gi /ISS(config)# int gi 0/9
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 5
+ISS(config-vlan)# ports gi 0/9
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/9
+ISS(config-if)# switchport pvid 5
+ISS(config-if)# end
+ISS# 
+ISS# c tISS(config)# monitor session 3 source int gi 0/9 rx
+ISS(config)# monitor session 3 destination int gi 0/6
+% Configuration not allowed. Destination port is already confiigured
+ISS(config)# end
+ISS# 
+ISS# sh monitor session 3
+Mirroring is globally Enabled.
+  Session     : 3
+ -------
+ Source Ports 
+   Rx              : Gi0/5,Gi0/9
+   Tx              :  None 
+   Both            :  None 
+ Destination Ports : Gi0/6
+ Session Status    : Active 
+ Rspan Disabled 
+
+ISS# ISS# sh monitor session 3ISS# sh monitor session 4
+Mirroring is globally Enabled.
+  Session     : 4
+ -------
+ Source Ports 
+   Rx              : Gi0/7
+   Tx              :  None 
+   Both            :  None 
+ Destination Ports : Gi0/8
+ Session Status    : Active 
+ Rspan Disabled 
+
+ISS# Quit
+root@localhost:/usr/local/bin/broadcom# exit
+
+Script done on Sat 01 Jan 2000 04:38:23 AM UTC

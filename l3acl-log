@@ -1,0 +1,2204 @@
+
+
+ISS# c tISS(config)# set gmrp disable 
+ISS(config)# set gvrp disable
+ISS(config)# shut garp
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# shut spanning-tree
+ISS(config)# int gi 0/4ISS(config-if)# no shutISS(config-if)# endISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1001
+ISS(config-ext-nacl)# deny ip 1.1.1.1 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1002
+ISS(config-ext-nacl)# deny ip 1.1.1.2 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1003
+ISS(config-ext-nacl)# deny ip 1.1.1.3 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1004
+ISS(config-ext-nacl)# deny ip 1.1.1.4 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1005
+ISS(config-ext-nacl)# deny ip 1.1.1.5 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1006
+ISS(config-ext-nacl)# deny ip 1.1.1.6 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1007
+ISS(config-ext-nacl)# deny ip 1.1.1.7 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1008
+ISS(config-ext-nacl)# deny ip 1.1.1.8 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1009
+ISS(config-ext-nacl)# deny ip 1.1.1.9 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1010
+ISS(config-ext-nacl)# deny ip 1.1.1.10 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1011
+ISS(config-ext-nacl)# deny ip 1.1.1.11 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1012
+ISS(config-ext-nacl)# deny ip 1.1.1.12 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1013
+ISS(config-ext-nacl)# deny ip 1.1.1.13 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1014
+ISS(config-ext-nacl)# deny ip 1.1.1.14 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1015
+ISS(config-ext-nacl)# deny ip 1.1.1.15 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1016
+ISS(config-ext-nacl)# deny ip 1.1.1.16 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1017
+ISS(config-ext-nacl)# deny ip 1.1.1.17 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1018
+ISS(config-ext-nacl)# deny ip 1.1.1.18 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1019
+ISS(config-ext-nacl)# deny ip 1.1.1.19 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1020
+ISS(config-ext-nacl)# deny ip 1.1.1.20 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1021
+ISS(config-ext-nacl)# deny ip 1.1.1.21 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1022
+ISS(config-ext-nacl)# deny ip 1.1.1.22 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1023
+ISS(config-ext-nacl)# deny ip 1.1.1.23 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1024
+ISS(config-ext-nacl)# deny ip 1.1.1.24 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1025
+ISS(config-ext-nacl)# deny ip 1.1.1.25 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1026
+ISS(config-ext-nacl)# deny ip 1.1.1.26 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1027
+ISS(config-ext-nacl)# deny ip 1.1.1.27 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1028
+ISS(config-ext-nacl)# deny ip 1.1.1.28 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1029
+ISS(config-ext-nacl)# deny ip 1.1.1.29 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1030
+ISS(config-ext-nacl)# deny ip 1.1.1.30 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1031
+ISS(config-ext-nacl)# deny ip 1.1.1.31 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1032
+ISS(config-ext-nacl)# deny ip 1.1.1.32 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1033
+ISS(config-ext-nacl)# deny ip 1.1.1.33 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1034
+ISS(config-ext-nacl)# deny ip 1.1.1.34 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1035
+ISS(config-ext-nacl)# deny ip 1.1.1.35 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1036
+ISS(config-ext-nacl)# deny ip 1.1.1.36 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1037
+ISS(config-ext-nacl)# deny ip 1.1.1.37 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1038
+ISS(config-ext-nacl)# deny ip 1.1.1.38 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1039
+ISS(config-ext-nacl)# deny ip 1.1.1.39 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1040
+ISS(config-ext-nacl)# deny ip 1.1.1.40 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1041
+ISS(config-ext-nacl)# deny ip 1.1.1.41 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1042
+ISS(config-ext-nacl)# deny ip 1.1.1.42 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1043
+ISS(config-ext-nacl)# deny ip 1.1.1.43 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1044
+ISS(config-ext-nacl)# deny ip 1.1.1.44 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1045
+ISS(config-ext-nacl)# deny ip 1.1.1.45 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1046
+ISS(config-ext-nacl)# deny ip 1.1.1.46 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1047
+ISS(config-ext-nacl)# deny ip 1.1.1.47 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1048
+ISS(config-ext-nacl)# deny ip 1.1.1.48 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1049
+ISS(config-ext-nacl)# deny ip 1.1.1.49 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1050
+ISS(config-ext-nacl)# deny ip 1.1.1.50 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1051
+ISS(config-ext-nacl)# deny ip 1.1.1.51 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1052
+ISS(config-ext-nacl)# deny ip 1.1.1.52 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1053
+ISS(config-ext-nacl)# deny ip 1.1.1.53 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1054
+ISS(config-ext-nacl)# deny ip 1.1.1.54 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1055
+ISS(config-ext-nacl)# deny ip 1.1.1.55 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1056
+ISS(config-ext-nacl)# deny ip 1.1.1.56 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1057
+ISS(config-ext-nacl)# deny ip 1.1.1.57 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1058
+ISS(config-ext-nacl)# deny ip 1.1.1.58 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1059
+ISS(config-ext-nacl)# deny ip 1.1.1.59 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1060
+ISS(config-ext-nacl)# deny ip 1.1.1.60 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1061
+ISS(config-ext-nacl)# deny ip 1.1.1.61 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1062
+ISS(config-ext-nacl)# deny ip 1.1.1.62 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1063
+ISS(config-ext-nacl)# deny ip 1.1.1.63 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1064
+ISS(config-ext-nacl)# deny ip 1.1.1.64 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1065
+ISS(config-ext-nacl)# deny ip 1.1.1.65 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1066
+ISS(config-ext-nacl)# deny ip 1.1.1.66 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1067
+ISS(config-ext-nacl)# deny ip 1.1.1.67 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1068
+ISS(config-ext-nacl)# deny ip 1.1.1.68 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1069
+ISS(config-ext-nacl)# deny ip 1.1.1.69 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1070
+ISS(config-ext-nacl)# deny ip 1.1.1.70 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1071
+ISS(config-ext-nacl)# deny ip 1.1.1.71 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1072
+ISS(config-ext-nacl)# deny ip 1.1.1.72 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1073
+ISS(config-ext-nacl)# deny ip 1.1.1.73 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1074
+ISS(config-ext-nacl)# deny ip 1.1.1.74 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1075
+ISS(config-ext-nacl)# deny ip 1.1.1.75 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1076
+ISS(config-ext-nacl)# deny ip 1.1.1.76 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1077
+ISS(config-ext-nacl)# deny ip 1.1.1.77 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1078
+ISS(config-ext-nacl)# deny ip 1.1.1.78 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1079
+ISS(config-ext-nacl)# deny ip 1.1.1.79 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1080
+ISS(config-ext-nacl)# deny ip 1.1.1.80 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1081
+ISS(config-ext-nacl)# deny ip 1.1.1.81 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1082
+ISS(config-ext-nacl)# deny ip 1.1.1.82 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1083
+ISS(config-ext-nacl)# deny ip 1.1.1.83 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1084
+ISS(config-ext-nacl)# deny ip 1.1.1.84 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1085
+ISS(config-ext-nacl)# deny ip 1.1.1.85 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1086
+ISS(config-ext-nacl)# deny ip 1.1.1.86 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1087
+ISS(config-ext-nacl)# deny ip 1.1.1.87 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1088
+ISS(config-ext-nacl)# deny ip 1.1.1.88 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1089
+ISS(config-ext-nacl)# deny ip 1.1.1.89 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1090
+ISS(config-ext-nacl)# deny ip 1.1.1.90 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1091
+ISS(config-ext-nacl)# deny ip 1.1.1.91 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1092
+ISS(config-ext-nacl)# deny ip 1.1.1.92 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1093
+ISS(config-ext-nacl)# deny ip 1.1.1.93 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1094
+ISS(config-ext-nacl)# deny ip 1.1.1.94 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1095
+ISS(config-ext-nacl)# deny ip 1.1.1.95 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1096
+ISS(config-ext-nacl)# deny ip 1.1.1.96 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1097
+ISS(config-ext-nacl)# deny ip 1.1.1.97 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1098
+ISS(config-ext-nacl)# deny ip 1.1.1.98 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1099
+ISS(config-ext-nacl)# deny ip 1.1.1.99 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1100
+ISS(config-ext-nacl)# deny ip 1.1.1.100 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1101
+ISS(config-ext-nacl)# deny ip 1.1.1.101 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1102
+ISS(config-ext-nacl)# deny ip 1.1.1.102 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1103
+ISS(config-ext-nacl)# deny ip 1.1.1.103 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1104
+ISS(config-ext-nacl)# deny ip 1.1.1.104 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1105
+ISS(config-ext-nacl)# deny ip 1.1.1.105 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1106
+ISS(config-ext-nacl)# deny ip 1.1.1.106 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1107
+ISS(config-ext-nacl)# deny ip 1.1.1.107 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1108
+ISS(config-ext-nacl)# deny ip 1.1.1.108 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1109
+ISS(config-ext-nacl)# deny ip 1.1.1.109 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1110
+ISS(config-ext-nacl)# deny ip 1.1.1.110 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1111
+ISS(config-ext-nacl)# deny ip 1.1.1.111 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1112
+ISS(config-ext-nacl)# deny ip 1.1.1.112 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1113
+ISS(config-ext-nacl)# deny ip 1.1.1.113 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1114
+ISS(config-ext-nacl)# deny ip 1.1.1.114 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1115
+ISS(config-ext-nacl)# deny ip 1.1.1.115 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1116
+ISS(config-ext-nacl)# deny ip 1.1.1.116 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1117
+ISS(config-ext-nacl)# deny ip 1.1.1.117 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1118
+ISS(config-ext-nacl)# deny ip 1.1.1.118 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1119
+ISS(config-ext-nacl)# deny ip 1.1.1.119 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1120
+ISS(config-ext-nacl)# deny ip 1.1.1.120 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1121
+ISS(config-ext-nacl)# deny ip 1.1.1.121 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1122
+ISS(config-ext-nacl)# deny ip 1.1.1.122 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1123
+ISS(config-ext-nacl)# deny ip 1.1.1.123 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1124
+ISS(config-ext-nacl)# deny ip 1.1.1.124 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1125
+ISS(config-ext-nacl)# deny ip 1.1.1.125 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1126
+ISS(config-ext-nacl)# deny ip 1.1.1.126 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1127
+ISS(config-ext-nacl)# deny ip 1.1.1.127 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1128
+ISS(config-ext-nacl)# deny ip 1.1.1.128 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1129
+ISS(config-ext-nacl)# deny ip 1.1.1.129 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1130
+ISS(config-ext-nacl)# deny ip 1.1.1.130 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1131
+ISS(config-ext-nacl)# deny ip 1.1.1.131 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1132
+ISS(config-ext-nacl)# deny ip 1.1.1.132 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1133
+ISS(config-ext-nacl)# deny ip 1.1.1.133 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1134
+ISS(config-ext-nacl)# deny ip 1.1.1.134 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1135
+ISS(config-ext-nacl)# deny ip 1.1.1.135 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1136
+ISS(config-ext-nacl)# deny ip 1.1.1.136 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1137
+ISS(config-ext-nacl)# deny ip 1.1.1.137 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1138
+ISS(config-ext-nacl)# deny ip 1.1.1.138 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1139
+ISS(config-ext-nacl)# deny ip 1.1.1.139 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1140
+ISS(config-ext-nacl)# deny ip 1.1.1.140 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1141
+ISS(config-ext-nacl)# deny ip 1.1.1.141 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1142
+ISS(config-ext-nacl)# deny ip 1.1.1.142 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1143
+ISS(config-ext-nacl)# deny ip 1.1.1.143 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1144
+ISS(config-ext-nacl)# deny ip 1.1.1.144 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1145
+ISS(config-ext-nacl)# deny ip 1.1.1.145 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1146
+ISS(config-ext-nacl)# deny ip 1.1.1.146 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1147
+ISS(config-ext-nacl)# deny ip 1.1.1.147 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1148
+ISS(config-ext-nacl)# deny ip 1.1.1.148 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1149
+ISS(config-ext-nacl)# deny ip 1.1.1.149 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1150
+ISS(config-ext-nacl)# deny ip 1.1.1.150 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1151
+ISS(config-ext-nacl)# deny ip 1.1.1.151 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1152
+ISS(config-ext-nacl)# deny ip 1.1.1.152 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1153
+ISS(config-ext-nacl)# deny ip 1.1.1.153 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1154
+ISS(config-ext-nacl)# deny ip 1.1.1.154 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1155
+ISS(config-ext-nacl)# deny ip 1.1.1.155 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1156
+ISS(config-ext-nacl)# deny ip 1.1.1.156 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1157
+ISS(config-ext-nacl)# deny ip 1.1.1.157 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1158
+ISS(config-ext-nacl)# deny ip 1.1.1.158 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1159
+ISS(config-ext-nacl)# deny ip 1.1.1.159 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1160
+ISS(config-ext-nacl)# deny ip 1.1.1.160 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1161
+ISS(config-ext-nacl)# deny ip 1.1.1.161 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1162
+ISS(config-ext-nacl)# deny ip 1.1.1.162 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1163
+ISS(config-ext-nacl)# deny ip 1.1.1.163 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1164
+ISS(config-ext-nacl)# deny ip 1.1.1.164 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1165
+ISS(config-ext-nacl)# deny ip 1.1.1.165 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1166
+ISS(config-ext-nacl)# deny ip 1.1.1.166 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1167
+ISS(config-ext-nacl)# deny ip 1.1.1.167 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1168
+ISS(config-ext-nacl)# deny ip 1.1.1.168 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1169
+ISS(config-ext-nacl)# deny ip 1.1.1.169 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1170
+ISS(config-ext-nacl)# deny ip 1.1.1.170 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1171
+ISS(config-ext-nacl)# deny ip 1.1.1.171 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1172
+ISS(config-ext-nacl)# deny ip 1.1.1.172 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1173
+ISS(config-ext-nacl)# deny ip 1.1.1.173 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1174
+ISS(config-ext-nacl)# deny ip 1.1.1.174 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1175
+ISS(config-ext-nacl)# deny ip 1.1.1.175 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1176
+ISS(config-ext-nacl)# deny ip 1.1.1.176 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1177
+ISS(config-ext-nacl)# deny ip 1.1.1.177 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1178
+ISS(config-ext-nacl)# deny ip 1.1.1.178 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1179
+ISS(config-ext-nacl)# deny ip 1.1.1.179 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1180
+ISS(config-ext-nacl)# deny ip 1.1.1.180 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1181
+ISS(config-ext-nacl)# deny ip 1.1.1.181 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1182
+ISS(config-ext-nacl)# deny ip 1.1.1.182 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1183
+ISS(config-ext-nacl)# deny ip 1.1.1.183 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1184
+ISS(config-ext-nacl)# deny ip 1.1.1.184 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1185
+ISS(config-ext-nacl)# deny ip 1.1.1.185 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1186
+ISS(config-ext-nacl)# deny ip 1.1.1.186 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1187
+ISS(config-ext-nacl)# deny ip 1.1.1.187 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1188
+ISS(config-ext-nacl)# deny ip 1.1.1.188 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1189
+ISS(config-ext-nacl)# deny ip 1.1.1.189 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1190
+ISS(config-ext-nacl)# deny ip 1.1.1.190 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1191
+ISS(config-ext-nacl)# deny ip 1.1.1.191 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1192
+ISS(config-ext-nacl)# deny ip 1.1.1.192 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1193
+ISS(config-ext-nacl)# deny ip 1.1.1.193 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1194
+ISS(config-ext-nacl)# deny ip 1.1.1.194 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1195
+ISS(config-ext-nacl)# deny ip 1.1.1.195 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1196
+ISS(config-ext-nacl)# deny ip 1.1.1.196 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1197
+ISS(config-ext-nacl)# deny ip 1.1.1.197 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1198
+ISS(config-ext-nacl)# deny ip 1.1.1.198 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1199
+ISS(config-ext-nacl)# deny ip 1.1.1.199 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1200
+ISS(config-ext-nacl)# deny ip 1.1.1.200 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1201
+ISS(config-ext-nacl)# deny ip 1.1.1.201 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1202
+ISS(config-ext-nacl)# deny ip 1.1.1.202 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1203
+ISS(config-ext-nacl)# deny ip 1.1.1.203 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1204
+ISS(config-ext-nacl)# deny ip 1.1.1.204 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1205
+ISS(config-ext-nacl)# deny ip 1.1.1.205 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1206
+ISS(config-ext-nacl)# deny ip 1.1.1.206 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1207
+ISS(config-ext-nacl)# deny ip 1.1.1.207 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1208
+ISS(config-ext-nacl)# deny ip 1.1.1.208 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1209
+ISS(config-ext-nacl)# deny ip 1.1.1.209 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1210
+ISS(config-ext-nacl)# deny ip 1.1.1.210 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1211
+ISS(config-ext-nacl)# deny ip 1.1.1.211 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1212
+ISS(config-ext-nacl)# deny ip 1.1.1.212 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1213
+ISS(config-ext-nacl)# deny ip 1.1.1.213 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1214
+ISS(config-ext-nacl)# deny ip 1.1.1.214 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1215
+ISS(config-ext-nacl)# deny ip 1.1.1.215 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1216
+ISS(config-ext-nacl)# deny ip 1.1.1.216 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1217
+ISS(config-ext-nacl)# deny ip 1.1.1.217 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1218
+ISS(config-ext-nacl)# deny ip 1.1.1.218 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1219
+ISS(config-ext-nacl)# deny ip 1.1.1.219 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1220
+ISS(config-ext-nacl)# deny ip 1.1.1.220 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1221
+ISS(config-ext-nacl)# deny ip 1.1.1.221 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1222
+ISS(config-ext-nacl)# deny ip 1.1.1.222 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1223
+ISS(config-ext-nacl)# deny ip 1.1.1.223 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1224
+ISS(config-ext-nacl)# deny ip 1.1.1.224 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1225
+ISS(config-ext-nacl)# deny ip 1.1.1.225 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1226
+ISS(config-ext-nacl)# deny ip 1.1.1.226 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1227
+ISS(config-ext-nacl)# deny ip 1.1.1.227 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1228
+ISS(config-ext-nacl)# deny ip 1.1.1.228 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1229
+ISS(config-ext-nacl)# deny ip 1.1.1.229 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1230
+ISS(config-ext-nacl)# deny ip 1.1.1.230 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1231
+ISS(config-ext-nacl)# deny ip 1.1.1.231 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1232
+ISS(config-ext-nacl)# deny ip 1.1.1.232 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1233
+ISS(config-ext-nacl)# deny ip 1.1.1.233 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1234
+ISS(config-ext-nacl)# deny ip 1.1.1.234 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1235
+ISS(config-ext-nacl)# deny ip 1.1.1.235 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1236
+ISS(config-ext-nacl)# deny ip 1.1.1.236 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1237
+ISS(config-ext-nacl)# deny ip 1.1.1.237 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1238
+ISS(config-ext-nacl)# deny ip 1.1.1.238 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1239
+ISS(config-ext-nacl)# deny ip 1.1.1.239 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1240
+ISS(config-ext-nacl)# deny ip 1.1.1.240 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1241
+ISS(config-ext-nacl)# deny ip 1.1.1.241 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1242
+ISS(config-ext-nacl)# deny ip 1.1.1.242 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1243
+ISS(config-ext-nacl)# deny ip 1.1.1.243 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1244
+ISS(config-ext-nacl)# deny ip 1.1.1.244 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1245
+ISS(config-ext-nacl)# deny ip 1.1.1.245 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1246
+ISS(config-ext-nacl)# deny ip 1.1.1.246 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1247
+ISS(config-ext-nacl)# deny ip 1.1.1.247 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1248
+ISS(config-ext-nacl)# deny ip 1.1.1.248 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1249
+ISS(config-ext-nacl)# deny ip 1.1.1.249 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1250
+ISS(config-ext-nacl)# deny ip 1.1.1.250 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1251
+ISS(config-ext-nacl)# deny ip 1.1.1.251 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1252
+ISS(config-ext-nacl)# deny ip 1.1.1.252 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1253
+ISS(config-ext-nacl)# deny ip 1.1.1.253 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1254
+ISS(config-ext-nacl)# deny ip 1.1.1.254 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1255
+ISS(config-ext-nacl)# deny ip 1.1.1.255 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# configure terminal
+ISS(config)# ip access-list extended 1256
+ISS(config-ext-nacl)# deny ip 2.2.2.1 255.0 any priority 50
+ISS(config-ext-nacl)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# ip access-list extended 1257
+% Number of filter creation reached maximum
+ISS(config)# deny ip 2.2.2.1 255.0 any priority 50
+% Invalid Command
+ISS(config)# end
+ISS# 
+ISS# 
+ISS# 
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1001  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1002  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1003  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1004  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1005  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1006  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1007  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1008  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1009  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1010  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1011  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1012  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1013  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1014  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1015  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1016  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1017  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1018  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1019  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1018  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1019  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1020  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1021  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1022  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1023  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1024  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1025  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1026  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1027  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1028  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1029  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1030  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1031  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1032  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1033  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1034  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1035  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1036  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1037  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1038  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1039  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1040  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1041  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1042  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1043  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1044  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1045  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1046  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1047  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1048  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1049  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1050  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1051  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1052  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1053  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1054  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1055  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1056  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1057  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1058  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1059  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1060  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1061  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1062  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1063  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1064  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1065  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1066  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1067  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1068  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1069  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1070  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1071  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1072  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1073  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1074  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1075  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1076  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1077  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1078  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1079  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1080  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1081  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1082  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1083  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1084  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1085  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1086  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1087  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1088  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1089  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1090  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1091  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1092  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1093  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1094  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1095  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1096  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1097  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1098  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1099  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1100  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1101  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1102  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1103  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1104  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1105  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1106  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1107  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1108  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1109  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1110  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1111  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1112  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1113  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1114  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1115  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1116  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1117  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1118  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1119  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1120  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1121  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1122  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1123  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1124  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1125  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1126  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1127  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1128  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1129  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1130  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1131  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1132  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1133  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1134  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1135  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1136  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1137  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1138  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1139  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1140  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1141  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1142  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1143  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1144  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1145  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1146  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1147  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1148  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1149  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1150  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1151  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1152  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1153  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1154  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1155  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1156  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1157  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1158  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1159  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1160  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1161  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1162  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1163  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1164  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1165  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1166  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1167  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1168  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1169  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1170  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1171  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1172  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1173  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1174  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1175  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1176  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1177  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1178  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1179  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1180  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1181  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1182  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1183  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1184  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1185  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1186  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1187  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1188  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1189  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1190  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1191  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1192  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1193  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1194  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1195  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1196  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1197  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1198  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1199  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1200  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1201  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1202  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1203  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1204  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1205  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1206  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1207  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1208  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1209  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1210  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1211  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1212  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1213  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1214  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1215  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1216  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1217  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1218  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1219  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1220  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1221  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1222  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1223  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1224  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1225  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1226  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1227  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1228  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1229  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1230  in
+ISS(config-if)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1231  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1232  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1233  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1234  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1235  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1236  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1237  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1238  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1239  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1240  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1241  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1242  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1243  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1244  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1245  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1246  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1247  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1248  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1249  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1250  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1251  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1252  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1253  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1254  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1255  in
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# ip access-group 1256  in
+ISS(config-if)# end
+ISS# 
+ISS# 
+ISS# sh access-list 1010
+
+Extended IP Access List 1010
+-----------------------------
+ Filter Priority                  : 50
+ Filter Fragment                  : False
+ Filter Protocol Type             : ANY
+ IP address Type                  : IPV4             
+ Source IP address                : 1.0.0.0          
+ Source IP address mask           : 255.0.0.0        
+ Source IP Prefix Length          : 8                
+ Destination IP address           : ANY              
+ Destination IP address mask      : ANY              
+ Destination IP Prefix Length     : 0                
+ Flow Identifier                  : 0                
+ In Port List                     : Gi0/4 
+ In Port Channel List             : NIL
+ Out Port List                    : NIL
+ Out Port Channel List            : NIL
+ Vep List                         : NIL Filter TOS                       : None
+ Filter DSCP                      : NIL
+ Control Protocol Type            : NONE
+ Service Vlan                     : 0                
+ Service Vlan Priority            : None             Customer Vlan                    : 0                                 Customer Vlan Priority           : None                              Packet Tag Type                  : Single-tag                        Filter Action                    : Deny                 Redirect Port List               :                  Filter Creation Mode             : External                 Status                           : Active                 Counter Status                   : Disabled
+                 Match Count                      : 0
+                
+                ISS# sh access-list 1130
+
+Extended IP Access List 1130
+-----------------------------
+ Filter Priority                  : 50
+ Filter Fragment                  : False
+ Filter Protocol Type             : ANY
+ IP address Type                  : IPV4             
+ Source IP address                : 1.0.0.0          
+ Source IP address mask           : 255.0.0.0        
+ Source IP Prefix Length          : 8                
+ Destination IP address           : ANY              
+ Destination IP address mask      : ANY              
+ Destination IP Prefix Length     : 0                
+ Flow Identifier                  : 0                
+ In Port List                     : Gi0/4 
+ In Port Channel List             : NIL
+ Out Port List                    : NIL
+ Out Port Channel List            : NIL
+ Vep List                         : NIL Filter TOS                       : None
+ Filter DSCP                      : NIL
+ Control Protocol Type            : NONE
+ Service Vlan                     : 0                
+ Service Vlan Priority            : None                              Customer Vlan                    : 0                                 Customer Vlan Priority           : None                              Packet Tag Type                  : Single-tag                        Filter Action                    : Deny                 Redirect Port List               :                  Filter Creation Mode             : External                 Status                           : Active                 Counter Status                   : Disabled                 Match Count                      : 0
+                
+                ISS# sh access-list 1220
+
+Extended IP Access List 1220
+-----------------------------
+ Filter Priority                  : 50
+ Filter Fragment                  : False
+ Filter Protocol Type             : ANY
+ IP address Type                  : IPV4             
+ Source IP address                : 1.0.0.0          
+ Source IP address mask           : 255.0.0.0        
+ Source IP Prefix Length          : 8                
+ Destination IP address           : ANY              
+ Destination IP address mask      : ANY              
+ Destination IP Prefix Length     : 0                
+ Flow Identifier                  : 0                
+ In Port List                     : Gi0/4 
+ In Port Channel List             : NIL
+ Out Port List                    : NIL
+ Out Port Channel List            : NIL
+ Vep List                         : NIL Filter TOS                       : None
+ Filter DSCP                      : NIL
+ Control Protocol Type            : NONE
+ Service Vlan                     : 0                
+ Service Vlan Priority            : None                              Customer Vlan                    : 0                                 Customer Vlan Priority           : None                              Packet Tag Type                  : Single-tag                        Filter Action                    : Deny                 Redirect Port List               :                  Filter Creation Mode             : External                 Status                           : Active                 Counter Status                   : Disabled                 Match Count                      : 0                ISS# sh access-list 1256
+
+Extended IP Access List 1256
+-----------------------------
+ Filter Priority                  : 50
+ Filter Fragment                  : False
+ Filter Protocol Type             : ANY
+ IP address Type                  : IPV4             
+ Source IP address                : 2.0.0.0          
+ Source IP address mask           : 255.0.0.0        
+ Source IP Prefix Length          : 8                
+ Destination IP address           : ANY              
+ Destination IP address mask      : ANY              
+ Destination IP Prefix Length     : 0                
+ Flow Identifier                  : 0                
+ In Port List                     : Gi0/4 
+ In Port Channel List             : NIL
+ Out Port List                    : NIL
+ Out Port Channel List            : NIL
+ Vep List                         : NIL Filter TOS                       : None
+ Filter DSCP                      : NIL
+ Control Protocol Type            : NONE
+ Service Vlan                     : 0                
+ Service Vlan Priority            : None                              Customer Vlan                    : 0                                 Customer Vlan Priority           : None                              Packet Tag Type                  : Single-tag                        Filter Action                    : Deny                 Redirect Port List               :                  Filter Creation Mode             : External                 Status                           : Active                 Counter Status                   : Disabled                 Match Count                      : 0
+ISS# sh access-list 1257
+% Invalid Access List 
+
+ISS# Quit
+root@localhost:/home/ISS_DELTA# exit
+
+Script done on Thu 24 Feb 2022 11:35:01 AM UTC

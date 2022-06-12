@@ -1,0 +1,4729 @@
+ISS# c t
+ISS(config)# hw
+ISS(config-hw)# hw "cint"
+Entering C Interpreter. Type 'exit;' to quit.
+
+cint> bcm_field_group_dump (0,10);
+Group       10 [Group  10]
+  Flags       = 00000577
+    +USED +IN_HW PH1 -hw_id +CHGENT +ADDENT IGR +ASZ
+    -l2 +IP4 -ip6 -mpls +IPS -cas -small -loose -sparse
+  Stage       =        0 (types 00000002)
+  Mode        = Auto (Quad)
+  Priority    =        6
+  HW group ID = 0000000A
+  Prev/Next   =      128 /       11
+  Entry count =      100
+  First/Last  =       87 /      104
+  PredefKey   = (none)
+  Group QSET:
+    DstMac, DstIp, InPort, OuterVlanId, L4SrcPort, L4DstPort, EtherType,
+    IpProtocol, SrcPort, PacketRes, StageIngress, InterfaceClassL2, Ip4,
+    VlanFormat, SrcModPortGport, DataField(42), DataField(45), DataField(52),
+    DataField(53), DataField(54), DataField(55), DataField(56)
+  Group ASET:
+    PrioIntNew, Drop, VportTcNew, Trap, Snoop
+  Group preselectors (implied):
+    (none)
+  Group preselectors (hardware):
+    (none)
+  Entries:
+    Entry       87
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =    65536 /       88
+      HW entry ID = 0000003A
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0025/FFFF
+          0000000000000025/000000000000FFFF (expected)
+          0000000000000025/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       88
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       87 /       89
+      HW entry ID = 0000003B
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0000/FFFF
+          0000000000000000/000000000000FFFF (expected)
+          0000000000000000/000000000000FFFF (actual)
+          0022/FFFF
+          0000000000000022/000000000000FFFF (expected)
+          0000000000000022/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       89
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       88 /       90
+      HW entry ID = 0000003C
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0EC8/FFFF
+          0000000000000EC8/000000000000FFFF (expected)
+          0000000000000EC8/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       90
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       89 /       91
+      HW entry ID = 0000003D
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0000/FFFF
+          0000000000000000/000000000000FFFF (expected)
+          0000000000000000/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       91
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       90 /       92
+      HW entry ID = 0000003E
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0027/FFFF
+          0000000000000027/000000000000FFFF (expected)
+          0000000000000027/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       92
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       91 /       93
+      HW entry ID = 0000003F
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0003/FFFF
+          0000000000000003/000000000000FFFF (expected)
+          0000000000000003/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       93
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       92 /       97
+      HW entry ID = 00000040
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0028/FFFF
+          0000000000000028/000000000000FFFF (expected)
+          0000000000000028/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       97
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       93 /      101
+      HW entry ID = 00000044
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8809/FFFF
+          0000000000008809/000000000000FFFF (expected)
+          0000000000008809/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:02/FF:FF:FF:FF:FF:FF
+          00000180C2000002/0000FFFFFFFFFFFF (expected)
+          00000180C2000002/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+          010000/FF0000
+          0000000000010000/0000000000FF0000 (expected)
+          0000000000010000/0000000000FF0000 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      101
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       97 /      102
+      HW entry ID = 00000048
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8809/FFFF
+          0000000000008809/000000000000FFFF (expected)
+          0000000000008809/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:02/FF:FF:FF:FF:FF:FF
+          00000180C2000002/0000FFFFFFFFFFFF (expected)
+          00000180C2000002/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+          030000/FF0000
+          0000000000030000/0000000000FF0000 (expected)
+          0000000000030000/0000000000FF0000 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      102
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =      101 /      103
+      HW entry ID = 00000049
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          88CC/FFFF
+          00000000000088CC/000000000000FFFF (expected)
+          00000000000088CC/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:00/FF:FF:FF:FF:FF:F0
+          00000180C2000000/0000FFFFFFFFFFF0 (expected)
+          00000180C2000000/0000FFFFFFFFFFF0 (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      103
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =      102 /       95
+      HW entry ID = 0000004A
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:00/FF:FF:FF:FF:FF:F0
+          00000180C2000000/0000FFFFFFFFFFF0 (expected)
+          00000180C2000000/0000FFFFFFFFFFF0 (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry       95
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483645
+      Prev/Next   =      103 /        1
+      HW entry ID = 00000042
+      HW priority = 7FFFFFFD
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8902/FFFF
+          0000000000008902/000000000000FFFF (expected)
+          0000000000008902/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry        1
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       95 /        2
+      HW entry ID = 00000001
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:01:00:00/FF:FF:FF:FF:00:00
+          0000020304010000/0000FFFFFFFF0000 (expected)
+          0000020304010000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          001/1FF
+          0000000000000001/00000000000001FF (expected)
+          0000000000000001/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        2
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        1 /        3
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        3
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        2 /        4
+      HW entry ID = 00000002
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:02:00:00/FF:FF:FF:FF:00:00
+          0000020304020000/0000FFFFFFFF0000 (expected)
+          0000020304020000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          002/1FF
+          0000000000000002/00000000000001FF (expected)
+          0000000000000002/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        4
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        3 /        5
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        5
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        4 /        6
+      HW entry ID = 00000003
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:03:00:00/FF:FF:FF:FF:00:00
+          0000020304030000/0000FFFFFFFF0000 (expected)
+          0000020304030000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          003/1FF
+          0000000000000003/00000000000001FF (expected)
+          0000000000000003/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        6
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        5 /        7
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        7
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        6 /        8
+      HW entry ID = 00000004
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:04:00:00/FF:FF:FF:FF:00:00
+          0000020304040000/0000FFFFFFFF0000 (expected)
+          0000020304040000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          004/1FF
+          0000000000000004/00000000000001FF (expected)
+          0000000000000004/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        8
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        7 /        9
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        9
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        8 /       10
+      HW entry ID = 00000005
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:05:00:00/FF:FF:FF:FF:00:00
+          0000020304050000/0000FFFFFFFF0000 (expected)
+          0000020304050000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          005/1FF
+          0000000000000005/00000000000001FF (expected)
+          0000000000000005/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       10
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        9 /       11
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       11
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       10 /       12
+      HW entry ID = 00000006
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:06:00:00/FF:FF:FF:FF:00:00
+          0000020304060000/0000FFFFFFFF0000 (expected)
+          0000020304060000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          006/1FF
+          0000000000000006/00000000000001FF (expected)
+          0000000000000006/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       12
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       11 /       13
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       13
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       12 /       14
+      HW entry ID = 00000007
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:07:00:00/FF:FF:FF:FF:00:00
+          0000020304070000/0000FFFFFFFF0000 (expected)
+          0000020304070000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          007/1FF
+          0000000000000007/00000000000001FF (expected)
+          0000000000000007/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       14
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       13 /       15
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       15
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       14 /       16
+      HW entry ID = 00000008
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:08:00:00/FF:FF:FF:FF:00:00
+          0000020304080000/0000FFFFFFFF0000 (expected)
+          0000020304080000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          008/1FF
+          0000000000000008/00000000000001FF (expected)
+          0000000000000008/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       16
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       15 /       17
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       17
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       16 /       18
+      HW entry ID = 00000009
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:09:00:00/FF:FF:FF:FF:00:00
+          0000020304090000/0000FFFFFFFF0000 (expected)
+          0000020304090000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          009/1FF
+          0000000000000009/00000000000001FF (expected)
+          0000000000000009/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       18
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       17 /       19
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       19
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       18 /       20
+      HW entry ID = 0000000A
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0A:00:00/FF:FF:FF:FF:00:00
+          00000203040A0000/0000FFFFFFFF0000 (expected)
+          00000203040A0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00A/1FF
+          000000000000000A/00000000000001FF (expected)
+          000000000000000A/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       20
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       19 /       21
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       21
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       20 /       22
+      HW entry ID = 0000000B
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0B:00:00/FF:FF:FF:FF:00:00
+          00000203040B0000/0000FFFFFFFF0000 (expected)
+          00000203040B0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00B/1FF
+          000000000000000B/00000000000001FF (expected)
+          000000000000000B/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       22
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       21 /       23
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       23
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       22 /       24
+      HW entry ID = 0000000C
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0C:00:00/FF:FF:FF:FF:00:00
+          00000203040C0000/0000FFFFFFFF0000 (expected)
+          00000203040C0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00C/1FF
+          000000000000000C/00000000000001FF (expected)
+          000000000000000C/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       24
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       23 /       25
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       25
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       24 /       26
+      HW entry ID = 0000000D
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0D:00:00/FF:FF:FF:FF:00:00
+          00000203040D0000/0000FFFFFFFF0000 (expected)
+          00000203040D0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00D/1FF
+          000000000000000D/00000000000001FF (expected)
+          000000000000000D/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       26
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       25 /       27
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       27
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       26 /       28
+      HW entry ID = 0000000E
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0E:00:00/FF:FF:FF:FF:00:00
+          00000203040E0000/0000FFFFFFFF0000 (expected)
+          00000203040E0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00E/1FF
+          000000000000000E/00000000000001FF (expected)
+          000000000000000E/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       28
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       27 /       29
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       29
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       28 /       30
+      HW entry ID = 0000000F
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0F:00:00/FF:FF:FF:FF:00:00
+          00000203040F0000/0000FFFFFFFF0000 (expected)
+          00000203040F0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00F/1FF
+          000000000000000F/00000000000001FF (expected)
+          000000000000000F/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       30
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       29 /       31
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       31
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       30 /       32
+      HW entry ID = 00000010
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:10:00:00/FF:FF:FF:FF:00:00
+          0000020304100000/0000FFFFFFFF0000 (expected)
+          0000020304100000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          010/1FF
+          0000000000000010/00000000000001FF (expected)
+          0000000000000010/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       32
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       31 /       33
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       33
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       32 /       34
+      HW entry ID = 00000011
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:11:00:00/FF:FF:FF:FF:00:00
+          0000020304110000/0000FFFFFFFF0000 (expected)
+          0000020304110000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          011/1FF
+          0000000000000011/00000000000001FF (expected)
+          0000000000000011/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       34
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       33 /       35
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       35
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       34 /       36
+      HW entry ID = 00000012
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:12:00:00/FF:FF:FF:FF:00:00
+          0000020304120000/0000FFFFFFFF0000 (expected)
+          0000020304120000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          012/1FF
+          0000000000000012/00000000000001FF (expected)
+          0000000000000012/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       36
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       35 /       37
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       37
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       36 /       38
+      HW entry ID = 00000013
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:13:00:00/FF:FF:FF:FF:00:00
+          0000020304130000/0000FFFFFFFF0000 (expected)
+          0000020304130000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          013/1FF
+          0000000000000013/00000000000001FF (expected)
+          0000000000000013/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       38
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       37 /       39
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       39
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       38 /       40
+      HW entry ID = 00000014
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:14:00:00/FF:FF:FF:FF:00:00
+          0000020304140000/0000FFFFFFFF0000 (expected)
+          0000020304140000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          014/1FF
+          0000000000000014/00000000000001FF (expected)
+          0000000000000014/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       40
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       39 /       41
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       41
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       40 /       42
+      HW entry ID = 00000015
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:15:00:00/FF:FF:FF:FF:00:00
+          0000020304150000/0000FFFFFFFF0000 (expected)
+          0000020304150000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          015/1FF
+          0000000000000015/00000000000001FF (expected)
+          0000000000000015/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       42
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       41 /       43
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       43
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       42 /       44
+      HW entry ID = 00000016
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:16:00:00/FF:FF:FF:FF:00:00
+          0000020304160000/0000FFFFFFFF0000 (expected)
+          0000020304160000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          016/1FF
+          0000000000000016/00000000000001FF (expected)
+          0000000000000016/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       44
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       43 /       45
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       45
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       44 /       46
+      HW entry ID = 00000017
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:17:00:00/FF:FF:FF:FF:00:00
+          0000020304170000/0000FFFFFFFF0000 (expected)
+          0000020304170000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          017/1FF
+          0000000000000017/00000000000001FF (expected)
+          0000000000000017/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       46
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       45 /       47
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       47
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       46 /       48
+      HW entry ID = 00000018
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:18:00:00/FF:FF:FF:FF:00:00
+          0000020304180000/0000FFFFFFFF0000 (expected)
+          0000020304180000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          018/1FF
+          0000000000000018/00000000000001FF (expected)
+          0000000000000018/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       48
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       47 /       49
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       49
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       48 /       50
+      HW entry ID = 00000019
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:19:00:00/FF:FF:FF:FF:00:00
+          0000020304190000/0000FFFFFFFF0000 (expected)
+          0000020304190000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          019/1FF
+          0000000000000019/00000000000001FF (expected)
+          0000000000000019/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       50
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       49 /       51
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       51
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       50 /       52
+      HW entry ID = 0000001A
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:1A:00:00/FF:FF:FF:FF:00:00
+          00000203041A0000/0000FFFFFFFF0000 (expected)
+          00000203041A0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          01A/1FF
+          000000000000001A/00000000000001FF (expected)
+          000000000000001A/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       52
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       51 /       53
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       53
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       52 /       54
+      HW entry ID = 0000001B
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:1B:00:00/FF:FF:FF:FF:00:00
+          00000203041B0000/0000FFFFFFFF0000 (expected)
+          00000203041B0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          01B/1FF
+          000000000000001B/00000000000001FF (expected)
+          000000000000001B/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       54
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       53 /       55
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       55
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       54 /       56
+      HW entry ID = 0000001C
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:1C:00:00/FF:FF:FF:FF:00:00
+          00000203041C0000/0000FFFFFFFF0000 (expected)
+          00000203041C0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          01C/1FF
+          000000000000001C/00000000000001FF (expected)
+          000000000000001C/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       56
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       55 /       57
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       57
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       56 /       58
+      HW entry ID = 0000001D
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D0/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD0/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD0/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702B,00000000
+      PPD actions:
+        trap (3)
+          0000072B
+    Entry       58
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       57 /       59
+      HW entry ID = 0000001E
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D1/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD1/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD1/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702C,00000000
+      PPD actions:
+        trap (3)
+          0000072C
+    Entry       59
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       58 /       60
+      HW entry ID = 0000001F
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D2/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD2/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD2/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702D,00000000
+      PPD actions:
+        trap (3)
+          0000072D
+    Entry       60
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       59 /       61
+      HW entry ID = 00000020
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D3/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD3/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD3/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702E,00000000
+      PPD actions:
+        trap (3)
+          0000072E
+    Entry       61
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       60 /       62
+      HW entry ID = 00000021
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D4/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD4/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD4/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702F,00000000
+      PPD actions:
+        trap (3)
+          0000072F
+    Entry       62
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       61 /       63
+      HW entry ID = 00000022
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:DB/FF:FF:FF:FF:FF:FF
+          000001000CCDCDDB/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDDB/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B1,00000000
+      PPD actions:
+        trap (3)
+          000007B1
+    Entry       63
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       62 /       64
+      HW entry ID = 00000023
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D5/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD5/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD5/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B2,00000000
+      PPD actions:
+        trap (3)
+          000007B2
+    Entry       64
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       63 /       65
+      HW entry ID = 00000024
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D6/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD6/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD6/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B3,00000000
+      PPD actions:
+        trap (3)
+          000007B3
+    Entry       65
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       64 /       66
+      HW entry ID = 00000025
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D7/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD7/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD7/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B4,00000000
+      PPD actions:
+        trap (3)
+          000007B4
+    Entry       66
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       65 /       67
+      HW entry ID = 00000026
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D8/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD8/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD8/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B5,00000000
+      PPD actions:
+        trap (3)
+          000007B5
+    Entry       67
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       66 /       68
+      HW entry ID = 00000027
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D9/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD9/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD9/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B6,00000000
+      PPD actions:
+        trap (3)
+          000007B6
+    Entry       68
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       67 /       69
+      HW entry ID = 00000028
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:DA/FF:FF:FF:FF:FF:FF
+          000001000CCDCDDA/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDDA/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B7,00000000
+      PPD actions:
+        trap (3)
+          000007B7
+    Entry       69
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       68 /       70
+      HW entry ID = 00000029
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          00:00:00:00:00:00/FF:FF:FF:FF:FF:FF
+          0000000000000000/0000FFFFFFFFFFFF (expected)
+          0000000000000000/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B8,00000000
+      PPD actions:
+        trap (3)
+          000007B8
+    Entry       70
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       69 /       74
+      HW entry ID = 0000002A
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          00:00:00:00:00:00/FF:FF:FF:FF:FF:FF
+          0000000000000000/0000FFFFFFFFFFFF (expected)
+          0000000000000000/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B9,00000000
+      PPD actions:
+        trap (3)
+          000007B9
+    Entry       74
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       70 /       75
+      HW entry ID = 0000002E
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0806/FFFF
+          0000000000000806/000000000000FFFF (expected)
+          0000000000000806/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Snoop (255)
+          160370BA,00000000
+      PPD actions:
+        snp (4)
+          000003BA
+    Entry       75
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       74 /       76
+      HW entry ID = 0000002F
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0806/FFFF
+          0000000000000806/000000000000FFFF (expected)
+          0000000000000806/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:00/FF:FF:FF:FF:FF:00
+          0000000402030400/0000FFFFFFFFFF00 (expected)
+          0000000402030400/0000FFFFFFFFFF00 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000E
+        trap (3)
+          0000072A
+    Entry       76
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       75 /       77
+      HW entry ID = 00000030
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8035/FFFF
+          0000000000008035/000000000000FFFF (expected)
+          0000000000008035/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       77
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       76 /       78
+      HW entry ID = 00000031
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0800/FFFF
+          0000000000000800/000000000000FFFF (expected)
+          0000000000000800/000000000000FFFF (actual)
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0208/FFFF
+          0000000000000208/000000000000FFFF (expected)
+          0000000000000208/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       78
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       77 /       79
+      HW entry ID = 00000032
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0800/FFFF
+          0000000000000800/000000000000FFFF (expected)
+          0000000000000800/000000000000FFFF (actual)
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          007B/FFFF
+          000000000000007B/000000000000FFFF (expected)
+          000000000000007B/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       79
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       78 /       80
+      HW entry ID = 00000033
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          0044/FFFF
+          0000000000000044/000000000000FFFF (expected)
+          0000000000000044/000000000000FFFF (actual)
+      BCM actions:
+        Snoop (255)
+          160370BA,00000000
+      PPD actions:
+        snp (4)
+          000003BA
+    Entry       80
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       79 /       81
+      HW entry ID = 00000034
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0044/FFFF
+          0000000000000044/000000000000FFFF (expected)
+          0000000000000044/000000000000FFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+      BCM actions:
+        Snoop (255)
+          160370BA,00000000
+      PPD actions:
+        snp (4)
+          000003BA
+    Entry       81
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       80 /       82
+      HW entry ID = 00000035
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       82
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       81 /       83
+      HW entry ID = 00000036
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          00/00
+          0000000000000000/0000000000000000 (expected)
+          0000000000000000/0000000000000000 (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:01/FF:FF:FF:FF:FF:FF
+          0000000402030401/0000FFFFFFFFFFFF (expected)
+          0000000402030401/0000FFFFFFFFFFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          00B3/FFFF
+          00000000000000B3/000000000000FFFF (expected)
+          00000000000000B3/000000000000FFFF (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+      PPD actions:
+        tc (2)
+          0000000E
+    Entry       83
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       82 /       84
+      HW entry ID = 00000037
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          00/00
+          0000000000000000/0000000000000000 (expected)
+          0000000000000000/0000000000000000 (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:01/FF:FF:FF:FF:FF:FF
+          0000000402030401/0000FFFFFFFFFFFF (expected)
+          0000000402030401/0000FFFFFFFFFFFF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          00B3/FFFF
+          00000000000000B3/000000000000FFFF (expected)
+          00000000000000B3/000000000000FFFF (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+      PPD actions:
+        tc (2)
+          0000000E
+    Entry       84
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       83 /       85
+      HW entry ID = 00000038
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          2E/FF
+          000000000000002E/00000000000000FF (expected)
+          000000000000002E/00000000000000FF (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:01/FF:FF:FF:FF:FF:FF
+          0000000402030401/0000FFFFFFFFFFFF (expected)
+          0000000402030401/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       85
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       84 /       94
+      HW entry ID = 00000039
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0800/FFFF
+          0000000000000800/000000000000FFFF (expected)
+          0000000000000800/000000000000FFFF (actual)
+        DstIp (10) -> ipv4_dip (40)
+          E0000002/FFFFFFFF (224.0.0.2/255.255.255.255)
+          00000000E0000002/00000000FFFFFFFF (expected)
+          00000000E0000002/00000000FFFFFFFF (actual)
+        DstMac (7) -> da (13)
+          01:00:5E:00:00:02/FF:FF:FF:FF:FF:FF
+          000001005E000002/0000FFFFFFFFFFFF (expected)
+          000001005E000002/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000E
+        trap (3)
+          0000072A
+    Entry       94
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       85 /       96
+      HW entry ID = 00000041
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0007/FFFF
+          0000000000000007/000000000000FFFF (expected)
+          0000000000000007/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       96
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       94 /       98
+      HW entry ID = 00000043
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          8902/FFFF
+          0000000000008902/000000000000FFFF (expected)
+          0000000000008902/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       98
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       96 /       99
+      HW entry ID = 00000045
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:00/FF:FF:FF:FF:FF:FF
+          00000180C2000000/0000FFFFFFFFFFFF (expected)
+          00000180C2000000/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry       99
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       98 /      100
+      HW entry ID = 00000046
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CC:CC:CD/FF:FF:FF:FF:FF:FF
+          000001000CCCCCCD/0000FFFFFFFFFFFF (expected)
+          000001000CCCCCCD/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      100
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       99 /      104
+      HW entry ID = 00000047
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:20/FF:FF:FF:FF:FF:F0
+          00000180C2000020/0000FFFFFFFFFFF0 (expected)
+          00000180C2000020/0000FFFFFFFFFFF0 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      104
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =      100 /    65536
+      HW entry ID = 0000004B
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0024/FFFF
+          0000000000000024/000000000000FFFF (expected)
+          0000000000000024/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+cint> exit;
+
+ISS(config-hw)# end
+ISS# 
+ISS# 
+ISS# configure terminal
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# set port-channel enable
+ISS(config)# set lldp enable
+ISS(config)# shutdown garp
+ISS(config)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 100
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 200
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 300
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 400
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 500
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 600
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 700
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 800
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/2
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 200 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/3
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 300 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 400 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 500 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/6
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 600 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/7
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 700 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/8
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 800 mode active
+ISS(config-if)# end
+ISS# 
+ISS# sh int po100ISS# sh int po10ISS# sh int po1ISS# sh int po 100ISS# sh int po ISS# sh int po 100
+
+po100 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100 
+
+Hardware Address is 00:04:02:03:04:81   
+
+ISS# ISS# sh int po 100ISS# sh int po 10ISS# sh int po 100[K[KISS# sh int po 00ISS# sh int po 700ISS# sh int po 7ISS# sh int po 700
+
+po700 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po700 
+
+Hardware Address is 00:04:02:03:04:87   
+
+ISS# c t
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 900
+% Maximum number of port channels supported in the system is 8 
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# hw
+ISS(config-hw)# hw "cint"
+Entering C Interpreter. Type 'exit;' to quit.
+
+cint> bcm_field_group_dump (0,10;
+                          ^ syntax error, unexpected ';', expecting ')' or ','
+
+;
+cint>  ;  bcm_field_group_dump (0,10;);bcm_field_group_dump (0,10)
+Group       10 [Group  10]
+  Flags       = 00000577
+    +USED +IN_HW PH1 -hw_id +CHGENT +ADDENT IGR +ASZ
+    -l2 +IP4 -ip6 -mpls +IPS -cas -small -loose -sparse
+  Stage       =        0 (types 00000002)
+  Mode        = Auto (Quad)
+  Priority    =        6
+  HW group ID = 0000000A
+  Prev/Next   =      128 /       11
+  Entry count =      100
+  First/Last  =       87 /      104
+  PredefKey   = (none)
+  Group QSET:
+    DstMac, DstIp, InPort, OuterVlanId, L4SrcPort, L4DstPort, EtherType,
+    IpProtocol, SrcPort, PacketRes, StageIngress, InterfaceClassL2, Ip4,
+    VlanFormat, SrcModPortGport, DataField(42), DataField(45), DataField(52),
+    DataField(53), DataField(54), DataField(55), DataField(56)
+  Group ASET:
+    PrioIntNew, Drop, VportTcNew, Trap, Snoop
+  Group preselectors (implied):
+    (none)
+  Group preselectors (hardware):
+    (none)
+  Entries:
+    Entry       87
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =    65536 /       88
+      HW entry ID = 0000003A
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0025/FFFF
+          0000000000000025/000000000000FFFF (expected)
+          0000000000000025/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       88
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       87 /       89
+      HW entry ID = 0000003B
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0000/FFFF
+          0000000000000000/000000000000FFFF (expected)
+          0000000000000000/000000000000FFFF (actual)
+          0022/FFFF
+          0000000000000022/000000000000FFFF (expected)
+          0000000000000022/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       89
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       88 /       90
+      HW entry ID = 0000003C
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0EC8/FFFF
+          0000000000000EC8/000000000000FFFF (expected)
+          0000000000000EC8/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       90
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       89 /       91
+      HW entry ID = 0000003D
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0000/FFFF
+          0000000000000000/000000000000FFFF (expected)
+          0000000000000000/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       91
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       90 /       92
+      HW entry ID = 0000003E
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0027/FFFF
+          0000000000000027/000000000000FFFF (expected)
+          0000000000000027/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       92
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       91 /       93
+      HW entry ID = 0000003F
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0003/FFFF
+          0000000000000003/000000000000FFFF (expected)
+          0000000000000003/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       93
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       92 /       97
+      HW entry ID = 00000040
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0028/FFFF
+          0000000000000028/000000000000FFFF (expected)
+          0000000000000028/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       97
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       93 /      101
+      HW entry ID = 00000044
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8809/FFFF
+          0000000000008809/000000000000FFFF (expected)
+          0000000000008809/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:02/FF:FF:FF:FF:FF:FF
+          00000180C2000002/0000FFFFFFFFFFFF (expected)
+          00000180C2000002/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+          010000/FF0000
+          0000000000010000/0000000000FF0000 (expected)
+          0000000000010000/0000000000FF0000 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      101
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =       97 /      102
+      HW entry ID = 00000048
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8809/FFFF
+          0000000000008809/000000000000FFFF (expected)
+          0000000000008809/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:02/FF:FF:FF:FF:FF:FF
+          00000180C2000002/0000FFFFFFFFFFFF (expected)
+          00000180C2000002/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+          030000/FF0000
+          0000000000030000/0000000000FF0000 (expected)
+          0000000000030000/0000000000FF0000 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      102
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =      101 /      103
+      HW entry ID = 00000049
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          88CC/FFFF
+          00000000000088CC/000000000000FFFF (expected)
+          00000000000088CC/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:00/FF:FF:FF:FF:FF:F0
+          00000180C2000000/0000FFFFFFFFFFF0 (expected)
+          00000180C2000000/0000FFFFFFFFFFF0 (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      103
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483647
+      Prev/Next   =      102 /       95
+      HW entry ID = 0000004A
+      HW priority = 7FFFFFFF
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:00/FF:FF:FF:FF:FF:F0
+          00000180C2000000/0000FFFFFFFFFFF0 (expected)
+          00000180C2000000/0000FFFFFFFFFFF0 (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry       95
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    = 2147483645
+      Prev/Next   =      103 /        1
+      HW entry ID = 00000042
+      HW priority = 7FFFFFFD
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8902/FFFF
+          0000000000008902/000000000000FFFF (expected)
+          0000000000008902/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry        1
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       95 /        2
+      HW entry ID = 00000001
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:01:00:00/FF:FF:FF:FF:00:00
+          0000020304010000/0000FFFFFFFF0000 (expected)
+          0000020304010000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          001/1FF
+          0000000000000001/00000000000001FF (expected)
+          0000000000000001/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        2
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        1 /        3
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        3
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        2 /        4
+      HW entry ID = 00000002
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:02:00:00/FF:FF:FF:FF:00:00
+          0000020304020000/0000FFFFFFFF0000 (expected)
+          0000020304020000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          002/1FF
+          0000000000000002/00000000000001FF (expected)
+          0000000000000002/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        4
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        3 /        5
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        5
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        4 /        6
+      HW entry ID = 00000003
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:03:00:00/FF:FF:FF:FF:00:00
+          0000020304030000/0000FFFFFFFF0000 (expected)
+          0000020304030000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          003/1FF
+          0000000000000003/00000000000001FF (expected)
+          0000000000000003/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        6
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        5 /        7
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        7
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        6 /        8
+      HW entry ID = 00000004
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:04:00:00/FF:FF:FF:FF:00:00
+          0000020304040000/0000FFFFFFFF0000 (expected)
+          0000020304040000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          004/1FF
+          0000000000000004/00000000000001FF (expected)
+          0000000000000004/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry        8
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        7 /        9
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry        9
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        8 /       10
+      HW entry ID = 00000005
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:05:00:00/FF:FF:FF:FF:00:00
+          0000020304050000/0000FFFFFFFF0000 (expected)
+          0000020304050000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          005/1FF
+          0000000000000005/00000000000001FF (expected)
+          0000000000000005/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       10
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =        9 /       11
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       11
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       10 /       12
+      HW entry ID = 00000006
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:06:00:00/FF:FF:FF:FF:00:00
+          0000020304060000/0000FFFFFFFF0000 (expected)
+          0000020304060000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          006/1FF
+          0000000000000006/00000000000001FF (expected)
+          0000000000000006/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       12
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       11 /       13
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       13
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       12 /       14
+      HW entry ID = 00000007
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:07:00:00/FF:FF:FF:FF:00:00
+          0000020304070000/0000FFFFFFFF0000 (expected)
+          0000020304070000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          007/1FF
+          0000000000000007/00000000000001FF (expected)
+          0000000000000007/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       14
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       13 /       15
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       15
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       14 /       16
+      HW entry ID = 00000008
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:08:00:00/FF:FF:FF:FF:00:00
+          0000020304080000/0000FFFFFFFF0000 (expected)
+          0000020304080000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          008/1FF
+          0000000000000008/00000000000001FF (expected)
+          0000000000000008/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       16
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       15 /       17
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       17
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       16 /       18
+      HW entry ID = 00000009
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:09:00:00/FF:FF:FF:FF:00:00
+          0000020304090000/0000FFFFFFFF0000 (expected)
+          0000020304090000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          009/1FF
+          0000000000000009/00000000000001FF (expected)
+          0000000000000009/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       18
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       17 /       19
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       19
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       18 /       20
+      HW entry ID = 0000000A
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0A:00:00/FF:FF:FF:FF:00:00
+          00000203040A0000/0000FFFFFFFF0000 (expected)
+          00000203040A0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00A/1FF
+          000000000000000A/00000000000001FF (expected)
+          000000000000000A/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       20
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       19 /       21
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       21
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       20 /       22
+      HW entry ID = 0000000B
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0B:00:00/FF:FF:FF:FF:00:00
+          00000203040B0000/0000FFFFFFFF0000 (expected)
+          00000203040B0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00B/1FF
+          000000000000000B/00000000000001FF (expected)
+          000000000000000B/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       22
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       21 /       23
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       23
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       22 /       24
+      HW entry ID = 0000000C
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0C:00:00/FF:FF:FF:FF:00:00
+          00000203040C0000/0000FFFFFFFF0000 (expected)
+          00000203040C0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00C/1FF
+          000000000000000C/00000000000001FF (expected)
+          000000000000000C/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       24
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       23 /       25
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       25
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       24 /       26
+      HW entry ID = 0000000D
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0D:00:00/FF:FF:FF:FF:00:00
+          00000203040D0000/0000FFFFFFFF0000 (expected)
+          00000203040D0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00D/1FF
+          000000000000000D/00000000000001FF (expected)
+          000000000000000D/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       26
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       25 /       27
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       27
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       26 /       28
+      HW entry ID = 0000000E
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0E:00:00/FF:FF:FF:FF:00:00
+          00000203040E0000/0000FFFFFFFF0000 (expected)
+          00000203040E0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00E/1FF
+          000000000000000E/00000000000001FF (expected)
+          000000000000000E/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       28
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       27 /       29
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       29
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       28 /       30
+      HW entry ID = 0000000F
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:0F:00:00/FF:FF:FF:FF:00:00
+          00000203040F0000/0000FFFFFFFF0000 (expected)
+          00000203040F0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          00F/1FF
+          000000000000000F/00000000000001FF (expected)
+          000000000000000F/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       30
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       29 /       31
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       31
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       30 /       32
+      HW entry ID = 00000010
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:10:00:00/FF:FF:FF:FF:00:00
+          0000020304100000/0000FFFFFFFF0000 (expected)
+          0000020304100000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          010/1FF
+          0000000000000010/00000000000001FF (expected)
+          0000000000000010/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       32
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       31 /       33
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       33
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       32 /       34
+      HW entry ID = 00000011
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:11:00:00/FF:FF:FF:FF:00:00
+          0000020304110000/0000FFFFFFFF0000 (expected)
+          0000020304110000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          011/1FF
+          0000000000000011/00000000000001FF (expected)
+          0000000000000011/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       34
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       33 /       35
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       35
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       34 /       36
+      HW entry ID = 00000012
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:12:00:00/FF:FF:FF:FF:00:00
+          0000020304120000/0000FFFFFFFF0000 (expected)
+          0000020304120000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          012/1FF
+          0000000000000012/00000000000001FF (expected)
+          0000000000000012/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       36
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       35 /       37
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       37
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       36 /       38
+      HW entry ID = 00000013
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:13:00:00/FF:FF:FF:FF:00:00
+          0000020304130000/0000FFFFFFFF0000 (expected)
+          0000020304130000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          013/1FF
+          0000000000000013/00000000000001FF (expected)
+          0000000000000013/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       38
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       37 /       39
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       39
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       38 /       40
+      HW entry ID = 00000014
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:14:00:00/FF:FF:FF:FF:00:00
+          0000020304140000/0000FFFFFFFF0000 (expected)
+          0000020304140000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          014/1FF
+          0000000000000014/00000000000001FF (expected)
+          0000000000000014/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       40
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       39 /       41
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       41
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       40 /       42
+      HW entry ID = 00000015
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:15:00:00/FF:FF:FF:FF:00:00
+          0000020304150000/0000FFFFFFFF0000 (expected)
+          0000020304150000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          015/1FF
+          0000000000000015/00000000000001FF (expected)
+          0000000000000015/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       42
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       41 /       43
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       43
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       42 /       44
+      HW entry ID = 00000016
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:16:00:00/FF:FF:FF:FF:00:00
+          0000020304160000/0000FFFFFFFF0000 (expected)
+          0000020304160000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          016/1FF
+          0000000000000016/00000000000001FF (expected)
+          0000000000000016/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       44
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       43 /       45
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       45
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       44 /       46
+      HW entry ID = 00000017
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:17:00:00/FF:FF:FF:FF:00:00
+          0000020304170000/0000FFFFFFFF0000 (expected)
+          0000020304170000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          017/1FF
+          0000000000000017/00000000000001FF (expected)
+          0000000000000017/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       46
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       45 /       47
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       47
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       46 /       48
+      HW entry ID = 00000018
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:18:00:00/FF:FF:FF:FF:00:00
+          0000020304180000/0000FFFFFFFF0000 (expected)
+          0000020304180000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          018/1FF
+          0000000000000018/00000000000001FF (expected)
+          0000000000000018/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       48
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       47 /       49
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       49
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       48 /       50
+      HW entry ID = 00000019
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:19:00:00/FF:FF:FF:FF:00:00
+          0000020304190000/0000FFFFFFFF0000 (expected)
+          0000020304190000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          019/1FF
+          0000000000000019/00000000000001FF (expected)
+          0000000000000019/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       50
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       49 /       51
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       51
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       50 /       52
+      HW entry ID = 0000001A
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:1A:00:00/FF:FF:FF:FF:00:00
+          00000203041A0000/0000FFFFFFFF0000 (expected)
+          00000203041A0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          01A/1FF
+          000000000000001A/00000000000001FF (expected)
+          000000000000001A/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       52
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       51 /       53
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       53
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       52 /       54
+      HW entry ID = 0000001B
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:1B:00:00/FF:FF:FF:FF:00:00
+          00000203041B0000/0000FFFFFFFF0000 (expected)
+          00000203041B0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          01B/1FF
+          000000000000001B/00000000000001FF (expected)
+          000000000000001B/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       54
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       53 /       55
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       55
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       54 /       56
+      HW entry ID = 0000001C
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          02:03:04:1C:00:00/FF:FF:FF:FF:00:00
+          00000203041C0000/0000FFFFFFFF0000 (expected)
+          00000203041C0000/0000FFFFFFFF0000 (actual)
+        EtherType (29) -> ethertype (14)
+          888E/FFFF
+          000000000000888E/000000000000FFFF (expected)
+          000000000000888E/000000000000FFFF (actual)
+        InPort (12) -> src_pp_port (86)
+          01C/1FF
+          000000000000001C/00000000000001FF (expected)
+          000000000000001C/00000000000001FF (actual)
+      BCM actions:
+        Drop (39)
+          00000001,00000000
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        dest_drop (90)
+          00000001
+        trap (3)
+          0000072A
+    Entry       56
+      Flags       = 00000031
+        +USED -in_hw -want_hw -upd +CHG +NEW -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       55 /       57
+      Qualifiers:
+        (none; matches all applicable traffic)
+      BCM actions:
+        (none; a match will not affect traffic)
+      PPD actions:
+        (none; a match will not affect traffic)
+    Entry       57
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       56 /       58
+      HW entry ID = 0000001D
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D0/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD0/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD0/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702B,00000000
+      PPD actions:
+        trap (3)
+          0000072B
+    Entry       58
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       57 /       59
+      HW entry ID = 0000001E
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D1/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD1/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD1/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702C,00000000
+      PPD actions:
+        trap (3)
+          0000072C
+    Entry       59
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       58 /       60
+      HW entry ID = 0000001F
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D2/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD2/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD2/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702D,00000000
+      PPD actions:
+        trap (3)
+          0000072D
+    Entry       60
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       59 /       61
+      HW entry ID = 00000020
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D3/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD3/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD3/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702E,00000000
+      PPD actions:
+        trap (3)
+          0000072E
+    Entry       61
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       60 /       62
+      HW entry ID = 00000021
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D4/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD4/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD4/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702F,00000000
+      PPD actions:
+        trap (3)
+          0000072F
+    Entry       62
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       61 /       63
+      HW entry ID = 00000022
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:DB/FF:FF:FF:FF:FF:FF
+          000001000CCDCDDB/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDDB/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B1,00000000
+      PPD actions:
+        trap (3)
+          000007B1
+    Entry       63
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       62 /       64
+      HW entry ID = 00000023
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D5/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD5/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD5/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B2,00000000
+      PPD actions:
+        trap (3)
+          000007B2
+    Entry       64
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       63 /       65
+      HW entry ID = 00000024
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D6/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD6/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD6/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B3,00000000
+      PPD actions:
+        trap (3)
+          000007B3
+    Entry       65
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       64 /       66
+      HW entry ID = 00000025
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D7/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD7/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD7/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B4,00000000
+      PPD actions:
+        trap (3)
+          000007B4
+    Entry       66
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       65 /       67
+      HW entry ID = 00000026
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D8/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD8/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD8/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B5,00000000
+      PPD actions:
+        trap (3)
+          000007B5
+    Entry       67
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       66 /       68
+      HW entry ID = 00000027
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:D9/FF:FF:FF:FF:FF:FF
+          000001000CCDCDD9/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDD9/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B6,00000000
+      PPD actions:
+        trap (3)
+          000007B6
+    Entry       68
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       67 /       69
+      HW entry ID = 00000028
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CD:CD:DA/FF:FF:FF:FF:FF:FF
+          000001000CCDCDDA/0000FFFFFFFFFFFF (expected)
+          000001000CCDCDDA/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B7,00000000
+      PPD actions:
+        trap (3)
+          000007B7
+    Entry       69
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       68 /       70
+      HW entry ID = 00000029
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          00:00:00:00:00:00/FF:FF:FF:FF:FF:FF
+          0000000000000000/0000FFFFFFFFFFFF (expected)
+          0000000000000000/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B8,00000000
+      PPD actions:
+        trap (3)
+          000007B8
+    Entry       70
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       69 /       74
+      HW entry ID = 0000002A
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          00:00:00:00:00:00/FF:FF:FF:FF:FF:FF
+          0000000000000000/0000FFFFFFFFFFFF (expected)
+          0000000000000000/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          160070B9,00000000
+      PPD actions:
+        trap (3)
+          000007B9
+    Entry       74
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       70 /       75
+      HW entry ID = 0000002E
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0806/FFFF
+          0000000000000806/000000000000FFFF (expected)
+          0000000000000806/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Snoop (255)
+          160370BA,00000000
+      PPD actions:
+        snp (4)
+          000003BA
+    Entry       75
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       74 /       76
+      HW entry ID = 0000002F
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0806/FFFF
+          0000000000000806/000000000000FFFF (expected)
+          0000000000000806/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:00/FF:FF:FF:FF:FF:00
+          0000000402030400/0000FFFFFFFFFF00 (expected)
+          0000000402030400/0000FFFFFFFFFF00 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000E
+        trap (3)
+          0000072A
+    Entry       76
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       75 /       77
+      HW entry ID = 00000030
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8035/FFFF
+          0000000000008035/000000000000FFFF (expected)
+          0000000000008035/000000000000FFFF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       77
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       76 /       78
+      HW entry ID = 00000031
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0800/FFFF
+          0000000000000800/000000000000FFFF (expected)
+          0000000000000800/000000000000FFFF (actual)
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0208/FFFF
+          0000000000000208/000000000000FFFF (expected)
+          0000000000000208/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       78
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       77 /       79
+      HW entry ID = 00000032
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0800/FFFF
+          0000000000000800/000000000000FFFF (expected)
+          0000000000000800/000000000000FFFF (actual)
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          007B/FFFF
+          000000000000007B/000000000000FFFF (expected)
+          000000000000007B/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       79
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       78 /       80
+      HW entry ID = 00000033
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          0044/FFFF
+          0000000000000044/000000000000FFFF (expected)
+          0000000000000044/000000000000FFFF (actual)
+      BCM actions:
+        Snoop (255)
+          160370BA,00000000
+      PPD actions:
+        snp (4)
+          000003BA
+    Entry       80
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       79 /       81
+      HW entry ID = 00000034
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0044/FFFF
+          0000000000000044/000000000000FFFF (expected)
+          0000000000000044/000000000000FFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+      BCM actions:
+        Snoop (255)
+          160370BA,00000000
+      PPD actions:
+        snp (4)
+          000003BA
+    Entry       81
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       80 /       82
+      HW entry ID = 00000035
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          11/FF
+          0000000000000011/00000000000000FF (expected)
+          0000000000000011/00000000000000FF (actual)
+        DstMac (7) -> da (13)
+          FF:FF:FF:FF:FF:FF/FF:FF:FF:FF:FF:FF
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (expected)
+          0000FFFFFFFFFFFF/0000FFFFFFFFFFFF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          0043/FFFF
+          0000000000000043/000000000000FFFF (expected)
+          0000000000000043/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       82
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       81 /       83
+      HW entry ID = 00000036
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          00/00
+          0000000000000000/0000000000000000 (expected)
+          0000000000000000/0000000000000000 (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:01/FF:FF:FF:FF:FF:FF
+          0000000402030401/0000FFFFFFFFFFFF (expected)
+          0000000402030401/0000FFFFFFFFFFFF (actual)
+        L4DstPort (28) -> ipv4_dest_port (42)
+          00B3/FFFF
+          00000000000000B3/000000000000FFFF (expected)
+          00000000000000B3/000000000000FFFF (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+      PPD actions:
+        tc (2)
+          0000000E
+    Entry       83
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       82 /       84
+      HW entry ID = 00000037
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          00/00
+          0000000000000000/0000000000000000 (expected)
+          0000000000000000/0000000000000000 (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:01/FF:FF:FF:FF:FF:FF
+          0000000402030401/0000FFFFFFFFFFFF (expected)
+          0000000402030401/0000FFFFFFFFFFFF (actual)
+        L4SrcPort (27) -> ipv4_src_port (41)
+          00B3/FFFF
+          00000000000000B3/000000000000FFFF (expected)
+          00000000000000B3/000000000000FFFF (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+      PPD actions:
+        tc (2)
+          0000000E
+    Entry       84
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       83 /       85
+      HW entry ID = 00000038
+      HW priority = 00000000
+      Qualifiers:
+        IpProtocol (30) -> ipv4_next_prtcl (36)
+          2E/FF
+          000000000000002E/00000000000000FF (expected)
+          000000000000002E/00000000000000FF (actual)
+        DstMac (7) -> da (13)
+          00:04:02:03:04:01/FF:FF:FF:FF:FF:FF
+          0000000402030401/0000FFFFFFFFFFFF (expected)
+          0000000402030401/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       85
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       84 /       94
+      HW entry ID = 00000039
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          0800/FFFF
+          0000000000000800/000000000000FFFF (expected)
+          0000000000000800/000000000000FFFF (actual)
+        DstIp (10) -> ipv4_dip (40)
+          E0000002/FFFFFFFF (224.0.0.2/255.255.255.255)
+          00000000E0000002/00000000FFFFFFFF (expected)
+          00000000E0000002/00000000FFFFFFFF (actual)
+        DstMac (7) -> da (13)
+          01:00:5E:00:00:02/FF:FF:FF:FF:FF:FF
+          000001005E000002/0000FFFFFFFFFFFF (expected)
+          000001005E000002/0000FFFFFFFFFFFF (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000006,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000E
+        trap (3)
+          0000072A
+    Entry       94
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       85 /       96
+      HW entry ID = 00000041
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0007/FFFF
+          0000000000000007/000000000000FFFF (expected)
+          0000000000000007/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       96
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       94 /       98
+      HW entry ID = 00000043
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          8902/FFFF
+          0000000000008902/000000000000FFFF (expected)
+          0000000000008902/000000000000FFFF (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+    Entry       98
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       96 /       99
+      HW entry ID = 00000045
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:00/FF:FF:FF:FF:FF:FF
+          00000180C2000000/0000FFFFFFFFFFFF (expected)
+          00000180C2000000/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry       99
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       98 /      100
+      HW entry ID = 00000046
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:00:0C:CC:CC:CD/FF:FF:FF:FF:FF:FF
+          000001000CCCCCCD/0000FFFFFFFFFFFF (expected)
+          000001000CCCCCCD/0000FFFFFFFFFFFF (actual)
+        VlanFormat (90) -> eth_tag_format (89)
+          0/F
+          0000000000000000/000000000000000F (expected)
+          0000000000000000/000000000000000F (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      100
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =       99 /      104
+      HW entry ID = 00000047
+      HW priority = 00000000
+      Qualifiers:
+        DstMac (7) -> da (13)
+          01:80:C2:00:00:20/FF:FF:FF:FF:FF:F0
+          00000180C2000020/0000FFFFFFFFFFF0 (expected)
+          00000180C2000020/0000FFFFFFFFFFF0 (actual)
+      BCM actions:
+        PrioIntNew (14)
+          00000007,FFFFFFFF
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        tc (2)
+          0000000F
+        trap (3)
+          0000072A
+    Entry      104
+      Flags       = 00000007
+        +USED +IN_HW +WANT_HW -upd -chg -new -sta
+      Group       =       10
+      Priority    =        0
+      Prev/Next   =      100 /    65536
+      HW entry ID = 0000004B
+      HW priority = 00000000
+      Qualifiers:
+        EtherType (29) -> ethertype (14)
+          8847/FFFF
+          0000000000008847/000000000000FFFF (expected)
+          0000000000008847/000000000000FFFF (actual)
+          0024/FFFF
+          0000000000000024/000000000000FFFF (expected)
+          0000000000000024/000000000000FFFF (actual)
+          0000D0/FFFFF0
+          00000000000000D0/0000000000FFFFF0 (expected)
+          00000000000000D0/0000000000FFFFF0 (actual)
+      BCM actions:
+        Trap (251)
+          1600702A,00000000
+      PPD actions:
+        trap (3)
+          0000072A
+cint> exit;
+
+ISS(config-hw)# end
+ISS# 
+ISS# Quit
+root@localhost:/usr/local/bin/broadcom# exit
+
+Script done on Tue 22 Feb 2000 08:07:41 PM UTC

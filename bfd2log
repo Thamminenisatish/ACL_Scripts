@@ -1,0 +1,1216 @@
+Script started on Tue 15 Mar 2022 05:13:00 PM IST
+_root@chepdtvm5_213:/home/sat3/code/future/LR/switch2\[root@chepdtvm5_213 switch2]# ../ISS.exe
+dnsproxy: no process killed
+LR: 
+      This switch software is implemented using Open sources from OpenSSL,OpenSSH,and other open source community.
+To see a full description, type "show system acknowledgement"
+[2J[1;1H
+		 Aricent Intelligent Switch Solution 
+
+ISS login: root
+Password: 
+
+ISS# ISS# c t
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# shutdown garp
+ISS(config)# shutdown spanning-tree
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/2
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/4
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/6
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/8
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/9
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/10
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/11
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/12
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/13
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/14
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/15
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/16
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/17
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/18
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/19
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/20
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/21
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/22
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/23
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/24
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/25
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/26
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/27
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/28
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/29
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/30
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/31
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/32
+ISS(config-if)# map switch default
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 1
+ISS(config-vlan)# no ports
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 5
+ISS(config-vlan)# ports add gi 0/1 untagged gi 0/1
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# switchport pvid 5
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 5
+ISS(config-if)# ip address 5.0.0.1 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 6
+ISS(config-vlan)# ports add gi 0/2 untagged gi 0/2
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/2
+ISS(config-if)# switchport pvid 6
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 6
+ISS(config-if)# ip address 6.0.0.1 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 7
+ISS(config-vlan)# ports add gi 0/3 untagged gi 0/3
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# switchport pvid 7
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 7
+ISS(config-if)# ip address 7.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 8
+ISS(config-vlan)# ports add gi 0/4 untagged gi 0/4
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/4
+ISS(config-if)# switchport pvid 8
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 8
+ISS(config-if)# ip address 8.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 9
+ISS(config-vlan)# ports add gi 0/5 untagged gi 0/5
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# switchport pvid 9
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 9
+ISS(config-if)# ip address 9.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 10
+ISS(config-vlan)# ports add gi 0/6 untagged gi 0/6
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/6
+ISS(config-if)# switchport pvid 10
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 10
+ISS(config-if)# ip address 10.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 11
+ISS(config-vlan)# ports add gi 0/7 untagged gi 0/7
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# switchport pvid 11
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 11
+ISS(config-if)# ip address 11.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 8
+ISS(config-vlan)# ports add gi 0/4 untagged gi 0/4
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/4
+ISS(config-if)# switchport pvid 8
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 8
+ISS(config-if)# ip address 8.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 9
+ISS(config-vlan)# ports add gi 0/5 untagged gi 0/5
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# switchport pvid 9
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 9
+ISS(config-if)# ip address 9.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 10
+ISS(config-vlan)# ports add gi 0/6 untagged gi 0/6
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/6
+ISS(config-if)# switchport pvid 10
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 10
+ISS(config-if)# ip address 10.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 11
+ISS(config-vlan)# ports add gi 0/7 untagged gi 0/7
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# switchport pvid 11
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 11
+ISS(config-if)# ip address 11.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 12
+ISS(config-vlan)# ports add gi 0/8 untagged gi 0/8
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/8
+ISS(config-if)# switchport pvid 12
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 12
+ISS(config-if)# ip address 12.0.0.2 255.0.0.0
+% This IP Address overlaps with an existing Interface IP Address 
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 13
+ISS(config-vlan)# ports add gi 0/9 untagged gi 0/9
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/9
+ISS(config-if)# switchport pvid 13
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 13
+ISS(config-if)# ip address 13.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 14
+ISS(config-vlan)# ports add gi 0/10 untagged gi 0/10
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/10
+ISS(config-if)# switchport pvid 14
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 14
+ISS(config-if)# ip address 14.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 15
+ISS(config-vlan)# ports add gi 0/11 untagged gi 0/11
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/11
+ISS(config-if)# switchport pvid 15
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 15
+ISS(config-if)# ip address 15.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 16
+ISS(config-vlan)# ports add gi 0/12 untagged gi 0/12
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/12
+ISS(config-if)# switchport pvid 16
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 16
+ISS(config-if)# ip address 16.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 17
+ISS(config-vlan)# ports add gi 0/13 untagged gi 0/13
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/13
+ISS(config-if)# switchport pvid 17
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 17
+ISS(config-if)# ip address 17.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 18
+ISS(config-vlan)# ports add gi 0/14 untagged gi 0/14
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/14
+ISS(config-if)# switchport pvid 18
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 18
+ISS(config-if)# ip address 18.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 19
+ISS(config-vlan)# ports add gi 0/15 untagged gi 0/15
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/15
+ISS(config-if)# switchport pvid 19
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 19
+ISS(config-if)# ip address 19.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 20
+ISS(config-vlan)# ports add gi 0/16 untagged gi 0/16
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/16
+ISS(config-if)# switchport pvid 20
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 20
+ISS(config-if)# ip address 20.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 21
+ISS(config-vlan)# ports add gi 0/17 untagged gi 0/17
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/17
+ISS(config-if)# switchport pvid 21
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 21
+ISS(config-if)# ip address 21.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 22
+ISS(config-vlan)# ports add gi 0/18 untagged gi 0/18
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/18
+ISS(config-if)# switchport pvid 22
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 22
+ISS(config-if)# ip address 22.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 23
+ISS(config-vlan)# ports add gi 0/19 untagged gi 0/19
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/19
+ISS(config-if)# switchport pvid 23
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 23
+ISS(config-if)# ip address 23.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 24
+ISS(config-vlan)# ports add gi 0/20 untagged gi 0/20
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/20
+ISS(config-if)# switchport pvid 24
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 24
+ISS(config-if)# ip address 24.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 25
+ISS(config-vlan)# ports add gi 0/21 untagged gi 0/21
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/21
+ISS(config-if)# switchport pvid 25
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 25
+ISS(config-if)# ip address 25.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 26
+ISS(config-vlan)# ports add gi 0/22 untagged gi 0/22
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/22
+ISS(config-if)# switchport pvid 26
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 26
+ISS(config-if)# ip address 26.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 27
+ISS(config-vlan)# ports add gi 0/23 untagged gi 0/23
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/23
+ISS(config-if)# switchport pvid 27
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 27
+ISS(config-if)# ip address 27.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 28
+ISS(config-vlan)# ports add gi 0/24 untagged gi 0/24
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/24
+ISS(config-if)# switchport pvid 28
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 28
+ISS(config-if)# ip address 28.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 29
+ISS(config-vlan)# ports add gi 0/25 untagged gi 0/25
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/25
+ISS(config-if)# switchport pvid 29
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 29
+ISS(config-if)# ip address 29.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 30
+ISS(config-vlan)# ports add gi 0/26 untagged gi 0/26
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/26
+ISS(config-if)# switchport pvid 30
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 30
+ISS(config-if)# ip address 30.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 31
+ISS(config-vlan)# ports add gi 0/27 untagged gi 0/27
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/27
+ISS(config-if)# switchport pvid 31
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 31
+ISS(config-if)# ip address 31.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 32
+ISS(config-vlan)# ports add gi 0/28 untagged gi 0/28
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/28
+ISS(config-if)# switchport pvid 32
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 32
+ISS(config-if)# ip address 32.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 33
+ISS(config-vlan)# ports add gi 0/29 untagged gi 0/29
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/29
+ISS(config-if)# switchport pvid 33
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 33
+ISS(config-if)# ip address 33.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 34
+ISS(config-vlan)# ports add gi 0/30 untagged gi 0/30
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/30
+ISS(config-if)# switchport pvid 34
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 34
+ISS(config-if)# ip address 34.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 35
+ISS(config-vlan)# ports add gi 0/31 untagged gi 0/31
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/31
+ISS(config-if)# switchport pvid 35
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 35
+ISS(config-if)# ip address 35.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 36
+ISS(config-vlan)# ports add gi 0/32 untagged gi 0/32
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/32
+ISS(config-if)# switchport pvid 36
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int vlan 36
+ISS(config-if)# ip address 36.0.0.2 255.0.0.0
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# 
+ISS# c t
+ISS(config)# bfd session 1
+ISS(config-bfdsess)# bfd ipv4 5.0.0.1 vlan 5
+% Unable to configure BFD session table
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 2
+ISS(config-bfdsess)# bfd ipv4 6.0.0.1 vlan 6
+% Unable to configure BFD session table
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 3
+ISS(config-bfdsess)# bfd ipv4 7.0.0.1 vlan 7
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 4
+ISS(config-bfdsess)# bfd ipv4 8.0.0.1 vlan 8
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 5
+ISS(config-bfdsess)# bfd ipv4 9.0.0.1 vlan 9
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 6
+ISS(config-bfdsess)# bfd ipv4 10.0.0.1 vlan 10
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 7
+ISS(config-bfdsess)# bfd ipv4 11.0.0.1 vlan 11
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 8
+ISS(config-bfdsess)# bfd ipv4 12.0.0.1 vlan 12
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 9
+ISS(config-bfdsess)# bfd ipv4 13.0.0.1 vlan 13
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 10
+ISS(config-bfdsess)# bfd ipv4 14.0.0.1 vlan 14
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 11
+ISS(config-bfdsess)# bfd ipv4 15.0.0.1 vlan 15
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 12
+ISS(config-bfdsess)# bfd ipv4 16.0.0.1 vlan 16
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 13
+ISS(config-bfdsess)# bfd ipv4 17.0.0.1 vlan 17
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 14
+ISS(config-bfdsess)# bfd ipv4 18.0.0.1 vlan 18
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 15
+ISS(config-bfdsess)# bfd ipv4 19.0.0.1 vlan 19
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 16
+ISS(config-bfdsess)# bfd ipv4 20.0.0.1 vlan 20
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 17
+ISS(config-bfdsess)# bfd ipv4 21.0.0.1 vlan 21
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 18
+ISS(config-bfdsess)# bfd ipv4 22.0.0.1 vlan 22
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 19
+ISS(config-bfdsess)# bfd ipv4 23.0.0.1 vlan 23
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 20
+ISS(config-bfdsess)# bfd ipv4 24.0.0.1 vlan 24
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 21
+ISS(config-bfdsess)# bfd ipv4 25.0.0.1 vlan 25
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 22
+ISS(config-bfdsess)# bfd ipv4 26.0.0.1 vlan 26
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 23
+ISS(config-bfdsess)# bfd ipv4 27.0.0.1 vlan 27
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 24
+ISS(config-bfdsess)# bfd ipv4 28.0.0.1 vlan 28
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 25
+ISS(config-bfdsess)# bfd ipv4 29.0.0.1 vlan 29
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 26
+ISS(config-bfdsess)# bfd ipv4 30.0.0.1 vlan 30
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 27
+ISS(config-bfdsess)# bfd ipv4 31.0.0.1 vlan 31
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 28
+ISS(config-bfdsess)# bfd ipv4 32.0.0.1 vlan 32
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 29
+ISS(config-bfdsess)# bfd ipv4 33.0.0.1 vlan 33
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 30
+ISS(config-bfdsess)# bfd ipv4 34.0.0.1 vlan 34
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 31
+ISS(config-bfdsess)# bfd ipv4 35.0.0.1 vlan 35
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# end
+ISS# 
+ISS# c t
+ISS(config)# bfd session 32
+ISS(config-bfdsess)# bfd ipv4 36.0.0.1 vlan 36
+ISS(config-bfdsess)# bfd enable
+ISS(config-bfdsess)# endBFD:  [BFD][MGMT]BFD Session UP for Session index - 12 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 14 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 25 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 31 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 16 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 24 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 4 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 22 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 21 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 29 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 26 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 10 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 32 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 23 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 15 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 6 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 18 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 7 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 1 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 2 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 3 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 5 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 17 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 20 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 27 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 9 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 30 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 11 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 19 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 13 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 28 in ContextId- 0
+
+ISS# show bfd session summary
+
+Context default
+Session Index:1
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+Multiplier:3, diag:0, My discr:1, your discr:1, state UP, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:2
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+Multiplier:3, diag:0, My discr:2, your discr:2, state UP, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:3
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+Multiplier:3, diag:0, My discr:3, your discr:3, state UP, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:4
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+Multiplier:3, diag:0, My discr:4, your discr:4, state UP, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:5
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+Multiplier:3, diag:0, My discr:5, your discr:5, state UP, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:6
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+Multiplier:3, diag:0, My discr:6, your discr:6, state UP, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:7
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:7, your discr:7, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:8
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:8, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:9
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:9, your discr:9, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:10
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:10, your discr:10, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:11
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:11, your discr:11, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:12
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:12, your discr:12, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:13
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:13, your discr:13, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:14
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:14, your discr:14, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:15
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:15, your discr:15, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:16
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:16, your discr:16, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:17
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:17, your discr:17, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:18
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:18, your discr:18, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:19
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:19, your discr:19, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:20
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:20, your discr:20, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:21
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:21, your discr:21, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:22
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:22, your discr:22, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:23
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:23, your discr:23, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:24
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:24, your discr:24, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:25
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:25, your discr:25, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:26
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:26, your discr:26, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:27
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:27, your discr:27, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:28
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:28, your discr:28, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:29
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:29, your discr:29, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:30
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:30, your discr:30, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:31
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:31, your discr:31, state UP, D/C/M/A:0/0/0/0
+                
+                Context default
+                Session Index:32
+                Session Status : enabled, Session Admin Status : start
+                Version:1,  desired tx interval:1s , required rx interval:1s 
+                Multiplier:3, diag:0, My discr:32, your discr:32, state UP, D/C/M/A:0/0/0/0
+                [27m                       ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# ISS# Quit
+_root@chepdtvm5_213:/home/sat3/code/future/LR/switch2\You have new mail in /var/spool/mail/root
+[root@chepdtvm5_213 switch2]# exit
+
+Script done on Tue 15 Mar 2022 05:14:53 PM IST

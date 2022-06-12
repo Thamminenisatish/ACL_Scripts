@@ -1,0 +1,261 @@
+
+ISS# configure terminal
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# set port-channel enable
+ISS(config)# set lldp enable
+ISS(config)# shutdown garp
+ISS(config)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 100
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 200
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 300
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 400
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 500
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 600
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 700
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 800
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/2
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 200 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/3
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 300 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 400 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 500 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/6
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 600 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/7
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 700 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/8
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 800 mode active
+ISS(config-if)# end
+ISS# 
+ISS# sh int des
+Interface    Status   Protocol  Description   SFP Status---------    ------   --------  -----------   ----------Gi0/1        up       up            Not PresentGi0/2        up       up            Not Present
+Gi0/3        up       up            Not PresentGi0/4        up       up            Not PresentGi0/5        up       up            Not PresentGi0/6        up       up            Not PresentGi0/7        up       up            Not PresentGi0/8        up       up            Not PresentGi0/9        down     down          Not PresentGi0/10       down     down          Not PresentGi0/11       down     down          Not Present
+Gi0/12       down     down          Not PresentGi0/13       down     down          Not PresentGi0/14       down     down          Not PresentGi0/15       down     down          Not PresentGi0/16       down     down          Not Presentpo100        up       down          Not Presentpo200        up       down          Not Presentpo300        up       down          Not Presentpo400        up       down          Not Presentpo500        up       down          Not Presentpo600        up       down          Not Present      po700        up       down          Not Present       po800        up       down          Not Presentvlan1        up       down          Not Present     ISS# 
+ISS# 
+ISS# 
+ISS# sh int po 200
+po200 up, line protocol is down (not connect)Bridge Port Type: Customer Bridge PortInterface SubType: Not ApplicableInterface Alias: po200 Hardware Address is 00:02:02:03:04:82   
+ISS# sh int po 800
+po800 up, line protocol is down (not connect)Bridge Port Type: Customer Bridge PortInterface SubType: Not ApplicableInterface Alias: po800 Hardware Address is 00:02:02:03:04:88   
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 900
+% Maximum number of port channels supported in the system is 8 
+ISS(config)# no shutdown
+% Incomplete command.
+ISS(config)# end
+ISS# 
+ISS# 
+ISS# 
+ISS# 
+ISS# c t
+ISS(config)# hw
+ISS(config-hw)# hw "debug-appl +"
+ISS(config-hw)# hw "debug bcmapi +"        debug l2 +
+ISS(config-hw)# API: bcm_stk_gport_sysport_get(0,1,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,2,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,3,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,4,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,5,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,6,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,7,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,8,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,1,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,2,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,3,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,4,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,5,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,6,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,7,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,8,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,1,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,2,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,3,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,4,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,5,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,6,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,7,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,8,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,9,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,1,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,2,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,3,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+API: bcm_stk_gport_sysport_get(0,4,...) -> 0 Ok
+API: bcm_tx(0,...) -> 0 Ok
+
+
+ISS# c t
+ISS(config)# hwISS(config-hw)# hw "diag lag 500"
+
+ISS(config-hw)# hw "diag lag 100"
+ISS(config-hw)# hw "diag lag 200"ISS(config-hw)# hw "diag lag 300"ISS(config-hw)# hw "diag lag 800"
+ISS(config-hw)# end
+ISS# 
+ISS# sh ether summary
+Port-channel Module Admin Status is enabledPort-channel Module Oper Status is enabledPort-channel recovery action on exceeding Threshold is NonePort-channel Independent mode is disabledPort-channel System Identifier is  00:02:02:03:04:01   LACP System Priority: 32768LACP Error Recovery Time: 0LACP Error Recovery Threshold: 5LACP Recovery Triggered count: 0LACP Error Recovery Threshold for Defaulted State : 5LACP Error Recovery Threshold for Hardware Failure : 5LACP Same state threshold : 5
+Flags: D - down         P - in port-channelI - stand-alone  H - Hot-standby (LACP only)E - ErrDisabledU - in-use       d - default portR - Layer3AD - Admin Down      AU - Admin UpOD - Operative Down  OU - Operative Up
+Number of channel-groups in use: 8Number of aggregators: 8                Group  Port-channel    Protocol   Ports
+-------------------------------------------------------------------------
+100    Po100(D)[AU,OD] LACP       Gi0/1(D)
+200    Po200(D)[AU,OD] LACP       Gi0/2(D)
+300    Po300(D)[AU,OD] LACP       Gi0/3(D)
+400    Po400(D)[AU,OD] LACP       Gi0/4(D)
+500    Po500(D)[AU,OD] LACP       Gi0/5(D)
+600    Po600(D)[AU,OD] LACP       Gi0/6(D)
+700    Po700(D)[AU,OD] LACP       Gi0/7(D)
+800    Po800(D)[AU,OD] LACP       Gi0/8(D)
+ISS# 
+ISS# 
+ISS# Quit
+root@localhost:/home/ISS_DELTA# exit
+There are stopped jobs.
+root@localhost:/home/ISS_DELTA# exit
+
+Script done on Tue 22 Feb 2022 12:34:32 PM UTC

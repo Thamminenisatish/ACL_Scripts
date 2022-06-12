@@ -1,0 +1,1347 @@
+
+Test Start time : Fri Mar 25 17:18:14 2022
+
+Total No of test cases : 1 
+
+TARGET MODE   : normal
+GLOBAL TARGET : sw1
+
+Test Case ID : ISS_TEST_IPV6_MSR_RELOAD
+
+                     Execute Status : yes
+
+Proc Name writePktsrvconf
+
+ 
+---------------------------------------------------------------------------
+ Test Number   : 1
+ Testcase Id   : ISS_TEST_IPV6_MSR_RELOAD
+ Description   : None
+ Pre-requisite : None
+ Time Started  : Fri Mar 25 17:18:14 2022
+
+topologyChange spawn: exp6 file: pqa_pktsrv.confcd /home/PQA/pqatestsuite/simulation
+]0;root@localhost:/home/PQA/pqatestsuite/simulation\[root@localhost simulation]# 
+
+ -------------------***************------------------- 
+             Starting of curMsTopFile.conf 
+ -------------------***************------------------- 
+
+server ipaddress 30.0.0.40
+network net1
+1 1
+2 5
+network net2
+1 4
+2 18./pktctrl 30.0.0.40 config /home/PQA/pqatestsuite/simulation/curMsTopFile.conf 
+sending read config (/home/PQA/pqatestsuite/simulation/curMsTopFile.conf) 30.0.0.40:8000
+]0;root@localhost:/home/PQA/pqatestsuite/simulation\[root@localhost simulation]# 
+
+ -------------------***************------------------- 
+                     Starting ISS1 
+ -------------------***************------------------- 
+]0;root@localhost:/home/PQA/pqatestsuite\[root@localhost pqatestsuite]# cd /home/PQA/code/future/LR/switch1
+]0;root@localhost:/home/PQA/code/future/LR/switch1\[root@localhost switch1]# gdb ./../ISS.exe
+GNU gdb (GDB) Red Hat Enterprise Linux (7.2-60.el6_4.1)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/PQA/code/future/LR/ISS.exe...done.
+(gdb) r 
+Starting program: /home/PQA/code/future/LR/ISS.exe 
+[Thread debugging using libthread_db enabled]
+Detaching after fork from child process 13386.
+dnsproxy: no process killed
+ Unable to open sizing file system.size 
+ System Size Data Structure updated with Default Values 
+LR: 
+      This switch software is implemented using Open sources from OpenSSL,OpenSSH,and other open source community.
+To see a full description, type "show system acknowledgement"
+[New Thread 0xb7fcef20 (LWP 13387)]
+[New Thread 0xb73fcf20 (LWP 13388)]
+[New Thread 0xb5868f20 (LWP 13389)]
+[Thread 0xb5868f20 (LWP 13389) exited]
+[New Thread 0xb5868f20 (LWP 13390)]
+[New Thread 0xb501af20 (LWP 13391)]
+[New Thread 0xb4dbaf20 (LWP 13392)]
+[New Thread 0xb47d5f20 (LWP 13393)]
+[New Thread 0xb43fef20 (LWP 13394)]
+[New Thread 0xb3ffef20 (LWP 13395)]
+[New Thread 0xb3aa0f20 (LWP 13396)]
+[New Thread 0xb36fef20 (LWP 13397)]
+[New Thread 0xb32fef20 (LWP 13398)]
+[New Thread 0xb2ffef20 (LWP 13399)]
+[New Thread 0xb2dfef20 (LWP 13400)]
+[New Thread 0xb29fef20 (LWP 13401)]
+[New Thread 0xb27fef20 (LWP 13402)]
+[New Thread 0xb25fef20 (LWP 13403)]
+[New Thread 0xb2383f20 (LWP 13404)]
+[New Thread 0xb0d0ff20 (LWP 13405)]
+[New Thread 0xb0b0ff20 (LWP 13406)]
+[New Thread 0xb06a4f20 (LWP 13407)]
+[New Thread 0xb04a4f20 (LWP 13408)]
+[New Thread 0xac5e3f20 (LWP 13409)]
+[New Thread 0xab5f7f20 (LWP 13410)]
+[New Thread 0xab158f20 (LWP 13411)]
+[New Thread 0xaa3c3f20 (LWP 13412)]
+[New Thread 0xa96e6f20 (LWP 13413)]
+[New Thread 0xa91a1f20 (LWP 13414)]
+[New Thread 0xa8fa1f20 (LWP 13415)]
+[New Thread 0xa823af20 (LWP 13416)]
+[New Thread 0xa803af20 (LWP 13417)]
+[Thread 0xa803af20 (LWP 13417) exited]
+[New Thread 0xa7e3af20 (LWP 13418)]
+[New Thread 0xa803af20 (LWP 13419)]
+[New Thread 0xa7b38f20 (LWP 13420)]
+[New Thread 0xa7464f20 (LWP 13421)]
+[New Thread 0xa7264f20 (LWP 13422)]
+[New Thread 0xa7064f20 (LWP 13423)]
+[New Thread 0xa6bfef20 (LWP 13424)]
+[New Thread 0xa57f9f20 (LWP 13425)]
+[New Thread 0xa51fef20 (LWP 13426)]
+[New Thread 0xa4ffef20 (LWP 13427)]
+[New Thread 0xa4b30f20 (LWP 13428)]
+[New Thread 0xa4930f20 (LWP 13429)]
+[New Thread 0xa4730f20 (LWP 13430)]
+[New Thread 0xa44ddf20 (LWP 13431)]
+[New Thread 0xa4213f20 (LWP 13432)]
+[New Thread 0xa3dfef20 (LWP 13433)]
+[New Thread 0xa39c3f20 (LWP 13434)]
+[New Thread 0xa34cdf20 (LWP 13435)]
+[New Thread 0xa32cdf20 (LWP 13436)]
+[New Thread 0xa2f82f20 (LWP 13437)]
+[New Thread 0xa2d82f20 (LWP 13438)]
+[New Thread 0xa2768f20 (LWP 13439)]
+[New Thread 0xa161ff20 (LWP 13440)]
+[New Thread 0xa03c0f20 (LWP 13441)]
+[New Thread 0x9fffef20 (LWP 13442)]
+[New Thread 0x9fdfef20 (LWP 13443)]
+[New Thread 0x9f988f20 (LWP 13444)]
+[New Thread 0x9f788f20 (LWP 13445)]
+[New Thread 0x9f588f20 (LWP 13446)]
+Detaching after fork from child process 13447.
+[New Thread 0x9f388f20 (LWP 13448)]
+[New Thread 0x9f188f20 (LWP 13449)]
+[New Thread 0x9ef88f20 (LWP 13450)]
+[New Thread 0x9ed88f20 (LWP 13451)]
+[New Thread 0x9eb88f20 (LWP 13452)]
+[New Thread 0x9dd91f20 (LWP 13453)]
+[New Thread 0x9db91f20 (LWP 13454)]
+[New Thread 0x9d991f20 (LWP 13455)]
+[New Thread 0x9d5fef20 (LWP 13456)]
+[New Thread 0x9cc5df20 (LWP 13457)]
+[New Thread 0x9c9caf20 (LWP 13458)]
+[New Thread 0x9c7caf20 (LWP 13459)]
+[New Thread 0x9bafef20 (LWP 13460)]
+[New Thread 0x9b8fef20 (LWP 13461)]
+[New Thread 0x9ab2ef20 (LWP 13462)]
+[New Thread 0x9a502f20 (LWP 13463)]
+[New Thread 0x9995cf20 (LWP 13464)]
+[New Thread 0x9975cf20 (LWP 13465)]
+[New Thread 0x9955cf20 (LWP 13466)]
+[New Thread 0x99183f20 (LWP 13467)]
+[New Thread 0x98c11f20 (LWP 13468)]
+[New Thread 0x985d7f20 (LWP 13469)]
+[New Thread 0x98203f20 (LWP 13470)]
+[New Thread 0x964aff20 (LWP 13471)]
+[New Thread 0x962aff20 (LWP 13472)]
+[New Thread 0x9588ef20 (LWP 13473)]
+[New Thread 0x954fef20 (LWP 13474)]
+[New Thread 0x950fef20 (LWP 13475)]
+[New Thread 0x94efef20 (LWP 13476)]
+[New Thread 0x94cfef20 (LWP 13477)]
+[New Thread 0x94afef20 (LWP 13478)]
+[New Thread 0x948fef20 (LWP 13479)]
+[New Thread 0x945aff20 (LWP 13480)]
+[New Thread 0x941fef20 (LWP 13481)]
+[New Thread 0x93ffef20 (LWP 13482)]
+[2J[1;1H[100B
+		 Aricent Intelligent Switch Solution 
+
+[New Thread 0x91874f20 (LWP 13483)]
+[New Thread 0x91674f20 (LWP 13484)]
+[New Thread 0x91474f20 (LWP 13485)]
+[New Thread 0x90ffef20 (LWP 13486)]
+[New Thread 0x90dfef20 (LWP 13487)]
+[New Thread 0x8f875f20 (LWP 13488)]
+[New Thread 0x8f675f20 (LWP 13489)]
+[New Thread 0x8f475f20 (LWP 13490)]
+[New Thread 0x8f24bf20 (LWP 13491)]
+[New Thread 0x8ebb7f20 (LWP 13492)]
+[New Thread 0x8e90ef20 (LWP 13493)]
+[New Thread 0x8bc45f20 (LWP 13494)]
+[New Thread 0x8ba45f20 (LWP 13495)]
+[Thread 0x8ba45f20 (LWP 13495) exited]
+[New Thread 0x8b845f20 (LWP 13496)]
+[New Thread 0x8ba45f20 (LWP 13497)]
+[New Thread 0x8b645f20 (LWP 13498)]
+[New Thread 0x8b445f20 (LWP 13499)]
+[New Thread 0x8b245f20 (LWP 13500)]
+[New Thread 0x8b045f20 (LWP 13501)]
+[New Thread 0x8aaf4f20 (LWP 13502)]
+[New Thread 0x8a8f4f20 (LWP 13503)]
+[New Thread 0x8a6f4f20 (LWP 13504)]
+[New Thread 0x8a2fef20 (LWP 13505)]
+ISS login: 
+===================================
+
+
+% Incorrect Login/Password
+ISS login: root
+Password: 
+
+ISS# [KISS# 
+ISS# 
+SpawnID of ISS1 is: exp11
+
+ -------------------***************------------------- 
+                     Starting ISS2 
+ -------------------***************------------------- 
+]0;root@localhost:/home/PQA/pqatestsuite\[root@localhost pqatestsuite]# cd /home/PQA/code/future/LR/switch2
+]0;root@localhost:/home/PQA/code/future/LR/switch2\[root@localhost switch2]# gdb ./../ISS.exe
+r 
+GNU gdb (GDB) Red Hat Enterprise Linux (7.2-60.el6_4.1)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/PQA/code/future/LR/ISS.exe...done.
+(gdb) r 
+Starting program: /home/PQA/code/future/LR/ISS.exe 
+[Thread debugging using libthread_db enabled]
+Detaching after fork from child process 13537.
+dnsproxy: no process killed
+ Unable to open sizing file system.size 
+ System Size Data Structure updated with Default Values 
+LR: 
+      This switch software is implemented using Open sources from OpenSSL,OpenSSH,and other open source community.
+To see a full description, type "show system acknowledgement"
+[New Thread 0xb7fcef20 (LWP 13538)]
+[New Thread 0xb73fcf20 (LWP 13539)]
+[New Thread 0xb5868f20 (LWP 13540)]
+[Thread 0xb5868f20 (LWP 13540) exited]
+[New Thread 0xb5868f20 (LWP 13541)]
+[New Thread 0xb501af20 (LWP 13542)]
+[New Thread 0xb4dbaf20 (LWP 13543)]
+[New Thread 0xb47d5f20 (LWP 13544)]
+[New Thread 0xb43fef20 (LWP 13545)]
+[New Thread 0xb3ffef20 (LWP 13546)]
+[New Thread 0xb3aa0f20 (LWP 13547)]
+[New Thread 0xb36fef20 (LWP 13548)]
+[New Thread 0xb32fef20 (LWP 13549)]
+[New Thread 0xb2ffef20 (LWP 13550)]
+[New Thread 0xb2dfef20 (LWP 13551)]
+[New Thread 0xb29fef20 (LWP 13552)]
+[New Thread 0xb27fef20 (LWP 13553)]
+[New Thread 0xb25fef20 (LWP 13554)]
+[New Thread 0xb2383f20 (LWP 13555)]
+[New Thread 0xb0d0ff20 (LWP 13556)]
+[New Thread 0xb0b0ff20 (LWP 13557)]
+[New Thread 0xb06a4f20 (LWP 13558)]
+[New Thread 0xb04a4f20 (LWP 13559)]
+[New Thread 0xac5e3f20 (LWP 13560)]
+[New Thread 0xab5f7f20 (LWP 13561)]
+[New Thread 0xab158f20 (LWP 13562)]
+[New Thread 0xaa3c3f20 (LWP 13563)]
+[New Thread 0xa96e6f20 (LWP 13564)]
+[New Thread 0xa91a1f20 (LWP 13565)]
+[New Thread 0xa8fa1f20 (LWP 13566)]
+[New Thread 0xa823af20 (LWP 13567)]
+[New Thread 0xa803af20 (LWP 13568)]
+[Thread 0xa803af20 (LWP 13568) exited]
+[New Thread 0xa7e3af20 (LWP 13569)]
+[New Thread 0xa803af20 (LWP 13570)]
+[New Thread 0xa7b38f20 (LWP 13571)]
+[New Thread 0xa7464f20 (LWP 13575)]
+[New Thread 0xa7264f20 (LWP 13576)]
+[New Thread 0xa7064f20 (LWP 13577)]
+[New Thread 0xa6bfef20 (LWP 13578)]
+[New Thread 0xa57f9f20 (LWP 13579)]
+[New Thread 0xa51fef20 (LWP 13581)]
+[New Thread 0xa4ffef20 (LWP 13582)]
+[New Thread 0xa4b30f20 (LWP 13583)]
+[New Thread 0xa4930f20 (LWP 13584)]
+[New Thread 0xa4730f20 (LWP 13585)]
+[New Thread 0xa44ddf20 (LWP 13586)]
+[New Thread 0xa4213f20 (LWP 13587)]
+[New Thread 0xa3dfef20 (LWP 13588)]
+[New Thread 0xa39c3f20 (LWP 13589)]
+[New Thread 0xa34cdf20 (LWP 13590)]
+[New Thread 0xa32cdf20 (LWP 13591)]
+[New Thread 0xa2f82f20 (LWP 13592)]
+[New Thread 0xa2d82f20 (LWP 13593)]
+[New Thread 0xa2768f20 (LWP 13594)]
+[New Thread 0xa161ff20 (LWP 13595)]
+[New Thread 0xa03c0f20 (LWP 13596)]
+[New Thread 0x9fffef20 (LWP 13598)]
+[New Thread 0x9fdfef20 (LWP 13599)]
+[New Thread 0x9f988f20 (LWP 13600)]
+[New Thread 0x9f788f20 (LWP 13601)]
+[New Thread 0x9f588f20 (LWP 13602)]
+Detaching after fork from child process 13603.
+[New Thread 0x9f388f20 (LWP 13604)]
+[New Thread 0x9f188f20 (LWP 13605)]
+[New Thread 0x9ef88f20 (LWP 13606)]
+[New Thread 0x9ed88f20 (LWP 13607)]
+[New Thread 0x9eb88f20 (LWP 13608)]
+[New Thread 0x9dd91f20 (LWP 13609)]
+[New Thread 0x9db91f20 (LWP 13610)]
+[New Thread 0x9d991f20 (LWP 13611)]
+[New Thread 0x9d5fef20 (LWP 13612)]
+[New Thread 0x9cc5df20 (LWP 13613)]
+[New Thread 0x9c9caf20 (LWP 13614)]
+[New Thread 0x9c7caf20 (LWP 13615)]
+[New Thread 0x9bafef20 (LWP 13616)]
+[New Thread 0x9b8fef20 (LWP 13617)]
+[New Thread 0x9ab2ef20 (LWP 13618)]
+[New Thread 0x9a502f20 (LWP 13619)]
+[New Thread 0x9995cf20 (LWP 13620)]
+[New Thread 0x9975cf20 (LWP 13621)]
+[New Thread 0x9955cf20 (LWP 13622)]
+[New Thread 0x99183f20 (LWP 13623)]
+[New Thread 0x98c11f20 (LWP 13624)]
+[New Thread 0x985d7f20 (LWP 13625)]
+[New Thread 0x98203f20 (LWP 13626)]
+[New Thread 0x964aff20 (LWP 13627)]
+[New Thread 0x962aff20 (LWP 13628)]
+[New Thread 0x9588ef20 (LWP 13629)]
+[New Thread 0x954fef20 (LWP 13630)]
+[New Thread 0x950fef20 (LWP 13631)]
+[New Thread 0x94efef20 (LWP 13632)]
+[New Thread 0x94cfef20 (LWP 13633)]
+[New Thread 0x94afef20 (LWP 13634)]
+[New Thread 0x948fef20 (LWP 13635)]
+[New Thread 0x945aff20 (LWP 13636)]
+[New Thread 0x941fef20 (LWP 13637)]
+[New Thread 0x93ffef20 (LWP 13638)]
+[2J[1;1H[100B
+		 Aricent Intelligent Switch Solution 
+
+[New Thread 0x91874f20 (LWP 13640)]
+[New Thread 0x91674f20 (LWP 13641)]
+[New Thread 0x91474f20 (LWP 13642)]
+[New Thread 0x90ffef20 (LWP 13643)]
+[New Thread 0x90dfef20 (LWP 13644)]
+[New Thread 0x8f875f20 (LWP 13645)]
+[New Thread 0x8f675f20 (LWP 13646)]
+[New Thread 0x8f475f20 (LWP 13647)]
+[New Thread 0x8f24bf20 (LWP 13648)]
+[New Thread 0x8ebb7f20 (LWP 13649)]
+[New Thread 0x8e90ef20 (LWP 13650)]
+[New Thread 0x8bc45f20 (LWP 13651)]
+[New Thread 0x8ba45f20 (LWP 13652)]
+[Thread 0x8ba45f20 (LWP 13652) exited]
+[New Thread 0x8b845f20 (LWP 13653)]
+[New Thread 0x8ba45f20 (LWP 13654)]
+[New Thread 0x8b645f20 (LWP 13655)]
+[New Thread 0x8b445f20 (LWP 13656)]
+[New Thread 0x8b245f20 (LWP 13657)]
+[New Thread 0x8b045f20 (LWP 13658)]
+[New Thread 0x8a99ff20 (LWP 13659)]
+[New Thread 0x8a79ff20 (LWP 13660)]
+[New Thread 0x8a59ff20 (LWP 13661)]
+[New Thread 0x8a113f20 (LWP 13662)]
+ISS login: 
+===================================
+
+
+% Incorrect Login/Password
+ISS login: [Thread 0xb73fcf20 (LWP 13539) exited]
+root
+Password: 
+
+ISS# [KISS# 
+ISS# 
+SpawnID of ISS2 is: exp12
+
+ -------------------***************------------------- 
+ "Test-Id : ISS_TEST_IPV6_MSR_RELOAD" 
+ -------------------***************------------------- 
+
+ISS# [Thread 0xb73fcf20 (LWP 13388) exited]
+c t
+ISS(config)# int gigabitethernet 0/1
+ISS(config-if)# map switch default
+ISS(config-if)# no sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# int gigabitethernet 0/4
+ISS(config-if)# map switch default
+ISS(config-if)# no sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 400
+ISS(config-vlan)# po add gigabitethernet 0/1
+ISS(config-vlan)# ex
+ISS(config)# int vlan 400
+ISS(config-if)# ipv6 enable
+ISS(config-if)# ipv6 address 2221::1 64
+ISS(config-if)# ipv6 address fe80::2221:1 link-local
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 500
+ISS(config-vlan)# po add gigabitethernet 0/4
+ISS(config-vlan)# ex
+ISS(config)# int vlan 500
+ISS(config-if)# ipv6 enable
+ISS(config-if)# ipv6 address 2222::1 64
+ISS(config-if)# ipv6 address fe80::2222:1 link-local
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# router isis
+ISS(config-router)# multi-topology
+ISS(config-router)# net 10:11:11:11:11:11:11:00
+ISS(config-router)# end
+ISS# configure terminal
+ISS(config)# interface vlan 400
+ISS(config-if)# ip router isis
+ISS(config-if)# isis circuit-type level1-2
+ 17:18:29 DLLI <T> : Interface [ DOWN ] - IF Index [ 74 ]
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface vlan 500
+ISS(config-if)# ip router isis
+ISS(config-if)# isis circuit-type level1-2
+ 17:18:29 DLLI <T> : Interface [ DOWN ] - IF Index [ 75 ]
+ISS(config-if)# end
+ISS# 
+
+
+---------------------------------------------------------------------------
+       ****** Sleeping for 2 seconds .....zzzzzzzzzzz... ******        
+---------------------------------------------------------------------------
+ISS# c t
+ISS(config)# int gigabitethernet 0/5
+ISS(config-if)# map switch default
+ISS(config-if)# no sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# int gigabitethernet 0/18
+ISS(config-if)# map switch default
+ISS(config-if)# no sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 500
+ISS(config-vlan)# po add gigabitethernet 0/5
+ISS(config-vlan)# ex
+ISS(config)# int vlan 500
+ISS(config-if)# ipv6 enable
+ISS(config-if)# ipv6 address 2222::2 64
+ISS(config-if)# ipv6 address fe80::2222:2 link-local
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 600
+ISS(config-vlan)# po add gigabitethernet 0/18
+ISS(config-vlan)# ex
+ISS(config)# int vlan 600
+ISS(config-if)# ipv6 enable
+ISS(config-if)# ipv6 address 2223::1 64
+ISS(config-if)# ipv6 address fe80::2223:1 link-local
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# router isis
+ISS(config-router)# multi-topology
+ISS(config-router)# net 10:22:22:22:22:22:22:00
+ISS(config-router)# end
+ISS# configure terminal
+ISS(config)# interface vlan 500
+ISS(config-if)# ip router isis
+ISS(config-if)# isis circuit-type level1-2
+ 17:18:33 DLLI <T> : Interface [ DOWN ] - IF Index [ 74 ]
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface vlan 600
+ISS(config-if)# ip router isis
+ISS(config-if)# isis circuit-type level1-2
+ 17:18:34 DLLI <T> : Interface [ DOWN ] - IF Index [ 75 ]
+ISS(config-if)# end
+ISS# 
+
+
+---------------------------------------------------------------------------
+       ****** Sleeping for 50 seconds .....zzzzzzzzzzz... ******        
+---------------------------------------------------------------------------
+Test Case ISS_TEST_IPV6_MSR_RELOAD Passed in Configuration 
+
+
+ -------------------***************------------------- 
+ "Validate show ipv6 route command before MSR" 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+C    2221::/64   
+        [1/0]           via ::, vlan 400
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+IL1   2223::/64   
+        [20/120]        via fe80::2222:2, vlan 500
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2221::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+C    2221::/64   
+        [1/0]           via ::, vlan 400
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+IL1   2223::/64   
+        [20/120]        via fe80::2222:2, vlan 500
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2222::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+C    2221::/64   
+        [1/0]           via ::, vlan 400
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+IL1   2223::/64   
+        [20/120]        via fe80::2222:2, vlan 500
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ IL1 >> 2223::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ IL1 >> 2221::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2222::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2223::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+
+
+---------------------------------------------------------------------------
+       ****** Sleeping for 10 seconds .....zzzzzzzzzzz... ******        
+---------------------------------------------------------------------------
+
+ -------------------***************------------------- 
+ "Validate after MSR" 
+ -------------------***************------------------- 
+write startup-config
+Building configuration ...
+                                                              [OK]
+ISS# 
+
+
+---------------------------------------------------------------------------
+       ****** Sleeping for 5 seconds .....zzzzzzzzzzz... ******        
+---------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------
+       ****** Sleeping for 90 seconds .....zzzzzzzzzzz... ******        
+---------------------------------------------------------------------------
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+C    2221::/64   
+        [1/0]           via ::, vlan 400
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+IL1   2223::/64   
+        [20/120]        via fe80::2222:2, vlan 500
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2221::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+C    2221::/64   
+        [1/0]           via ::, vlan 400
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+IL1   2223::/64   
+        [20/120]        via fe80::2222:2, vlan 500
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2222::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+C    2221::/64   
+        [1/0]           via ::, vlan 400
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+IL1   2223::/64   
+        [20/120]        via fe80::2222:2, vlan 500
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ IL1 >> 2223::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ IL1 >> 2221::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2222::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+ISS# show ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+ISS# 
+Show cmd passed succesfully
+
+ -------------------***************------------------- 
+ C >> 2223::/64 PATTERN FOUND 
+ -------------------***************------------------- 
+
+Test Case ISS_TEST_IPV6_MSR_RELOAD Passed in Input Verification 
+c t
+ISS(config)# int gigabitethernet 0/1
+ISS(config-if)# sh
+ISS(config-if)#  17:21:12 [ISIS_STATE_OFF] - Interface [vlan400] state changed to [DOWN]
+end
+ISS# c t
+ISS(config)# int gigabitethernet 0/4
+ISS(config-if)# sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 400
+ISS(config-vlan)# no po add gigabitethernet 0/1
+
+no po add
+      ^
+% Invalid input detected at '^' marker
+ISS(config-vlan)# 
+
+********************************************************************************
+ERROR[3]: CLI Error on terminal Cmd: no po add gigabitethernet 0/1 Router : 1
+********************************************************************************
+ex
+ISS(config)# int vlan 400
+ 17:21:12 [ISIS_STATE_OFF] - Interface [vlan500] state changed to [DOWN]
+ISS(config-if)# no ipv6 enable
+ISS(config-if)# no ipv6 address 2221::1 64
+ISS(config-if)# no ipv6 address fe80::2221:1 link-local
+ISS(config-if)# shutdown
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 500
+ISS(config-vlan)# no po add gigabitethernet 0/4
+
+no po add
+      ^
+% Invalid input detected at '^' marker
+ISS(config-vlan)# 
+
+********************************************************************************
+ERROR[4]: CLI Error on terminal Cmd: no po add gigabitethernet 0/4 Router : 1
+********************************************************************************
+ex
+ISS(config)# int vlan 500
+ISS(config-if)# no ipv6 enable
+ISS(config-if)# no ipv6 address 2222::1 64
+ISS(config-if)# no ipv6 address fe80::2222:1 link-local
+ISS(config-if)# shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no router isis
+ISS(config)#  17:21:13 CTL <T> : Processing ISIS IS Destroy event 
+ 17:21:13 DLLI <T> : Interface [ DOWN ] - IF Index [ 74 ]
+ 17:21:13 DLLI <T> : Interface [ DOWN ] - IF Index [ 75 ]
+multi-topology
+% Invalid Command
+ISS(config)# 
+
+********************************************************************************
+ERROR[5]: CLI Error on terminal Cmd: multi-topology Router : 1
+********************************************************************************
+no net 10:11:11:11:11:11:11:00
+
+no net
+   ^
+% Invalid input detected at '^' marker
+ISS(config)# 
+
+********************************************************************************
+ERROR[6]: CLI Error on terminal Cmd: no net 10:11:11:11:11:11:11:00 Router : 1
+********************************************************************************
+end
+ISS# configure terminal
+ISS(config)# interface vlan 400
+ISS(config-if)# no ip router isis
+% Invalid isis Context Id
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[7]: CLI Error on terminal Cmd: no ip router isis Router : 1
+********************************************************************************
+no isis circuit-type level1-2
+
+no isis circuit-type level1-2
+                     ^
+% Invalid input detected at '^' marker
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[8]: CLI Error on terminal Cmd: no isis circuit-type level1-2 Router : 1
+********************************************************************************
+end
+ISS# configure terminal
+ISS(config)# interface vlan 500
+ISS(config-if)# no ip router isis
+% Invalid isis Context Id
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[9]: CLI Error on terminal Cmd: no ip router isis Router : 1
+********************************************************************************
+no isis circuit-type level1-2
+
+no isis circuit-type level1-2
+                     ^
+% Invalid input detected at '^' marker
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[10]: CLI Error on terminal Cmd: no isis circuit-type level1-2 Router : 1
+********************************************************************************
+end
+ISS# c t
+ISS(config)# int gigabitethernet 0/5
+ISS(config-if)# sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# int gigabitethernet 0/18
+ISS(config-if)# sh
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 500
+ISS(config-vlan)# no po add gigabitethernet 0/5
+
+no po add
+      ^
+% Invalid input detected at '^' marker
+ISS(config-vlan)# 
+
+********************************************************************************
+ERROR[11]: CLI Error on terminal Cmd: no po add gigabitethernet 0/5 Router : 1
+********************************************************************************
+ex
+ISS(config)# int vlan 500
+ 17:21:14 [ISIS_STATE_OFF] - Interface [vlan500] state changed to [DOWN]
+ISS(config-i 17:21:14 [ISIS_STATE_OFF] - Interface [vlan600] state changed to [DOWN]
+f)# no ipv6 enable
+ISS(config-if)# no ipv6 address 2222::2 64
+ISS(config-if)# no ipv6 address fe80::2222:2 link-local
+ISS(config-if)# shutdown
+ISS(config-if)# end
+ISS# c t
+ISS(config)# vlan 600
+ISS(config-vlan)# no po add gigabitethernet 0/18
+
+no po add
+      ^
+% Invalid input detected at '^' marker
+ISS(config-vlan)# 
+
+********************************************************************************
+ERROR[12]: CLI Error on terminal Cmd: no po add gigabitethernet 0/18 Router : 1
+********************************************************************************
+ex
+ISS(config)# int vlan 600
+ISS(config-if)# no ipv6 enable
+ISS(config-if)# no ipv6 address 2223::1 64
+ISS(config-if)# no ipv6 address fe80::2223:1 link-local
+ISS(config-if)# shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no router isis
+ISS(config)#  17:21:14 CTL <T> : Processing ISIS IS Destroy event 
+ 17:21:14 DLLI <T> : Interface [ DOWN ] - IF Index [ 74 ]
+ 17:21:14 DLLI <T> : Interface [ DOWN ] - IF Index [ 75 ]
+multi-topology
+% Invalid Command
+ISS(config)# 
+
+********************************************************************************
+ERROR[13]: CLI Error on terminal Cmd: multi-topology Router : 1
+********************************************************************************
+no net 10:22:22:22:22:22:22:00
+
+no net
+   ^
+% Invalid input detected at '^' marker
+ISS(config)# 
+
+********************************************************************************
+ERROR[14]: CLI Error on terminal Cmd: no net 10:22:22:22:22:22:22:00 Router : 1
+********************************************************************************
+end
+ISS# configure terminal
+ISS(config)# interface vlan 500
+ISS(config-if)# no ip router isis
+% Invalid isis Context Id
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[15]: CLI Error on terminal Cmd: no ip router isis Router : 1
+********************************************************************************
+no isis circuit-type level1-2
+
+no isis circuit-type level1-2
+                     ^
+% Invalid input detected at '^' marker
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[16]: CLI Error on terminal Cmd: no isis circuit-type level1-2 Router : 1
+********************************************************************************
+end
+ISS# configure terminal
+ISS(config)# interface vlan 600
+ISS(config-if)# no ip router isis
+% Invalid isis Context Id
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[17]: CLI Error on terminal Cmd: no ip router isis Router : 1
+********************************************************************************
+no isis circuit-type level1-2
+
+no isis circuit-type level1-2
+                     ^
+% Invalid input detected at '^' marker
+ISS(config-if)# 
+
+********************************************************************************
+ERROR[18]: CLI Error on terminal Cmd: no isis circuit-type level1-2 Router : 1
+********************************************************************************
+end
+ISS# 
+
+ -------------------***************------------------- 
+ Cleanup failed for count 11 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 21 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 31 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 32 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 36 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 37 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 41 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 42 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 54 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 64 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 74 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 75 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 79 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 80 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 84 
+ -------------------***************------------------- 
+
+
+ -------------------***************------------------- 
+ Cleanup failed for count 85 
+ -------------------***************------------------- 
+
+Test Case ISS_TEST_IPV6_MSR_RELOAD  Failed  in Cleanup 
+
+
+ Test status   : ISS_TEST_IPV6_MSR_RELOAD COMPLETED
+ Result        : FAIL
+ Time Completed: Fri Mar 25 17:21:15 2022
+---------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------
+       ****** Sleeping for 5 seconds .....zzzzzzzzzzz... ******        
+---------------------------------------------------------------------------
+Proc Name writePktsrvconf
+
+
+---------------------------------------------------------------------------
+# Test Suite (pqastp) Execution COMPLETED
+
+# Start Time      : Fri Mar 25 17:18:14 2022
+
+# End Time        : Fri Mar 25 17:21:20 2022
+
+# Total Testcases : 1
+
+# Passed          : 0
+
+# Failed          : 1
+
+# Not Initiated   : 0
+
+# Errors          : 19
+
+# Warnings        : 0
+
+---------------------------------------------------------------------------
+
+dos2unix: converting file /home/PQA/log/REPORT-pqastp-SI.txt to UNIX format ...
+ISS# 
+ISS# end
+ISS# reload
+ISS# Detaching after fork from child process 13794.
+cp: cannot stat `iccl.conf': No such file or directory
+Detaching after fork from child process 13795.
+
+Alert: Switch needs to be restarted to complete the system restart process!!!!!!
+[Thread 0x8a6f4f20 (LWP 13504) exited]
+[Thread 0x8aaf4f20 (LWP 13502) exited]
+[Thread 0x8b045f20 (LWP 13501) exited]
+[Thread 0x8b645f20 (LWP 13498) exited]
+[Thread 0x8bc45f20 (LWP 13494) exited]
+[Thread 0x8f475f20 (LWP 13490) exited]
+[Thread 0x8f675f20 (LWP 13489) exited]
+[Thread 0x90dfef20 (LWP 13487) exited]
+[Thread 0x91474f20 (LWP 13485) exited]
+[Thread 0x91674f20 (LWP 13484) exited]
+[Thread 0x91874f20 (LWP 13483) exited]
+[Thread 0x941fef20 (LWP 13481) exited]
+[Thread 0x945aff20 (LWP 13480) exited]
+[Thread 0x948fef20 (LWP 13479) exited]
+[Thread 0x94cfef20 (LWP 13477) exited]
+[Thread 0x94efef20 (LWP 13476) exited]
+[Thread 0x954fef20 (LWP 13474) exited]
+[Thread 0x9588ef20 (LWP 13473) exited]
+[Thread 0x985d7f20 (LWP 13469) exited]
+[Thread 0x8b245f20 (LWP 13500) exited]
+[Thread 0x8f24bf20 (LWP 13491) exited]
+[Thread 0x98c11f20 (LWP 13468) exited]
+[Thread 0x9b8fef20 (LWP 13461) exited]
+[Thread 0x9c7caf20 (LWP 13459) exited]
+[Thread 0x9cc5df20 (LWP 13457) exited]
+[Thread 0x9d5fef20 (LWP 13456) exited]
+[Thread 0x9db91f20 (LWP 13454) exited]
+[Thread 0x9eb88f20 (LWP 13452) exited]
+[Thread 0x8ebb7f20 (LWP 13492) exited]
+[Thread 0x8e90ef20 (LWP 13493) exited]
+[Thread 0x90ffef20 (LWP 13486) exited]
+[Thread 0x94afef20 (LWP 13478) exited]
+[Thread 0x962aff20 (LWP 13472) exited]
+[Thread 0x9f388f20 (LWP 13448) exited]
+[Thread 0xa2768f20 (LWP 13439) exited]
+[Thread 0xa2f82f20 (LWP 13437) exited]
+[Thread 0xa39c3f20 (LWP 13434) exited]
+[Thread 0xa161ff20 (LWP 13440) exited]
+[Thread 0x9975cf20 (LWP 13465) exited]
+[Thread 0x9d991f20 (LWP 13455) exited]
+[Thread 0xa34cdf20 (LWP 13435) exited]
+[Thread 0xa3dfef20 (LWP 13433) exited]
+[Thread 0xa4213f20 (LWP 13432) exited]
+[Thread 0x964aff20 (LWP 13471) exited]
+[Thread 0x98203f20 (LWP 13470) exited]
+[Thread 0x9c9caf20 (LWP 13458) exited]
+[Thread 0xa44ddf20 (LWP 13431) exited]
+[Thread 0xa4730f20 (LWP 13430) exited]
+[Thread 0xa4930f20 (LWP 13429) exited]
+[Thread 0xa4b30f20 (LWP 13428) exited]
+[Thread 0xa4ffef20 (LWP 13427) exited]
+[Thread 0xa51fef20 (LWP 13426) exited]
+[Thread 0xa57f9f20 (LWP 13425) exited]
+[Thread 0xa6bfef20 (LWP 13424) exited]
+[Thread 0xa803af20 (LWP 13419) exited]
+[Thread 0xa7e3af20 (LWP 13418) exited]
+[Thread 0xa823af20 (LWP 13416) exited]
+[Thread 0x9bafef20 (LWP 13460) exited]
+[Thread 0xa8fa1f20 (LWP 13415) exited]
+[Thread 0xa32cdf20 (LWP 13436) exited]
+[Thread 0x9f988f20 (LWP 13444) exited]
+[Thread 0xa91a1f20 (LWP 13414) exited]
+[Thread 0xa96e6f20 (LWP 13413) exited]
+[Thread 0xaa3c3f20 (LWP 13412) exited]
+[Thread 0xab158f20 (LWP 13411) exited]
+[Thread 0xab5f7f20 (LWP 13410) exited]
+[Thread 0xac5e3f20 (LWP 13409) exited]
+[Thread 0xb04a4f20 (LWP 13408) exited]
+[Thread 0xb06a4f20 (LWP 13407) exited]
+[Thread 0xb0b0ff20 (LWP 13406) exited]
+[Thread 0xb0d0ff20 (LWP 13405) exited]
+[Thread 0xb2383f20 (LWP 13404) exited]
+[Thread 0xb25fef20 (LWP 13403) exited]
+[Thread 0xb29fef20 (LWP 13401) exited]
+[Thread 0xb2dfef20 (LWP 13400) exited]
+[Thread 0xb2ffef20 (LWP 13399) exited]
+[Thread 0xb32fef20 (LWP 13398) exited]
+[Thread 0xb36fef20 (LWP 13397) exited]
+[Thread 0xb3aa0f20 (LWP 13396) exited]
+[Thread 0xb3ffef20 (LWP 13395) exited]
+[Thread 0x9fdfef20 (LWP 13443) exited]
+[Thread 0x99183f20 (LWP 13467) exited]
+[Thread 0x9ed88f20 (LWP 13451) exited]
+[Thread 0x9ef88f20 (LWP 13450) exited]
+[Thread 0x9fffef20 (LWP 13442) exited]
+[Thread 0x9f588f20 (LWP 13446) exited]
+[Thread 0x9dd91f20 (LWP 13453) exited]
+[Thread 0x8a2fef20 (LWP 13505) exited]
+[Thread 0x9955cf20 (LWP 13466) exited]
+[Thread 0x9995cf20 (LWP 13464) exited]
+[Thread 0x9a502f20 (LWP 13463) exited]
+[Thread 0x9ab2ef20 (LWP 13462) exited]
+[Thread 0x9f188f20 (LWP 13449) exited]
+[Thread 0xa03c0f20 (LWP 13441) exited]
+[Thread 0xa7264f20 (LWP 13422) exited]
+[Thread 0xa7464f20 (LWP 13421) exited]
+[Thread 0xb43fef20 (LWP 13394) exited]
+[Thread 0xb47d5f20 (LWP 13393) exited]
+[Thread 0xb4dbaf20 (LWP 13392) exited]
+[Thread 0xb501af20 (LWP 13391) exited]
+[Thread 0xb5868f20 (LWP 13390) exited]
+[Thread 0xb7fcef20 (LWP 13387) exited]
+[Thread 0x9f788f20 (LWP 13445) exited]
+[Thread 0xa2d82f20 (LWP 13438) exited]
+[Thread 0x8f875f20 (LWP 13488) exited]
+[Thread 0x93ffef20 (LWP 13482) exited]
+[Thread 0xa7064f20 (LWP 13423) exited]
+[Thread 0xa7b38f20 (LWP 13420) exited]
+[Thread 0x8ba45f20 (LWP 13497) exited]
+[Thread 0x8b845f20 (LWP 13496) exited]
+[Thread 0xb27fef20 (LWP 13402) exited]
+[Thread 0x8b445f20 (LWP 13499) exited]
+[Thread 0x8a8f4f20 (LWP 13503) exited]
+[Thread 0x950fef20 (LWP 13475) exited]
+
+Program terminated with signal SIGKILL, Killed.
+The program no longer exists.
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.i686 libgcc-4.4.7-4.el6.i686
+(gdb) bt
+No stack.
+(gdb) quit 
+]0;root@localhost:/home/PQA/code/future/LR/switch1\[root@localhost switch1]# 
+KILLED IMAGE successfully!!! 
+
+Checking whether the image is killed properly!!! 
+
+Checking Whether Failure Occurs
+
+********************************************************************************
+ERROR[19]: clanupTestsuite::some problem in cleanup process-can't read "Switch(None,isTarget)": no such element in array
+********************************************************************************

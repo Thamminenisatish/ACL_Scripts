@@ -1,0 +1,426 @@
+Script started on Thu 10 Mar 2022 05:16:18 PM IST
+]0;root@localhost:/home/PQA/code/future/LR/switch2\[root@localhost switch2]# ../ISS.exe
+dnsproxy: no process killed
+ Unable to open sizing file system.size 
+ System Size Data Structure updated with Default Values 
+
+LR: 
+      This switch software is implemented using Open sources from OpenSSL,OpenSSH,and other open source community.
+To see a full description, type "show system acknowledgement"
+[2J[1;1H[100B
+		 Aricent Intelligent Switch Solution 
+
+ISS login: 
+
+
+% Incorrect Login/Password
+ISS login: root
+Password: 
+
+iss# [Kiss# c t
+iss(config)# int gi 0/5
+iss(config-if)# no sh
+iss(config-if)# end
+iss# 
+iss# 
+iss# c t
+iss(config)# int gi 0/18
+iss(config-if)# no sh
+iss(config-if)# end
+iss# 
+iss# 
+iss# c t
+iss(config)# vlan 500
+iss(config-vlan)# po add gi 0/5
+iss(config-vlan)# ex
+iss(config)# int vlan 500
+iss(config-if)# ipv6 enable
+iss(config-if)# ipv6 address 2222::2 64
+iss(config-if)# ipv6 address fe80::2222:2 link-local
+iss(config-if)# no shutdown
+iss(config-if)# end
+iss# 
+iss# c t
+iss(config)# vlan 600
+iss(config-vlan)# po add gi 0/18
+iss(config-vlan)# ex
+iss(config)# int vlan 600
+iss(config-if)# ipv6 enable
+iss(config-if)# ipv6 address 2223::1 64
+iss(config-if)# ipv6 address fe80::2223:1 link-local
+iss(config-if)# no shutdown
+iss(config-if)# end
+iss# 
+iss# configure terminal
+iss(config)# router isis
+iss(config-router)# multi-topology
+iss(config-router)# net 10:22:22:22:22:22:22:00
+iss(config-router)# end
+iss# 
+iss# configure terminal
+iss(config)# interface vlan 500
+iss(config-if)# ip router isis
+iss(config-if)# isis circuit-type level1-2
+ 17:19:13 DLLI <T> : Interface [ DOWN ] - IF Index [ 74 ]
+iss(config-if)# end
+iss# 
+iss# configure terminal
+iss(config)# interface vlan 600
+iss(config-if)# ip router isis
+iss(config-if)# isis circuit-type level1-2
+ 17:19:14 DLLI <T> : Interface [ DOWN ] - IF Index [ 75 ]
+iss(config-if)# end
+iss# 
+iss# 
+iss# show ip isis adjacencies
+
+ Adjacency on interface vlan500
+
+ DIS information
+ ----------------
+ LAN DIS Id        : 22:22:22:22:22:22:4b
+
+ LEVEL1 Adjacency
+ ----------------
+ AdjSysId          : 11:11:11:11:11:11 
+ Adjacency State IS: UP                
+ Adjacency Usage IS: LEVEL1            
+ IPV6 Address IS   : fe80::2222:1                    
+ Supported MTID    : 2              
+
+ DIS information
+ ----------------
+ LAN DIS Id        : 22:22:22:22:22:22:4b
+
+ LEVEL2 Adjacency
+ -----------------
+ AdjSysId          : 11:11:11:11:11:11 
+ Adjacency State IS: UP                
+ Adjacency Usage IS: LEVEL2            
+ IPV6 Address IS   : fe80::2222:1                    
+ Supported MTID    : 2              
+iss# 
+iss# 
+iss# sh ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+iss# 
+iss# ping ipv6 2222::2
+ping6 2222::2 100 bytes of data
+100 bytes from 2222::2 : ICMP6_seq = 0
+100 bytes from 2222::2 : ICMP6_seq = 1
+100 bytes from 2222::2 : ICMP6_seq = 2
+100 bytes from 2222::2 : ICMP6_seq = 3
+100 bytes from 2222::2 : ICMP6_seq = 4
+
+ --- Ping Statistics ---
+5 Packets Transmitted, 5 Packets Received, 0% Packet Loss
+iss# 
+iss# 
+iss# sh nvram
+
+Default IP Address                     : 12.0.0.2
+Default Subnet Mask                    : 255.0.0.0
+Default IP Address Config Mode         : Manual
+Default IP Address Allocation Protocol : DHCP
+Switch Base MAC Address                : 00:02:02:03:04:01   
+Default Interface Name                 : Gi0/1
+Config Restore Option                  : No restore
+Config Save Option                     : No save
+Auto Save                              : Disable
+Incremental Save                       : Disable
+Roll Back                              : Enable
+Config Save IP Address                 : 0.0.0.0
+Config Save Filename                   : iss.conf
+Config Restore Filename                : iss.conf
+PIM Mode                               : Sparse Mode
+IGS Forwarding Mode                    : MAC based
+Cli Serial Console                     : Yes 
+SNMP EngineID                          : 80.00.08.1c.04.46.53
+SNMP Engine Boots                      : 101
+Default VLAN Identifier                : 1
+Store Default Value                    : Disable
+Vrf Unique Mac                         : Disable
+Hardware Version                       : 5.9.1
+Software Version                       : 11.1.1
+Firmware Version                       : 6.7.2
+Hardware Part Number                   : 1-0-0
+Hardware Serial Number                 : 1-0-0
+Product Name                           : 1-0-0
+Platform Name                          : 
+Software Serial Number                 : 1-0-0
+Switch Name                            : ISS
+NPAPI mode                             : Synchronous
+TimeStamp Method                       : Software
+Restore Flag                           : Enabled
+Dynamic Port Count                     : 64
+Restore Option                         : Disabled
+Bridge Mode                            : Customer Bridge 
+Debugging Log File Location            : 
+Management Port                        : Disabled 
+Automatic Port Create Flag             : Enabled
+[100B[K--More--[K                [KRestore Type                           : MSR 
+[100B[K--More--[K                [KZTP Config Status                      : Disabled 
+[100B[K--More--[K                [KZTP Current State                      : Not started 
+[100B[K--More--[K                [KZTP Default Conf File                  : iss.conf  
+[100B[K--More--[K                [KIMG_DUMP_PATH                          : 
+[100B[K--More--[K                [KExternal CPU Present                   : Yes
+[100B[K--More--[K                [KExternal CPU Interface                 : 0
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K[27m                       iss# iss# iss# iss# iss# show ip isis adjacencies
+
+ Adjacency on interface vlan500
+
+ DIS information
+ ----------------
+ LAN DIS Id        : 22:22:22:22:22:22:4b
+
+ LEVEL1 Adjacency
+ ----------------
+ AdjSysId          : 11:11:11:11:11:11 
+ Adjacency State IS: UP                
+ Adjacency Usage IS: LEVEL1            
+ IPV6 Address IS   : fe80::2222:1                    
+ Supported MTID    : 2              
+
+ DIS information
+ ----------------
+ LAN DIS Id        : 22:22:22:22:22:22:4b
+
+ LEVEL2 Adjacency
+ -----------------
+ AdjSysId          : 11:11:11:11:11:11 
+ Adjacency State IS: UP                
+ Adjacency Usage IS: LEVEL2            
+ IPV6 Address IS   : fe80::2222:1                    
+ Supported MTID    : 2              
+iss# 
+iss# 
+iss# ping ipv6 2223::2
+ping6 2223::2 100 bytes of data
+Request Timed Out
+Request Timed Out
+Request Timed Out
+Request Timed Out
+Request Timed Out
+
+ --- Ping Statistics ---
+5 Packets Transmitted, 0 Packets Received, 100% Packet Loss
+iss# ping ipv6 2221::1
+ping6 2221::1 100 bytes of data
+100 bytes from 2221::1 : ICMP6_seq = 0
+100 bytes from 2221::1 : ICMP6_seq = 1
+100 bytes from 2221::1 : ICMP6_seq = 2
+100 bytes from 2221::1 : ICMP6_seq = 3
+100 bytes from 2221::1 : ICMP6_seq = 4
+
+ --- Ping Statistics ---
+5 Packets Transmitted, 5 Packets Received, 0% Packet Loss
+iss# 
+iss# iss# ping ipv6 2221::1[K[Kiss# ping ipv6 2223::2
+ping6 2223::2 100 bytes of data
+Request Timed Out
+Request Timed Out
+Request Timed Out
+Request Timed Out
+Request Timed Out
+
+ --- Ping Statistics ---
+5 Packets Transmitted, 0 Packets Received, 100% Packet Loss
+iss# 
+iss# 
+iss# sh ipv6 nei
+
+VRF Id  : 0
+VRF Name: default
+IPv6 Address        Link-layer Addr       State      Interface   Secure/Unsecure 
+------------        -----------------     -----      ---------   ---------------
+2222::1             00:01:02:03:04:01     Reachable  vlan500     Unsecure
+fe80::2222:1        00:01:02:03:04:01     Reachable  vlan500     Unsecure
+
+iss# 
+iss# 
+iss# sh ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+iss# clear int counters
+iss# 
+iss# sh int cou gi 0/5
+
+Port      InOctet    InUcast    InMcast    InBcast    InDiscard   InErrs     InHCOctet
+----      -------    -------    -------    -------    ---------   ------     ---------
+Gi0/5             129772     0          64         0          0           42         129772               
+Port      OutOctet   OutUcast   OutMcast   OutBcast   OutDiscard  OutErrs    OutHCOctet
+----      --------   --------   --------   --------   ----------  -------    ----------
+Gi0/5             5750       0          65         0          0           0          5750                 
+iss# 
+iss# sh int cou gi 0/18
+
+Port      InOctet    InUcast    InMcast    InBcast    InDiscard   InErrs     InHCOctet
+----      -------    -------    -------    -------    ---------   ------     ---------
+Gi0/18            84985      0          66         0          0           52         84985                
+Port      OutOctet   OutUcast   OutMcast   OutBcast   OutDiscard  OutErrs    OutHCOctet
+----      --------   --------   --------   --------   ----------  -------    ----------
+Gi0/18            5001       0          45         0          0           0          5001                 
+iss# 
+iss# 
+iss# c t
+iss(config)# int gi 0/4
+iss(config-if)# sh
+iss(config-if)# no shut
+iss(config-if)# end
+iss# 
+iss# clear int coun
+iss# 
+iss# sh int cou gi 0/1
+
+Port      InOctet    InUcast    InMcast    InBcast    InDiscard   InErrs     InHCOctet
+----      -------    -------    -------    -------    ---------   ------     ---------
+Gi0/1             0          0          0          0          0           0          0                    
+Port      OutOctet   OutUcast   OutMcast   OutBcast   OutDiscard  OutErrs    OutHCOctet
+----      --------   --------   --------   --------   ----------  -------    ----------
+Gi0/1             894        0          9          0          0           0          894                  
+iss# iss# sh int cou gi 0/1[K[Kiss# sh int cou gi 0/4
+
+Port      InOctet    InUcast    InMcast    InBcast    InDiscard   InErrs     InHCOctet
+----      -------    -------    -------    -------    ---------   ------     ---------
+Gi0/4             0          0          0          0          0           0          0                    
+Port      OutOctet   OutUcast   OutMcast   OutBcast   OutDiscard  OutErrs    OutHCOctet
+----      --------   --------   --------   --------   ----------  -------    ----------
+Gi0/4             1907       0          19         0          0           0          1907                 
+iss# 
+iss# 
+iss# sh ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+iss# sh ipv6 neigh
+
+VRF Id  : 0
+VRF Name: default
+IPv6 Address        Link-layer Addr       State      Interface   Secure/Unsecure 
+------------        -----------------     -----      ---------   ---------------
+2222::1             00:01:02:03:04:01     Stale      vlan500     Unsecure
+fe80::2222:1        00:01:02:03:04:01     Reachable  vlan500     Unsecure
+
+iss# 
+iss# 
+iss# ping ipv6 2221::2
+ping6 2221::2 100 bytes of data
+Request Timed Out
+Request Timed Out
+Request Timed Out
+Request Timed Out
+Request Timed Out
+
+ --- Ping Statistics ---
+5 Packets Transmitted, 0 Packets Received, 100% Packet Loss
+iss# 
+iss# 
+iss# ping ipv6 2223::1
+ping6 2223::1 100 bytes of data
+100 bytes from 2223::1 : ICMP6_seq = 0
+100 bytes from 2223::1 : ICMP6_seq = 1
+100 bytes from 2223::1 : ICMP6_seq = 2
+100 bytes from 2223::1 : ICMP6_seq = 3
+100 bytes from 2223::1 : ICMP6_seq = 4
+
+ --- Ping Statistics ---
+5 Packets Transmitted, 5 Packets Received, 0% Packet Loss
+iss# 
+iss# 
+iss# sh ipv6 nei
+
+VRF Id  : 0
+VRF Name: default
+IPv6 Address        Link-layer Addr       State      Interface   Secure/Unsecure 
+------------        -----------------     -----      ---------   ---------------
+2222::1             00:01:02:03:04:01     Stale      vlan500     Unsecure
+fe80::2222:1        00:01:02:03:04:01     Reachable  vlan500     Unsecure
+
+iss# sh ipv6 route
+IPv6 Routing Table:
+
+Codes : C - Connected, S - Static
+O - OSPF, R - RIP, B - BGP, I - ISIS, E - ECMP
+IA - OSPF inter area, ia - OSPF Intra Area, N1 - OSPF NSSA external type 1,
+N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+E2 - OSPF external type 2 L1 - ISIS Level1, L2 - ISIS Level2, ia - ISIS Inter Area,
+SR-SubM Route
+
+VRF    Name:      default
+---------------
+
+IL1   2221::/64   
+        [20/120]        via fe80::2222:1, vlan 500
+
+C    2222::/64   
+        [1/0]           via ::, vlan 500
+
+C    2223::/64   
+        [1/0]           via ::, vlan 600
+
+
+iss# Quit
+]0;root@localhost:/home/PQA/code/future/LR/switch2\[root@localhost switch2]# exit
+
+Script done on Thu 10 Mar 2022 05:45:49 PM IST

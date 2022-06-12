@@ -1,0 +1,181 @@
+ISS# configure terminal
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# set port-channel enable
+ISS(config)# set lldp enable
+ISS(config)# shutdown garp
+ISS(config)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 100
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 200
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 300
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 400
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 500
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 600
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 700
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 800
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/2
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 200 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/3
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 300 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 400 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 500 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/6
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 600 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/7
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 700 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/9
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 800 mode active
+ISS(config-if)# end
+ISS# 
+ISS# show etherchannel 100 detail
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  18:be:92:a0:ff:00   
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+Group: 100 
+----------
+Protocol :Disabled
+
+                Port-channels in the group:
+                ---------------------------
+
+Port-channel : Po100
+ -------------------
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KNumber of Ports = 0
+[100B[K--More--[K                [KHotStandBy port = null
+[100B[K--More--[K                [KPort state = Port-channel Ag-Not-Inuse Down
+[100B[K--More--[K                [KProtocol = Disabled
+[100B[K--More--[K                [KAggregator-MAC  18:be:92:a0:ff:80   
+[100B[K--More--[K                [KDefault Port = NoneMaximum number of Ports  = 48
+[100B[K--More--[K                [KPort-channel operational Up Transition Count = 0
+[100B[K--More--[K                [KPort-channel operational Down Transition Count = 1
+[100B[K--More--[K                [KOperational change timestamp = 17 Feb 2022 18:07:27
+[100B[K--More--[K                [KPort-channel is operationally Down
+[100B[K--More--[K                [K
+[100B[K--More--[K                [KPort-Channel Mtu         = 1500
+[100B[K--More--[K                [KPort-Channel Speed       = 0 Mbps
+[100B[K--More--[K                [KPort-Channel High Speed  = 0 Mbps
+[100B[K--More--[K                [KPort-Channel Member Ports Speed = 0 Mbps
+[100B[K--More--[K                [KPort-Channel Member Ports High Speed  = 0 Mbps
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K
+[100B[K--More--[K                [K[27m                       ISS# 
+ISS# 
+ISS# show int des
+
+Interface    Status   Protocol  Description   SFP Status
+---------    ------   --------  -----------   ----------
+Gi0/1        up       down          Not Present
+Gi0/2        up       down          Not Present
+Gi0/3        up       down          Not Present
+Gi0/4        up       down          Not Present
+Gi0/5        up       down          Not Present
+Gi0/6        up       up            Not Present
+Gi0/7        up       up            Not Present
+Gi0/8        down     down          Not Present
+Gi0/9        up       down          Not Present
+Gi0/10       down     down          Not Present
+Gi0/11       down     down          Not Present
+Gi0/12       down     down          Not Present
+Gi0/13       down     down          Not Present
+Gi0/14       down     down          Not Present
+Gi0/15       down     down          Not Present
+Gi0/16       down     down          Not Present
+Xl0/1        down     down          Not Present
+Xl0/2        down     down          Not Present
+po100        up       down          Not Present
+po200        up       down          Not Present
+[100B[K--More--[K                [Kpo300        up       down          Not Present
+[100B[K--More--[K                [Kpo400        up       down          Not Present
+[100B[K--More--[K                [Kpo500        up       down          Not Present
+[100B[K--More--[K                [Kpo600        up       up            Not Present
+[100B[K--More--[K                [Kpo700        up       up            Not Present
+[100B[K--More--[K                [Kpo800        up       down          Not Present
+[100B[K--More--[K                [Kvlan1        up       up            Not Present
+[100B[K--More--[K                [K[27m                       ISS# 
+ISS# sh ip int
+
+vlan1 is up, line protocol is up
+Internet Address is 10.0.0.1/8
+Broadcast Address  10.255.255.255
+Vlan counters disabled 
+ISS# Quit
+root@localhost:/home/ISS# exit
+There are stopped jobs.
+root@localhost:/home/ISS# exit
+
+Script done on Thu 17 Feb 2022 06:10:33 PM UTC

@@ -1,0 +1,154 @@
+ISS# 
+ISS# configure terminal
+ISS(config)# set gvrp disable
+ISS(config)# set gmrp disable
+ISS(config)# set port-channel enable
+ISS(config)# set lldp enable
+ISS(config)# shutdown garp
+ISS(config)# end
+ISS# 
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 100
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/2
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/3
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/4
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/6
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/7
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/8
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+ISS(config-if)# end
+ISS# 
+ISS# sh etherchannel 100 detail
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  00:02:02:03:04:01   
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+                 Channel Group Listing
+                 ---------------------
+Group: 100 
+----------
+Protocol :LACP
+
+                 Ports in the Group
+                 ------------------                Port : Gi0/1Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:53LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 1 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted Port : Gi0/2Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:53LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 2 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted Port : Gi0/3Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0
+Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:53LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 3 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted                 Port : Gi0/4Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:53LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 4 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted Port : Gi0/5Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:53LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 5 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted 
+Port : Gi0/6Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:54LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 6 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted 
+Port : Gi0/7Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:54LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 7 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted 
+Port : Gi0/8Port State = Down, Not in BundleChannel Group : 100Mode : ActivePort-channel = NullPseudo port-channel = Po100Port Up-In-Bundle Transition Count = 0Port Down-In-Bundle Transition Count = 1Port state change Timestamp = 22 Feb 2022 12:18:54LACP port-priority  = 128LACP Wait-time  = 2 secs LACP Port Identifier = 8 LACP Activity : Active LACP Timeout : LongLACP Error State : None Aggregation State : Aggregation, Defaulted 
+                 LACP Port   Admin  Oper   Port    Port
+Port     State   Priority    Key    Key    Number  State
+---------------------------------------------------------------------
+Gi0/1    Down    128         100    100    0x1     0xa2
+Gi0/2    Down    128         100    100    0x2     0xa2
+Gi0/3    Down    128         100    100    0x3     0xa2
+Gi0/4    Down    128         100    100    0x4     0xa2
+Gi0/5    Down    128         100    100    0x5     0xa2
+Gi0/6    Down    128         100    100    0x6     0xa2
+Gi0/7    Down    128         100    100    0x7     0xa2
+Gi0/8    Down    128         100    100    0x8     0xa2
+
+
+
+Port-channel : Po100Number of Ports = 8HotStandBy port = nullPort state = Port-channel Ag-Not-Inuse Protocol = LACPAggregator-MAC  00:02:02:03:04:81   Default Port = NoneMaximum number of Ports  = 48
+Port-channel operational Up Transition Count = 0Port-channel operational Down Transition Count = 1Operational change timestamp = 22 Feb 2022 12:17:40Port-channel is operationally DownPort-Channel Mtu         = 1500Port-Channel Speed       = 0 MbpsPort-Channel High Speed  = 0 MbpsPort-Channel Member Ports Speed = 0 MbpsPort-Channel Member Ports High Speed  = 0 Mbps
+ISS# 
+ISS# 
+ISS# 
+ISS# configure terminal
+ISS(config)# interface gigabitethernet 0/9
+ISS(config-if)# no shutdown
+ISS(config-if)# channel-group 100 mode active
+% LAG cannot be created between ports that are operating in different speeds 
+ISS(config-if)# end
+ISS# 
+ISS# sh int des
+
+Interface    Status   Protocol  Description   SFP Status
+---------    ------   --------  -----------   ----------
+Gi0/1        up       up            Not Present
+Gi0/2        up       up            Not Present
+Gi0/3        up       up            Not Present
+Gi0/4        up       up            Not Present
+Gi0/5        up       up            Not Present
+Gi0/6        up       up            Not Present
+Gi0/7        up       up            Not Present
+Gi0/8        up       up            Not Present
+Gi0/9        up       up            Not Present
+Gi0/10       down     down          Not Present
+Gi0/11       down     down          Not Present
+Gi0/12       down     down          Not Present
+Gi0/13       down     down          Not Present
+Gi0/14       down     down          Not Present
+Gi0/15       down     down          Not Present
+Gi0/16       down     down          Not Present
+po100        up       down          Not Present
+vlan1        up       up            Not Present
+ISS# 
+ISS# sh ip int
+
+vlan1 is up, line protocol is up
+Internet Address is 12.0.0.2/8
+Broadcast Address  12.255.255.255
+Vlan counters disabled 
+ISS# 
+ISS# 
+ISS# sh int po 100
+
+po100 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100 
+
+Hardware Address is 00:02:02:03:04:81   
+
+ISS# Quit
+root@localhost:/home/ISS_DELTA# exit
+
+Script done on Tue 22 Feb 2022 12:22:39 PM UTC

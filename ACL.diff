@@ -1,0 +1,21 @@
+Index: code/future/inc/bcm.h
+===================================================================
+RCS file: /home/projects/ISS_REPO_ONE_TOS_GREEN_YELLOW_RED_16FEB21/code/future/inc/bcm.h,v
+retrieving revision 1.23
+diff -B -p -u -w -r1.23 bcm.h
+--- code/future/inc/bcm.h	20 Jan 2022 08:22:48 -0000	1.23
++++ code/future/inc/bcm.h	3 Mar 2022 12:47:55 -0000
+@@ -462,11 +462,11 @@ enum
+ #define QOS_DEV_METER_EBS_MIN_VAL                 0
+ #define QOS_DEV_METER_EBS_MAX_VAL                 33292
+ 
+-#define ISS_MAX_L2_FILTERS                  128
++#define ISS_MAX_L2_FILTERS                  256
+ #ifdef PBR_WANTED
+ #define ISS_MAX_L3_FILTERS                  250
+ #else
+-#define ISS_MAX_L3_FILTERS                  128
++#define ISS_MAX_L3_FILTERS                  256
+ #endif
+ /* DNX Customer specific limits*/
+ #define ISS_L2FILTER_LIST_COUNT   gIssExGlobalInfo.IssL2FilterListHead.u4_Count + \

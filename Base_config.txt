@@ -1,0 +1,52 @@
+configure terminal
+interface gi 0/1
+shutdown
+end
+
+configure terminal
+interface gi 0/3
+shutdown
+end
+
+configure terminal
+interface gi 0/1
+shutdown
+end
+
+configure terminal
+shutdown spanning-tree
+interface gi 0/4
+shutdown
+no shutdown
+end
+
+configure terminal
+interface gi 0/3
+shutdown
+no shutdown
+end
+
+configure terminal
+interface gi 0/4
+bridge port-type  customerEdgePort
+end
+
+configure terminal
+interface gi 0/3
+bridge port-type providerNetworkPort
+end
+
+configure terminal
+interface gi 0/4
+switchport egress ether-type 0x8100
+switchport ingress ether-type 0x8100
+switchport ingress inner-ether-type 0x8100
+end
+
+configure terminal
+interface gi 0/3
+switchport egress ether-type 0x8100
+switchport egress inner-ether-type 0x8100
+switchport ingress ether-type 0x8100
+switchport ingress inner-ether-type 0x8100
+en

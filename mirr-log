@@ -1,0 +1,181 @@
+
+
+ISS# ISS# 
+ISS# configure terminal
+ISS(config)# set gmrp disable
+ISS(config)# set gvrp disable
+ISS(config)# shutdown garp
+ISS(config)# shutdown spanning-tree
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/2
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/4
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 1
+ISS(config-vlan)# ports gi 0/1
+ISS(config-vlan)# exit
+ISS(config)# vlan 2
+ISS(config-vlan)# ports gi 0/3
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# switchport pvid 1
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# switchport pvid 2
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 1 source int gi 0/1 rx
+ISS(config)# monitor session 1 destination int gi 0/2
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 2 source int gi 0/3 rx
+ISS(config)# monitor session 2 destination int gi 0/4
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# no shutdown
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/6
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/8
+ISS(config-if)# no shut
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# vlan 3
+ISS(config-vlan)# ports gi 0/5
+ISS(config-vlan)# exit
+ISS(config)# vlan 4
+ISS(config-vlan)# ports gi 0/7
+ISS(config-vlan)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# switchport pvid 3
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# switchport pvid 4
+ISS(config-if)# endsh: echo: I/O error
+
+ISS# 
+ISS# c t
+ISS(config)# monitor session 3 source int gi 0/5 rx
+ISS(config)# monitor session 3 destination int gi 0/6
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 4 source int gi 0/7 rx
+ISS(config)# monitor session 2 destination int gi 0/8
+% Configuration not allowed. Destination port is already confiigured
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# monitor session 4 source int gi 0/7 rx
+ISS(config)# monitor session 4 destination int gi 0/8
+ISS(config)# end
+ISS# 
+ISS# sh interface counters
+
+Port      InOctet    InUcast    InMcast    InBcast    InDiscard   InErrs     InHCOctet
+----      -------    -------    -------    -------    ---------   ------     ---------
+Gi0/1             0          0          0          0          0           0          0                    
+Gi0/2             0          0          0          0          0           0          0                    
+Gi0/3             0          0          0          0          0           0          0                    
+Gi0/4             0          0          0          0          0           0          0                    
+Gi0/5             0          0          0          0          0           0          0                    
+Gi0/6             0          0          0          0          0           0          0                    
+Gi0/7             0          0          0          0          0           0          0                    
+Gi0/8             0          0          0          0          0           0          0                    
+Gi0/9             0          0          0          0          0           0          0                    
+Gi0/10            0          0          0          0          0           0          0                    
+Gi0/11            0          0          0          0          0           0          0                    
+Gi0/12            0          0          0          0          0           0          0                    
+Gi0/13            0          0          0          0          0           0          0                    
+Gi0/14            0          0          0          0          0           0          0                    
+Gi0/15            0          0          0          0          0           0          0                    
+Gi0/16            0          0          0          0          0           0          0                    
+Gi0/17            0          0          0          0          0           0          0                    
+Gi0/18            0          0          0          0          0           0          0                    
+Gi0/19            0          0          0          0          0           0          0                    
+Gi0/20            0          0          0          0          0           0          0                    
+Gi0/21            0          0          0          0          0           0          0                    
+Gi0/22            0          0          0          0          0           0          0                    
+Gi0/23            0          0          0          0          0           0          0                    
+Gi0/24            0          0          0          0          0           0          0                    
+Xl0/1             0          0          0          0          0           0          0                    
+Xl0/2             0          0          0          0          0           0          0                    
+Gi0/25            0          0          0          0          0           0          0                    
+Gi0/26            0          0          0          0          0           0          0                    
+vlan1             0          0          0          0          0           0          0                    
+Port      OutOctet   OutUcast   OutMcast   OutBcast   OutDiscard  OutErrs    OutHCOctet
+----      --------   --------   --------   --------   ----------  -------    ----------
+Gi0/1             0          0          0          0          0           0          0                    
+Gi0/2             0          0          0          0          0           0          0                    
+Gi0/3             0          0          0          0          0           0          0                    
+Gi0/4             0          0          0          0          0           0          0                    
+Gi0/5             0          0          0          0          0           0          0                    
+Gi0/6             0          0          0          0          0           0          0                    
+                Gi0/7             0          0          0          0          0           0          0                    
+                Gi0/8             0          0          0          0          0           0          0                    
+                Gi0/9             0          0          0          0          0           0          0                    
+                Gi0/10            0          0          0          0          0           0          0                    
+                Gi0/11            0          0          0          0          0           0          0                    
+                Gi0/12            0          0          0          0          0           0          0                    
+                Gi0/13            0          0          0          0          0           0          0                    
+                Gi0/14            0          0          0          0          0           0          0                    
+                Gi0/15            0          0          0          0          0           0          0                    
+                Gi0/16            0          0          0          0          0           0          0                    
+                Gi0/17            0          0          0          0          0           0          0                    
+                Gi0/18            0          0          0          0          0           0          0                    
+                Gi0/19            0          0          0          0          0           0          0                    
+                Gi0/20            0          0          0          0          0           0          0                    
+                Gi0/21            0          0          0          0          0           0          0                    
+                Gi0/22            0          0          0          0          0           0          0                    
+                Gi0/23            0          0          0          0          0           0          0                    
+                Gi0/24            0          0          0          0          0           0          0                    
+                Xl0/1             0          0          0          0          0           0          0                    
+                Xl0/2             0          0          0          0          0           0          0                    
+                Gi0/25            0          0          0          0          0           0          0                    
+                Gi0/26            0          0          0          0          0           0          0                    
+                vlan1             0          0          0          0          0           0          0                    
+ISS# ISS# ISS# ISS# Quit
+root@localhost:/usr/local/bin/broadcom# exit
+
+Script done on Tue 22 Feb 2000 07:47:30 PM UTC

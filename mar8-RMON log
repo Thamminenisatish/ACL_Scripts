@@ -1,0 +1,366 @@
+ISS# 
+ISS# c t 
+ISS(config)# set rmon enable
+ISS(config)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/1
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 1 owner monitor
+ISS(config-if)# rmon collection history 1 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/2
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 2 owner monitor
+ISS(config-if)# rmon collection history 2 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/3
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 3 owner monitor
+ISS(config-if)# rmon collection history 3 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/4
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 4 owner monitor
+ISS(config-if)# rmon collection history 4 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/5
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 5 owner monitor
+ISS(config-if)# rmon collection history 5 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/6
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 6 owner monitor
+ISS(config-if)# rmon collection history 6 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/7
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 7 owner monitor
+ISS(config-if)# rmon collection history 7 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# c t
+ISS(config)# int gi 0/8
+ISS(config-if)# map switch default
+ISS(config-if)# no shut
+ISS(config-if)# rmon collection stats 8 owner monitor
+ISS(config-if)# rmon collection history 8 buckets 10 interval 30 owner monitor
+ISS(config-if)# end
+ISS# 
+ISS# 
+ISS# sh running-config rmon
+
+#Building configuration...
+! 
+interface gigabitethernet 0/1
+ rmon collection stats 1
+rmon collection history 1 buckets 10 interval 30
+!
+
+interface gigabitethernet 0/2
+rmon collection stats 2
+rmon collection history 2 buckets 10 interval 30
+!
+interface gigabitethernet 0/3
+rmon collection stats 3
+rmon collection history 3 buckets 10 interval 30
+!
+interface gigabitethernet 0/4
+ rmon collection stats 4
+rmon collection history 4 buckets 10 interval 30
+
+!
+interface gigabitethernet 0/5
+rmon collection stats 5
+rmon collection history 5 buckets 10 interval 30
+
+!                interface gigabitethernet 0/6                rmon collection stats 6                rmon collection history 6 buckets 10 interval 30                
+!                interface gigabitethernet 0/7
+                rmon collection stats 7                rmon collection history 7 buckets 10 interval 30                
+!                interface gigabitethernet 0/8                rmon collection stats 8                rmon collection history 8 buckets 10 interval 30                !                set rmon enable  end                       ISS# ISS# ISS# sh rmon statistics
+
+RMON is enabled globally 
+Collection 1 on Gi0/1 is active, and owned by monitor,
+Monitors by Gi0/1 interface which has
+ Received 0 octets,  overflow octets : 0
+ 0 packets and overflow packets : 0 
+ 0 broadcast and 0 multicast packets,
+ 0 undersized and 0 oversized packets,
+ 0 fragments and 0 jabbers,
+ 0 CRC alignment errors and 0 collisions.
+ 0 out FCS errors and 0 Drop events,
+ # of packets received of length (in octets):
+ 64: 0 and overflow 64 : 0 
+ 65-127: 0 and overflow 65-127 : 0 
+ 128-255: 0 and overflow 128-255 : 0 
+ 256-511: 0 and overflow 256-511 : 0 
+ 512-1023: 0 and overflow 512-1023 : 0 
+ 1024-1518: 0 and overflow 1024-1518 : 0 
+ 1519-1522: 0
+Collection 2 on Gi0/2 is active, and owned by monitor,
+Monitors by Gi0/2 interface which has
+ Received 0 octets,  overflow octets : 0
+ 0 packets and overflow packets : 0 
+                 0 broadcast and 0 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 0 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 0 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Collection 3 on Gi0/3 is active, and owned by monitor,
+                Monitors by Gi0/3 interface which has
+                 Received 0 octets,  overflow octets : 0
+                 0 packets and overflow packets : 0 
+                 0 broadcast and 0 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 0 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 0 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Collection 4 on Gi0/4 is active, and owned by monitor,
+                Monitors by Gi0/4 interface which has
+                 Received 0 octets,  overflow octets : 0
+                 0 packets and overflow packets : 0 
+                 0 broadcast and 0 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 0 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 0 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Collection 5 on Gi0/5 is active, and owned by monitor,
+                Monitors by Gi0/5 interface which has
+                 Received 0 octets,  overflow octets : 0
+                 0 packets and overflow packets : 0 
+                 0 broadcast and 0 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 0 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 0 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Collection 6 on Gi0/6 is active, and owned by monitor,
+                Monitors by Gi0/6 interface which has
+                 Received 1448 octets,  overflow octets : 0
+                 5 packets and overflow packets : 0 
+                 4 broadcast and 1 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 1 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 4 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Collection 7 on Gi0/7 is active, and owned by monitor,
+                Monitors by Gi0/7 interface which has
+                 Received 1102 octets,  overflow octets : 0
+                 4 packets and overflow packets : 0 
+                 3 broadcast and 1 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 1 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 3 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Collection 8 on Gi0/8 is active, and owned by monitor,
+                Monitors by Gi0/8 interface which has
+                 Received 0 octets,  overflow octets : 0
+                 0 packets and overflow packets : 0 
+                 0 broadcast and 0 multicast packets,
+                 0 undersized and 0 oversized packets,
+                 0 fragments and 0 jabbers,
+                 0 CRC alignment errors and 0 collisions.
+                 0 out FCS errors and 0 Drop events,
+                 # of packets received of length (in octets):
+                 64: 0 and overflow 64 : 0 
+                 65-127: 0 and overflow 65-127 : 0 
+                 128-255: 0 and overflow 128-255 : 0 
+                 256-511: 0 and overflow 256-511 : 0 
+                 512-1023: 0 and overflow 512-1023 : 0 
+                 1024-1518: 0 and overflow 1024-1518 : 0 
+                 1519-1522: 0
+                Number of statistics collection on interface: 8
+                
+                ISS# ISS# sh rmon history
+
+RMON is enabled globally 
+Entry 1 is active,  and owned by monitor
+ Monitors ifEntry.1.1 every 30 second(s)
+ Requested # of time intervals, ie buckets, is 10, 
+ Granted # of time intervals, ie buckets, is 10, 
+  Sample 1 began measuring at Mar  8 13:24:10 2022
+   Received 0 octets, 0 packets,
+   0 overflow octets, 0 overflow packets
+   0 packets and overflow packets : 0 
+   0 broadcast and 0 multicast packets,
+   0 undersized and 0 oversized packets,
+   0 fragments and 0 jabbers,
+   0 CRC alignment errors and 0 collisions,
+   # of dropped packet events is 0
+   Network utilization is estimated at 0
+Entry 2 is active,  and owned by monitor
+ Monitors ifEntry.1.2 every 30 second(s)
+ Requested # of time intervals, ie buckets, is 10, 
+ Granted # of time intervals, ie buckets, is 10, 
+  Sample 1 began measuring at Mar  8 13:24:10 2022
+   Received 0 octets, 0 packets,
+   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   0 broadcast and 0 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Entry 3 is active,  and owned by monitor
+                 Monitors ifEntry.1.3 every 30 second(s)
+                 Requested # of time intervals, ie buckets, is 10, 
+                 Granted # of time intervals, ie buckets, is 10, 
+                  Sample 1 began measuring at Mar  8 13:24:10 2022
+                   Received 0 octets, 0 packets,
+                   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   0 broadcast and 0 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Entry 4 is active,  and owned by monitor
+                 Monitors ifEntry.1.4 every 30 second(s)
+                 Requested # of time intervals, ie buckets, is 10, 
+                 Granted # of time intervals, ie buckets, is 10, 
+                  Sample 1 began measuring at Mar  8 13:24:10 2022
+                   Received 0 octets, 0 packets,
+                   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   0 broadcast and 0 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Entry 5 is active,  and owned by monitor
+                 Monitors ifEntry.1.5 every 30 second(s)
+                 Requested # of time intervals, ie buckets, is 10, 
+                 Granted # of time intervals, ie buckets, is 10, 
+                  Sample 1 began measuring at Mar  8 13:24:10 2022
+                   Received 0 octets, 0 packets,
+                   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   0 broadcast and 0 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Entry 6 is active,  and owned by monitor
+                 Monitors ifEntry.1.6 every 30 second(s)
+                 Requested # of time intervals, ie buckets, is 10, 
+                 Granted # of time intervals, ie buckets, is 10, 
+                  Sample 1 began measuring at Mar  8 13:24:10 2022
+                   Received 1102 octets, 4 packets,
+                   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   3 broadcast and 1 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Entry 7 is active,  and owned by monitor
+                 Monitors ifEntry.1.7 every 30 second(s)
+                 Requested # of time intervals, ie buckets, is 10, 
+                 Granted # of time intervals, ie buckets, is 10, 
+                  Sample 1 began measuring at Mar  8 13:24:10 2022
+                   Received 1448 octets, 5 packets,
+                   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   4 broadcast and 1 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Entry 8 is active,  and owned by monitor
+                 Monitors ifEntry.1.8 every 30 second(s)
+                 Requested # of time intervals, ie buckets, is 10, 
+                 Granted # of time intervals, ie buckets, is 10, 
+                  Sample 1 began measuring at Mar  8 13:24:10 2022
+                   Received 0 octets, 0 packets,
+                   0 overflow octets, 0 overflow packets
+                   0 packets and overflow packets : 0 
+                   0 broadcast and 0 multicast packets,
+                   0 undersized and 0 oversized packets,
+                   0 fragments and 0 jabbers,
+                   0 CRC alignment errors and 0 collisions,
+                   # of dropped packet events is 0
+                   Network utilization is estimated at 0
+                Number of history collection on interface: 8
+                
+                [27m                       ISS# ISS# ISS# ISS# sh rmon
+
+RMON is enabled globally 
+RMON Periodic Timer Interval is 1 
+
+ISS# Quit
+root@localhost:/home/ISS# exit
+
+Script done on Tue 08 Mar 2022 01:25:51 PM UTC

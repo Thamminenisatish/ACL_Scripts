@@ -1,0 +1,16 @@
+Index: code/future/inc/isslnxme.h
+===================================================================
+RCS file: /home/projects/ISS_REPO_ONE_TOS_GREEN_YELLOW_RED_16FEB21/code/future/inc/isslnxme.h,v
+retrieving revision 1.20
+diff -B -p -u -w -r1.20 isslnxme.h
+--- code/future/inc/isslnxme.h	24 Dec 2021 10:52:33 -0000	1.20
++++ code/future/inc/isslnxme.h	15 Mar 2022 12:22:33 -0000
+@@ -292,7 +292,7 @@
+ #define AST_MAX_SERVICES_PER_CUSTOMER   8
+ 
+ #define IP_DEV_MAX_TNL_INTF             8  /* Maximum IP interfaces */
+-#define IP_DEV_MAX_L3VLAN_INTF          16 /* Maximum IP interfaces */
++#define IP_DEV_MAX_L3VLAN_INTF          33 /* Maximum IP interfaces */
+ #define SYS_DEF_MAX_L3SUB_IFACES        256  /* Maximum L3SubInterfaces */
+ #define SYS_DEF_MAX_NULL_IFACES         1 /* Maximum No. of NULL interfaces */
+ /* Maximum inband interfaces supported*/

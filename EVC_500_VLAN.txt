@@ -1,0 +1,4000 @@
+configure terminal 
+vlan 2 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 11 service-vlan 2 
+end 
+configure terminal 
+vlan 3 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 12 service-vlan 3 
+end 
+configure terminal 
+vlan 4 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 13 service-vlan 4 
+end 
+configure terminal 
+vlan 5 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 14 service-vlan 5 
+end 
+configure terminal 
+vlan 6 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 15 service-vlan 6 
+end 
+configure terminal 
+vlan 7 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 16 service-vlan 7 
+end 
+configure terminal 
+vlan 8 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 17 service-vlan 8 
+end 
+configure terminal 
+vlan 9 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 18 service-vlan 9 
+end 
+configure terminal 
+vlan 10 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 19 service-vlan 10 
+end 
+configure terminal 
+vlan 11 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 20 service-vlan 11 
+end 
+configure terminal 
+vlan 12 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 21 service-vlan 12 
+end 
+configure terminal 
+vlan 13 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 22 service-vlan 13 
+end 
+configure terminal 
+vlan 14 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 23 service-vlan 14 
+end 
+configure terminal 
+vlan 15 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 24 service-vlan 15 
+end 
+configure terminal 
+vlan 16 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 25 service-vlan 16 
+end 
+configure terminal 
+vlan 17 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 26 service-vlan 17 
+end 
+configure terminal 
+vlan 18 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 27 service-vlan 18 
+end 
+configure terminal 
+vlan 19 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 28 service-vlan 19 
+end 
+configure terminal 
+vlan 20 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 29 service-vlan 20 
+end 
+configure terminal 
+vlan 21 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 30 service-vlan 21 
+end 
+configure terminal 
+vlan 22 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 31 service-vlan 22 
+end 
+configure terminal 
+vlan 23 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 32 service-vlan 23 
+end 
+configure terminal 
+vlan 24 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 33 service-vlan 24 
+end 
+configure terminal 
+vlan 25 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 34 service-vlan 25 
+end 
+configure terminal 
+vlan 26 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 35 service-vlan 26 
+end 
+configure terminal 
+vlan 27 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 36 service-vlan 27 
+end 
+configure terminal 
+vlan 28 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 37 service-vlan 28 
+end 
+configure terminal 
+vlan 29 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 38 service-vlan 29 
+end 
+configure terminal 
+vlan 30 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 39 service-vlan 30 
+end 
+configure terminal 
+vlan 31 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 40 service-vlan 31 
+end 
+configure terminal 
+vlan 32 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 41 service-vlan 32 
+end 
+configure terminal 
+vlan 33 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 42 service-vlan 33 
+end 
+configure terminal 
+vlan 34 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 43 service-vlan 34 
+end 
+configure terminal 
+vlan 35 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 44 service-vlan 35 
+end 
+configure terminal 
+vlan 36 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 45 service-vlan 36 
+end 
+configure terminal 
+vlan 37 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 46 service-vlan 37 
+end 
+configure terminal 
+vlan 38 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 47 service-vlan 38 
+end 
+configure terminal 
+vlan 39 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 48 service-vlan 39 
+end 
+configure terminal 
+vlan 40 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 49 service-vlan 40 
+end 
+configure terminal 
+vlan 41 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 50 service-vlan 41 
+end 
+configure terminal 
+vlan 42 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 51 service-vlan 42 
+end 
+configure terminal 
+vlan 43 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 52 service-vlan 43 
+end 
+configure terminal 
+vlan 44 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 53 service-vlan 44 
+end 
+configure terminal 
+vlan 45 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 54 service-vlan 45 
+end 
+configure terminal 
+vlan 46 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 55 service-vlan 46 
+end 
+configure terminal 
+vlan 47 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 56 service-vlan 47 
+end 
+configure terminal 
+vlan 48 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 57 service-vlan 48 
+end 
+configure terminal 
+vlan 49 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 58 service-vlan 49 
+end 
+configure terminal 
+vlan 50 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 59 service-vlan 50 
+end 
+configure terminal 
+vlan 51 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 60 service-vlan 51 
+end 
+configure terminal 
+vlan 52 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 61 service-vlan 52 
+end 
+configure terminal 
+vlan 53 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 62 service-vlan 53 
+end 
+configure terminal 
+vlan 54 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 63 service-vlan 54 
+end 
+configure terminal 
+vlan 55 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 64 service-vlan 55 
+end 
+configure terminal 
+vlan 56 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 65 service-vlan 56 
+end 
+configure terminal 
+vlan 57 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 66 service-vlan 57 
+end 
+configure terminal 
+vlan 58 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 67 service-vlan 58 
+end 
+configure terminal 
+vlan 59 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 68 service-vlan 59 
+end 
+configure terminal 
+vlan 60 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 69 service-vlan 60 
+end 
+configure terminal 
+vlan 61 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 70 service-vlan 61 
+end 
+configure terminal 
+vlan 62 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 71 service-vlan 62 
+end 
+configure terminal 
+vlan 63 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 72 service-vlan 63 
+end 
+configure terminal 
+vlan 64 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 73 service-vlan 64 
+end 
+configure terminal 
+vlan 65 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 74 service-vlan 65 
+end 
+configure terminal 
+vlan 66 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 75 service-vlan 66 
+end 
+configure terminal 
+vlan 67 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 76 service-vlan 67 
+end 
+configure terminal 
+vlan 68 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 77 service-vlan 68 
+end 
+configure terminal 
+vlan 69 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 78 service-vlan 69 
+end 
+configure terminal 
+vlan 70 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 79 service-vlan 70 
+end 
+configure terminal 
+vlan 71 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 80 service-vlan 71 
+end 
+configure terminal 
+vlan 72 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 81 service-vlan 72 
+end 
+configure terminal 
+vlan 73 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 82 service-vlan 73 
+end 
+configure terminal 
+vlan 74 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 83 service-vlan 74 
+end 
+configure terminal 
+vlan 75 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 84 service-vlan 75 
+end 
+configure terminal 
+vlan 76 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 85 service-vlan 76 
+end 
+configure terminal 
+vlan 77 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 86 service-vlan 77 
+end 
+configure terminal 
+vlan 78 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 87 service-vlan 78 
+end 
+configure terminal 
+vlan 79 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 88 service-vlan 79 
+end 
+configure terminal 
+vlan 80 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 89 service-vlan 80 
+end 
+configure terminal 
+vlan 81 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 90 service-vlan 81 
+end 
+configure terminal 
+vlan 82 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 91 service-vlan 82 
+end 
+configure terminal 
+vlan 83 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 92 service-vlan 83 
+end 
+configure terminal 
+vlan 84 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 93 service-vlan 84 
+end 
+configure terminal 
+vlan 85 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 94 service-vlan 85 
+end 
+configure terminal 
+vlan 86 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 95 service-vlan 86 
+end 
+configure terminal 
+vlan 87 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 96 service-vlan 87 
+end 
+configure terminal 
+vlan 88 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 97 service-vlan 88 
+end 
+configure terminal 
+vlan 89 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 98 service-vlan 89 
+end 
+configure terminal 
+vlan 90 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 99 service-vlan 90 
+end 
+configure terminal 
+vlan 91 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 100 service-vlan 91 
+end 
+configure terminal 
+vlan 92 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 101 service-vlan 92 
+end 
+configure terminal 
+vlan 93 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 102 service-vlan 93 
+end 
+configure terminal 
+vlan 94 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 103 service-vlan 94 
+end 
+configure terminal 
+vlan 95 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 104 service-vlan 95 
+end 
+configure terminal 
+vlan 96 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 105 service-vlan 96 
+end 
+configure terminal 
+vlan 97 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 106 service-vlan 97 
+end 
+configure terminal 
+vlan 98 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 107 service-vlan 98 
+end 
+configure terminal 
+vlan 99 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 108 service-vlan 99 
+end 
+configure terminal 
+vlan 100 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 109 service-vlan 100 
+end 
+configure terminal 
+vlan 101 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 110 service-vlan 101 
+end 
+configure terminal 
+vlan 102 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 111 service-vlan 102 
+end 
+configure terminal 
+vlan 103 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 112 service-vlan 103 
+end 
+configure terminal 
+vlan 104 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 113 service-vlan 104 
+end 
+configure terminal 
+vlan 105 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 114 service-vlan 105 
+end 
+configure terminal 
+vlan 106 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 115 service-vlan 106 
+end 
+configure terminal 
+vlan 107 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 116 service-vlan 107 
+end 
+configure terminal 
+vlan 108 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 117 service-vlan 108 
+end 
+configure terminal 
+vlan 109 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 118 service-vlan 109 
+end 
+configure terminal 
+vlan 110 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 119 service-vlan 110 
+end 
+configure terminal 
+vlan 111 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 120 service-vlan 111 
+end 
+configure terminal 
+vlan 112 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 121 service-vlan 112 
+end 
+configure terminal 
+vlan 113 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 122 service-vlan 113 
+end 
+configure terminal 
+vlan 114 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 123 service-vlan 114 
+end 
+configure terminal 
+vlan 115 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 124 service-vlan 115 
+end 
+configure terminal 
+vlan 116 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 125 service-vlan 116 
+end 
+configure terminal 
+vlan 117 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 126 service-vlan 117 
+end 
+configure terminal 
+vlan 118 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 127 service-vlan 118 
+end 
+configure terminal 
+vlan 119 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 128 service-vlan 119 
+end 
+configure terminal 
+vlan 120 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 129 service-vlan 120 
+end 
+configure terminal 
+vlan 121 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 130 service-vlan 121 
+end 
+configure terminal 
+vlan 122 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 131 service-vlan 122 
+end 
+configure terminal 
+vlan 123 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 132 service-vlan 123 
+end 
+configure terminal 
+vlan 124 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 133 service-vlan 124 
+end 
+configure terminal 
+vlan 125 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 134 service-vlan 125 
+end 
+configure terminal 
+vlan 126 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 135 service-vlan 126 
+end 
+configure terminal 
+vlan 127 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 136 service-vlan 127 
+end 
+configure terminal 
+vlan 128 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 137 service-vlan 128 
+end 
+configure terminal 
+vlan 129 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 138 service-vlan 129 
+end 
+configure terminal 
+vlan 130 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 139 service-vlan 130 
+end 
+configure terminal 
+vlan 131 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 140 service-vlan 131 
+end 
+configure terminal 
+vlan 132 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 141 service-vlan 132 
+end 
+configure terminal 
+vlan 133 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 142 service-vlan 133 
+end 
+configure terminal 
+vlan 134 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 143 service-vlan 134 
+end 
+configure terminal 
+vlan 135 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 144 service-vlan 135 
+end 
+configure terminal 
+vlan 136 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 145 service-vlan 136 
+end 
+configure terminal 
+vlan 137 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 146 service-vlan 137 
+end 
+configure terminal 
+vlan 138 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 147 service-vlan 138 
+end 
+configure terminal 
+vlan 139 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 148 service-vlan 139 
+end 
+configure terminal 
+vlan 140 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 149 service-vlan 140 
+end 
+configure terminal 
+vlan 141 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 150 service-vlan 141 
+end 
+configure terminal 
+vlan 142 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 151 service-vlan 142 
+end 
+configure terminal 
+vlan 143 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 152 service-vlan 143 
+end 
+configure terminal 
+vlan 144 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 153 service-vlan 144 
+end 
+configure terminal 
+vlan 145 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 154 service-vlan 145 
+end 
+configure terminal 
+vlan 146 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 155 service-vlan 146 
+end 
+configure terminal 
+vlan 147 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 156 service-vlan 147 
+end 
+configure terminal 
+vlan 148 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 157 service-vlan 148 
+end 
+configure terminal 
+vlan 149 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 158 service-vlan 149 
+end 
+configure terminal 
+vlan 150 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 159 service-vlan 150 
+end 
+configure terminal 
+vlan 151 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 160 service-vlan 151 
+end 
+configure terminal 
+vlan 152 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 161 service-vlan 152 
+end 
+configure terminal 
+vlan 153 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 162 service-vlan 153 
+end 
+configure terminal 
+vlan 154 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 163 service-vlan 154 
+end 
+configure terminal 
+vlan 155 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 164 service-vlan 155 
+end 
+configure terminal 
+vlan 156 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 165 service-vlan 156 
+end 
+configure terminal 
+vlan 157 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 166 service-vlan 157 
+end 
+configure terminal 
+vlan 158 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 167 service-vlan 158 
+end 
+configure terminal 
+vlan 159 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 168 service-vlan 159 
+end 
+configure terminal 
+vlan 160 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 169 service-vlan 160 
+end 
+configure terminal 
+vlan 161 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 170 service-vlan 161 
+end 
+configure terminal 
+vlan 162 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 171 service-vlan 162 
+end 
+configure terminal 
+vlan 163 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 172 service-vlan 163 
+end 
+configure terminal 
+vlan 164 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 173 service-vlan 164 
+end 
+configure terminal 
+vlan 165 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 174 service-vlan 165 
+end 
+configure terminal 
+vlan 166 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 175 service-vlan 166 
+end 
+configure terminal 
+vlan 167 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 176 service-vlan 167 
+end 
+configure terminal 
+vlan 168 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 177 service-vlan 168 
+end 
+configure terminal 
+vlan 169 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 178 service-vlan 169 
+end 
+configure terminal 
+vlan 170 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 179 service-vlan 170 
+end 
+configure terminal 
+vlan 171 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 180 service-vlan 171 
+end 
+configure terminal 
+vlan 172 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 181 service-vlan 172 
+end 
+configure terminal 
+vlan 173 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 182 service-vlan 173 
+end 
+configure terminal 
+vlan 174 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 183 service-vlan 174 
+end 
+configure terminal 
+vlan 175 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 184 service-vlan 175 
+end 
+configure terminal 
+vlan 176 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 185 service-vlan 176 
+end 
+configure terminal 
+vlan 177 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 186 service-vlan 177 
+end 
+configure terminal 
+vlan 178 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 187 service-vlan 178 
+end 
+configure terminal 
+vlan 179 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 188 service-vlan 179 
+end 
+configure terminal 
+vlan 180 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 189 service-vlan 180 
+end 
+configure terminal 
+vlan 181 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 190 service-vlan 181 
+end 
+configure terminal 
+vlan 182 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 191 service-vlan 182 
+end 
+configure terminal 
+vlan 183 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 192 service-vlan 183 
+end 
+configure terminal 
+vlan 184 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 193 service-vlan 184 
+end 
+configure terminal 
+vlan 185 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 194 service-vlan 185 
+end 
+configure terminal 
+vlan 186 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 195 service-vlan 186 
+end 
+configure terminal 
+vlan 187 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 196 service-vlan 187 
+end 
+configure terminal 
+vlan 188 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 197 service-vlan 188 
+end 
+configure terminal 
+vlan 189 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 198 service-vlan 189 
+end 
+configure terminal 
+vlan 190 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 199 service-vlan 190 
+end 
+configure terminal 
+vlan 191 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 200 service-vlan 191 
+end 
+configure terminal 
+vlan 192 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 201 service-vlan 192 
+end 
+configure terminal 
+vlan 193 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 202 service-vlan 193 
+end 
+configure terminal 
+vlan 194 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 203 service-vlan 194 
+end 
+configure terminal 
+vlan 195 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 204 service-vlan 195 
+end 
+configure terminal 
+vlan 196 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 205 service-vlan 196 
+end 
+configure terminal 
+vlan 197 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 206 service-vlan 197 
+end 
+configure terminal 
+vlan 198 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 207 service-vlan 198 
+end 
+configure terminal 
+vlan 199 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 208 service-vlan 199 
+end 
+configure terminal 
+vlan 200 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 209 service-vlan 200 
+end 
+configure terminal 
+vlan 201 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 210 service-vlan 201 
+end 
+configure terminal 
+vlan 202 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 211 service-vlan 202 
+end 
+configure terminal 
+vlan 203 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 212 service-vlan 203 
+end 
+configure terminal 
+vlan 204 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 213 service-vlan 204 
+end 
+configure terminal 
+vlan 205 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 214 service-vlan 205 
+end 
+configure terminal 
+vlan 206 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 215 service-vlan 206 
+end 
+configure terminal 
+vlan 207 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 216 service-vlan 207 
+end 
+configure terminal 
+vlan 208 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 217 service-vlan 208 
+end 
+configure terminal 
+vlan 209 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 218 service-vlan 209 
+end 
+configure terminal 
+vlan 210 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 219 service-vlan 210 
+end 
+configure terminal 
+vlan 211 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 220 service-vlan 211 
+end 
+configure terminal 
+vlan 212 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 221 service-vlan 212 
+end 
+configure terminal 
+vlan 213 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 222 service-vlan 213 
+end 
+configure terminal 
+vlan 214 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 223 service-vlan 214 
+end 
+configure terminal 
+vlan 215 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 224 service-vlan 215 
+end 
+configure terminal 
+vlan 216 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 225 service-vlan 216 
+end 
+configure terminal 
+vlan 217 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 226 service-vlan 217 
+end 
+configure terminal 
+vlan 218 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 227 service-vlan 218 
+end 
+configure terminal 
+vlan 219 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 228 service-vlan 219 
+end 
+configure terminal 
+vlan 220 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 229 service-vlan 220 
+end 
+configure terminal 
+vlan 221 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 230 service-vlan 221 
+end 
+configure terminal 
+vlan 222 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 231 service-vlan 222 
+end 
+configure terminal 
+vlan 223 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 232 service-vlan 223 
+end 
+configure terminal 
+vlan 224 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 233 service-vlan 224 
+end 
+configure terminal 
+vlan 225 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 234 service-vlan 225 
+end 
+configure terminal 
+vlan 226 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 235 service-vlan 226 
+end 
+configure terminal 
+vlan 227 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 236 service-vlan 227 
+end 
+configure terminal 
+vlan 228 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 237 service-vlan 228 
+end 
+configure terminal 
+vlan 229 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 238 service-vlan 229 
+end 
+configure terminal 
+vlan 230 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 239 service-vlan 230 
+end 
+configure terminal 
+vlan 231 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 240 service-vlan 231 
+end 
+configure terminal 
+vlan 232 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 241 service-vlan 232 
+end 
+configure terminal 
+vlan 233 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 242 service-vlan 233 
+end 
+configure terminal 
+vlan 234 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 243 service-vlan 234 
+end 
+configure terminal 
+vlan 235 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 244 service-vlan 235 
+end 
+configure terminal 
+vlan 236 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 245 service-vlan 236 
+end 
+configure terminal 
+vlan 237 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 246 service-vlan 237 
+end 
+configure terminal 
+vlan 238 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 247 service-vlan 238 
+end 
+configure terminal 
+vlan 239 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 248 service-vlan 239 
+end 
+configure terminal 
+vlan 240 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 249 service-vlan 240 
+end 
+configure terminal 
+vlan 241 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 250 service-vlan 241 
+end 
+configure terminal 
+vlan 242 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 251 service-vlan 242 
+end 
+configure terminal 
+vlan 243 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 252 service-vlan 243 
+end 
+configure terminal 
+vlan 244 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 253 service-vlan 244 
+end 
+configure terminal 
+vlan 245 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 254 service-vlan 245 
+end 
+configure terminal 
+vlan 246 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 255 service-vlan 246 
+end 
+configure terminal 
+vlan 247 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 256 service-vlan 247 
+end 
+configure terminal 
+vlan 248 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 257 service-vlan 248 
+end 
+configure terminal 
+vlan 249 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 258 service-vlan 249 
+end 
+configure terminal 
+vlan 250 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 259 service-vlan 250 
+end 
+configure terminal 
+vlan 251 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 260 service-vlan 251 
+end 
+configure terminal 
+vlan 252 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 261 service-vlan 252 
+end 
+configure terminal 
+vlan 253 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 262 service-vlan 253 
+end 
+configure terminal 
+vlan 254 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 263 service-vlan 254 
+end 
+configure terminal 
+vlan 255 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 264 service-vlan 255 
+end 
+configure terminal 
+vlan 256 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 265 service-vlan 256 
+end 
+configure terminal 
+vlan 257 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 266 service-vlan 257 
+end 
+configure terminal 
+vlan 258 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 267 service-vlan 258 
+end 
+configure terminal 
+vlan 259 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 268 service-vlan 259 
+end 
+configure terminal 
+vlan 260 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 269 service-vlan 260 
+end 
+configure terminal 
+vlan 261 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 270 service-vlan 261 
+end 
+configure terminal 
+vlan 262 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 271 service-vlan 262 
+end 
+configure terminal 
+vlan 263 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 272 service-vlan 263 
+end 
+configure terminal 
+vlan 264 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 273 service-vlan 264 
+end 
+configure terminal 
+vlan 265 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 274 service-vlan 265 
+end 
+configure terminal 
+vlan 266 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 275 service-vlan 266 
+end 
+configure terminal 
+vlan 267 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 276 service-vlan 267 
+end 
+configure terminal 
+vlan 268 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 277 service-vlan 268 
+end 
+configure terminal 
+vlan 269 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 278 service-vlan 269 
+end 
+configure terminal 
+vlan 270 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 279 service-vlan 270 
+end 
+configure terminal 
+vlan 271 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 280 service-vlan 271 
+end 
+configure terminal 
+vlan 272 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 281 service-vlan 272 
+end 
+configure terminal 
+vlan 273 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 282 service-vlan 273 
+end 
+configure terminal 
+vlan 274 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 283 service-vlan 274 
+end 
+configure terminal 
+vlan 275 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 284 service-vlan 275 
+end 
+configure terminal 
+vlan 276 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 285 service-vlan 276 
+end 
+configure terminal 
+vlan 277 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 286 service-vlan 277 
+end 
+configure terminal 
+vlan 278 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 287 service-vlan 278 
+end 
+configure terminal 
+vlan 279 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 288 service-vlan 279 
+end 
+configure terminal 
+vlan 280 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 289 service-vlan 280 
+end 
+configure terminal 
+vlan 281 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 290 service-vlan 281 
+end 
+configure terminal 
+vlan 282 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 291 service-vlan 282 
+end 
+configure terminal 
+vlan 283 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 292 service-vlan 283 
+end 
+configure terminal 
+vlan 284 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 293 service-vlan 284 
+end 
+configure terminal 
+vlan 285 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 294 service-vlan 285 
+end 
+configure terminal 
+vlan 286 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 295 service-vlan 286 
+end 
+configure terminal 
+vlan 287 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 296 service-vlan 287 
+end 
+configure terminal 
+vlan 288 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 297 service-vlan 288 
+end 
+configure terminal 
+vlan 289 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 298 service-vlan 289 
+end 
+configure terminal 
+vlan 290 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 299 service-vlan 290 
+end 
+configure terminal 
+vlan 291 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 300 service-vlan 291 
+end 
+configure terminal 
+vlan 292 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 301 service-vlan 292 
+end 
+configure terminal 
+vlan 293 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 302 service-vlan 293 
+end 
+configure terminal 
+vlan 294 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 303 service-vlan 294 
+end 
+configure terminal 
+vlan 295 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 304 service-vlan 295 
+end 
+configure terminal 
+vlan 296 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 305 service-vlan 296 
+end 
+configure terminal 
+vlan 297 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 306 service-vlan 297 
+end 
+configure terminal 
+vlan 298 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 307 service-vlan 298 
+end 
+configure terminal 
+vlan 299 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 308 service-vlan 299 
+end 
+configure terminal 
+vlan 300 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 309 service-vlan 300 
+end 
+configure terminal 
+vlan 301 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 310 service-vlan 301 
+end 
+configure terminal 
+vlan 302 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 311 service-vlan 302 
+end 
+configure terminal 
+vlan 303 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 312 service-vlan 303 
+end 
+configure terminal 
+vlan 304 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 313 service-vlan 304 
+end 
+configure terminal 
+vlan 305 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 314 service-vlan 305 
+end 
+configure terminal 
+vlan 306 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 315 service-vlan 306 
+end 
+configure terminal 
+vlan 307 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 316 service-vlan 307 
+end 
+configure terminal 
+vlan 308 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 317 service-vlan 308 
+end 
+configure terminal 
+vlan 309 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 318 service-vlan 309 
+end 
+configure terminal 
+vlan 310 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 319 service-vlan 310 
+end 
+configure terminal 
+vlan 311 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 320 service-vlan 311 
+end 
+configure terminal 
+vlan 312 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 321 service-vlan 312 
+end 
+configure terminal 
+vlan 313 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 322 service-vlan 313 
+end 
+configure terminal 
+vlan 314 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 323 service-vlan 314 
+end 
+configure terminal 
+vlan 315 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 324 service-vlan 315 
+end 
+configure terminal 
+vlan 316 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 325 service-vlan 316 
+end 
+configure terminal 
+vlan 317 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 326 service-vlan 317 
+end 
+configure terminal 
+vlan 318 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 327 service-vlan 318 
+end 
+configure terminal 
+vlan 319 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 328 service-vlan 319 
+end 
+configure terminal 
+vlan 320 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 329 service-vlan 320 
+end 
+configure terminal 
+vlan 321 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 330 service-vlan 321 
+end 
+configure terminal 
+vlan 322 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 331 service-vlan 322 
+end 
+configure terminal 
+vlan 323 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 332 service-vlan 323 
+end 
+configure terminal 
+vlan 324 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 333 service-vlan 324 
+end 
+configure terminal 
+vlan 325 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 334 service-vlan 325 
+end 
+configure terminal 
+vlan 326 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 335 service-vlan 326 
+end 
+configure terminal 
+vlan 327 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 336 service-vlan 327 
+end 
+configure terminal 
+vlan 328 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 337 service-vlan 328 
+end 
+configure terminal 
+vlan 329 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 338 service-vlan 329 
+end 
+configure terminal 
+vlan 330 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 339 service-vlan 330 
+end 
+configure terminal 
+vlan 331 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 340 service-vlan 331 
+end 
+configure terminal 
+vlan 332 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 341 service-vlan 332 
+end 
+configure terminal 
+vlan 333 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 342 service-vlan 333 
+end 
+configure terminal 
+vlan 334 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 343 service-vlan 334 
+end 
+configure terminal 
+vlan 335 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 344 service-vlan 335 
+end 
+configure terminal 
+vlan 336 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 345 service-vlan 336 
+end 
+configure terminal 
+vlan 337 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 346 service-vlan 337 
+end 
+configure terminal 
+vlan 338 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 347 service-vlan 338 
+end 
+configure terminal 
+vlan 339 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 348 service-vlan 339 
+end 
+configure terminal 
+vlan 340 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 349 service-vlan 340 
+end 
+configure terminal 
+vlan 341 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 350 service-vlan 341 
+end 
+configure terminal 
+vlan 342 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 351 service-vlan 342 
+end 
+configure terminal 
+vlan 343 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 352 service-vlan 343 
+end 
+configure terminal 
+vlan 344 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 353 service-vlan 344 
+end 
+configure terminal 
+vlan 345 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 354 service-vlan 345 
+end 
+configure terminal 
+vlan 346 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 355 service-vlan 346 
+end 
+configure terminal 
+vlan 347 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 356 service-vlan 347 
+end 
+configure terminal 
+vlan 348 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 357 service-vlan 348 
+end 
+configure terminal 
+vlan 349 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 358 service-vlan 349 
+end 
+configure terminal 
+vlan 350 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 359 service-vlan 350 
+end 
+configure terminal 
+vlan 351 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 360 service-vlan 351 
+end 
+configure terminal 
+vlan 352 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 361 service-vlan 352 
+end 
+configure terminal 
+vlan 353 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 362 service-vlan 353 
+end 
+configure terminal 
+vlan 354 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 363 service-vlan 354 
+end 
+configure terminal 
+vlan 355 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 364 service-vlan 355 
+end 
+configure terminal 
+vlan 356 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 365 service-vlan 356 
+end 
+configure terminal 
+vlan 357 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 366 service-vlan 357 
+end 
+configure terminal 
+vlan 358 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 367 service-vlan 358 
+end 
+configure terminal 
+vlan 359 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 368 service-vlan 359 
+end 
+configure terminal 
+vlan 360 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 369 service-vlan 360 
+end 
+configure terminal 
+vlan 361 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 370 service-vlan 361 
+end 
+configure terminal 
+vlan 362 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 371 service-vlan 362 
+end 
+configure terminal 
+vlan 363 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 372 service-vlan 363 
+end 
+configure terminal 
+vlan 364 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 373 service-vlan 364 
+end 
+configure terminal 
+vlan 365 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 374 service-vlan 365 
+end 
+configure terminal 
+vlan 366 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 375 service-vlan 366 
+end 
+configure terminal 
+vlan 367 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 376 service-vlan 367 
+end 
+configure terminal 
+vlan 368 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 377 service-vlan 368 
+end 
+configure terminal 
+vlan 369 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 378 service-vlan 369 
+end 
+configure terminal 
+vlan 370 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 379 service-vlan 370 
+end 
+configure terminal 
+vlan 371 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 380 service-vlan 371 
+end 
+configure terminal 
+vlan 372 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 381 service-vlan 372 
+end 
+configure terminal 
+vlan 373 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 382 service-vlan 373 
+end 
+configure terminal 
+vlan 374 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 383 service-vlan 374 
+end 
+configure terminal 
+vlan 375 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 384 service-vlan 375 
+end 
+configure terminal 
+vlan 376 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 385 service-vlan 376 
+end 
+configure terminal 
+vlan 377 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 386 service-vlan 377 
+end 
+configure terminal 
+vlan 378 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 387 service-vlan 378 
+end 
+configure terminal 
+vlan 379 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 388 service-vlan 379 
+end 
+configure terminal 
+vlan 380 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 389 service-vlan 380 
+end 
+configure terminal 
+vlan 381 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 390 service-vlan 381 
+end 
+configure terminal 
+vlan 382 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 391 service-vlan 382 
+end 
+configure terminal 
+vlan 383 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 392 service-vlan 383 
+end 
+configure terminal 
+vlan 384 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 393 service-vlan 384 
+end 
+configure terminal 
+vlan 385 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 394 service-vlan 385 
+end 
+configure terminal 
+vlan 386 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 395 service-vlan 386 
+end 
+configure terminal 
+vlan 387 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 396 service-vlan 387 
+end 
+configure terminal 
+vlan 388 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 397 service-vlan 388 
+end 
+configure terminal 
+vlan 389 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 398 service-vlan 389 
+end 
+configure terminal 
+vlan 390 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 399 service-vlan 390 
+end 
+configure terminal 
+vlan 391 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 400 service-vlan 391 
+end 
+configure terminal 
+vlan 392 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 401 service-vlan 392 
+end 
+configure terminal 
+vlan 393 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 402 service-vlan 393 
+end 
+configure terminal 
+vlan 394 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 403 service-vlan 394 
+end 
+configure terminal 
+vlan 395 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 404 service-vlan 395 
+end 
+configure terminal 
+vlan 396 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 405 service-vlan 396 
+end 
+configure terminal 
+vlan 397 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 406 service-vlan 397 
+end 
+configure terminal 
+vlan 398 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 407 service-vlan 398 
+end 
+configure terminal 
+vlan 399 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 408 service-vlan 399 
+end 
+configure terminal 
+vlan 400 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 409 service-vlan 400 
+end 
+configure terminal 
+vlan 401 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 410 service-vlan 401 
+end 
+configure terminal 
+vlan 402 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 411 service-vlan 402 
+end 
+configure terminal 
+vlan 403 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 412 service-vlan 403 
+end 
+configure terminal 
+vlan 404 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 413 service-vlan 404 
+end 
+configure terminal 
+vlan 405 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 414 service-vlan 405 
+end 
+configure terminal 
+vlan 406 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 415 service-vlan 406 
+end 
+configure terminal 
+vlan 407 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 416 service-vlan 407 
+end 
+configure terminal 
+vlan 408 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 417 service-vlan 408 
+end 
+configure terminal 
+vlan 409 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 418 service-vlan 409 
+end 
+configure terminal 
+vlan 410 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 419 service-vlan 410 
+end 
+configure terminal 
+vlan 411 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 420 service-vlan 411 
+end 
+configure terminal 
+vlan 412 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 421 service-vlan 412 
+end 
+configure terminal 
+vlan 413 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 422 service-vlan 413 
+end 
+configure terminal 
+vlan 414 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 423 service-vlan 414 
+end 
+configure terminal 
+vlan 415 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 424 service-vlan 415 
+end 
+configure terminal 
+vlan 416 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 425 service-vlan 416 
+end 
+configure terminal 
+vlan 417 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 426 service-vlan 417 
+end 
+configure terminal 
+vlan 418 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 427 service-vlan 418 
+end 
+configure terminal 
+vlan 419 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 428 service-vlan 419 
+end 
+configure terminal 
+vlan 420 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 429 service-vlan 420 
+end 
+configure terminal 
+vlan 421 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 430 service-vlan 421 
+end 
+configure terminal 
+vlan 422 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 431 service-vlan 422 
+end 
+configure terminal 
+vlan 423 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 432 service-vlan 423 
+end 
+configure terminal 
+vlan 424 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 433 service-vlan 424 
+end 
+configure terminal 
+vlan 425 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 434 service-vlan 425 
+end 
+configure terminal 
+vlan 426 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 435 service-vlan 426 
+end 
+configure terminal 
+vlan 427 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 436 service-vlan 427 
+end 
+configure terminal 
+vlan 428 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 437 service-vlan 428 
+end 
+configure terminal 
+vlan 429 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 438 service-vlan 429 
+end 
+configure terminal 
+vlan 430 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 439 service-vlan 430 
+end 
+configure terminal 
+vlan 431 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 440 service-vlan 431 
+end 
+configure terminal 
+vlan 432 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 441 service-vlan 432 
+end 
+configure terminal 
+vlan 433 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 442 service-vlan 433 
+end 
+configure terminal 
+vlan 434 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 443 service-vlan 434 
+end 
+configure terminal 
+vlan 435 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 444 service-vlan 435 
+end 
+configure terminal 
+vlan 436 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 445 service-vlan 436 
+end 
+configure terminal 
+vlan 437 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 446 service-vlan 437 
+end 
+configure terminal 
+vlan 438 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 447 service-vlan 438 
+end 
+configure terminal 
+vlan 439 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 448 service-vlan 439 
+end 
+configure terminal 
+vlan 440 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 449 service-vlan 440 
+end 
+configure terminal 
+vlan 441 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 450 service-vlan 441 
+end 
+configure terminal 
+vlan 442 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 451 service-vlan 442 
+end 
+configure terminal 
+vlan 443 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 452 service-vlan 443 
+end 
+configure terminal 
+vlan 444 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 453 service-vlan 444 
+end 
+configure terminal 
+vlan 445 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 454 service-vlan 445 
+end 
+configure terminal 
+vlan 446 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 455 service-vlan 446 
+end 
+configure terminal 
+vlan 447 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 456 service-vlan 447 
+end 
+configure terminal 
+vlan 448 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 457 service-vlan 448 
+end 
+configure terminal 
+vlan 449 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 458 service-vlan 449 
+end 
+configure terminal 
+vlan 450 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 459 service-vlan 450 
+end 
+configure terminal 
+vlan 451 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 460 service-vlan 451 
+end 
+configure terminal 
+vlan 452 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 461 service-vlan 452 
+end 
+configure terminal 
+vlan 453 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 462 service-vlan 453 
+end 
+configure terminal 
+vlan 454 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 463 service-vlan 454 
+end 
+configure terminal 
+vlan 455 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 464 service-vlan 455 
+end 
+configure terminal 
+vlan 456 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 465 service-vlan 456 
+end 
+configure terminal 
+vlan 457 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 466 service-vlan 457 
+end 
+configure terminal 
+vlan 458 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 467 service-vlan 458 
+end 
+configure terminal 
+vlan 459 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 468 service-vlan 459 
+end 
+configure terminal 
+vlan 460 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 469 service-vlan 460 
+end 
+configure terminal 
+vlan 461 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 470 service-vlan 461 
+end 
+configure terminal 
+vlan 462 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 471 service-vlan 462 
+end 
+configure terminal 
+vlan 463 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 472 service-vlan 463 
+end 
+configure terminal 
+vlan 464 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 473 service-vlan 464 
+end 
+configure terminal 
+vlan 465 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 474 service-vlan 465 
+end 
+configure terminal 
+vlan 466 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 475 service-vlan 466 
+end 
+configure terminal 
+vlan 467 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 476 service-vlan 467 
+end 
+configure terminal 
+vlan 468 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 477 service-vlan 468 
+end 
+configure terminal 
+vlan 469 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 478 service-vlan 469 
+end 
+configure terminal 
+vlan 470 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 479 service-vlan 470 
+end 
+configure terminal 
+vlan 471 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 480 service-vlan 471 
+end 
+configure terminal 
+vlan 472 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 481 service-vlan 472 
+end 
+configure terminal 
+vlan 473 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 482 service-vlan 473 
+end 
+configure terminal 
+vlan 474 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 483 service-vlan 474 
+end 
+configure terminal 
+vlan 475 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 484 service-vlan 475 
+end 
+configure terminal 
+vlan 476 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 485 service-vlan 476 
+end 
+configure terminal 
+vlan 477 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 486 service-vlan 477 
+end 
+configure terminal 
+vlan 478 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 487 service-vlan 478 
+end 
+configure terminal 
+vlan 479 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 488 service-vlan 479 
+end 
+configure terminal 
+vlan 480 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 489 service-vlan 480 
+end 
+configure terminal 
+vlan 481 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 490 service-vlan 481 
+end 
+configure terminal 
+vlan 482 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 491 service-vlan 482 
+end 
+configure terminal 
+vlan 483 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 492 service-vlan 483 
+end 
+configure terminal 
+vlan 484 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 493 service-vlan 484 
+end 
+configure terminal 
+vlan 485 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 494 service-vlan 485 
+end 
+configure terminal 
+vlan 486 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 495 service-vlan 486 
+end 
+configure terminal 
+vlan 487 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 496 service-vlan 487 
+end 
+configure terminal 
+vlan 488 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 497 service-vlan 488 
+end 
+configure terminal 
+vlan 489 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 498 service-vlan 489 
+end 
+configure terminal 
+vlan 490 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 499 service-vlan 490 
+end 
+configure terminal 
+vlan 491 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 500 service-vlan 491 
+end 
+configure terminal 
+vlan 492 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 501 service-vlan 492 
+end 
+configure terminal 
+vlan 493 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 502 service-vlan 493 
+end 
+configure terminal 
+vlan 494 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 503 service-vlan 494 
+end 
+configure terminal 
+vlan 495 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 504 service-vlan 495 
+end 
+configure terminal 
+vlan 496 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 505 service-vlan 496 
+end 
+configure terminal 
+vlan 497 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 506 service-vlan 497 
+end 
+configure terminal 
+vlan 498 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 507 service-vlan 498 
+end 
+configure terminal 
+vlan 499 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 508 service-vlan 499 relay-vlan-id 800
+end 
+configure terminal 
+vlan 500 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 509 service-vlan 500 relay-vlan-id 900
+end 
+configure terminal 
+vlan 501 
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+configure terminal 
+interface gi 0/4 
+switchport customer-vlan 510 service-vlan 501 relay-vlan-id 1010
+end
